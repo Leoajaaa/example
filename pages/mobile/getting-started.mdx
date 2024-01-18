@@ -1,0 +1,116 @@
+import Image from "next/image";
+import Link from "next/link";
+
+import screenLogin from "@/public/image/mobile/general/mobile_login.png";
+import logoPlaystore from "@/public/image/playstore.webp";
+import logoAppStore from "@/public/image/app.webp";
+
+import { Tabs, Tab } from "nextra/components";
+import { Callout } from "nextra/components";
+
+## Install Porta Pro Mobile
+
+### Download
+
+<Link
+    target="_blank"
+    href="https://play.google.com/store/apps/details?id=com.mediasarana.portapro"
+>
+    <Image
+        alt=""
+        loading="lazy"
+        width="167"
+        height="57"s
+        decoding="async"
+        data-nimg="1"
+        className="m-1 inline-block"
+        style={{
+            color: "transparent",
+            margin: "auto" 
+        }}
+        src={logoPlaystore}
+    />
+</Link>
+
+<Link
+    target="_blank"
+    href="https://apps.apple.com/id/app/porta-pro/id1661054603?l=id"
+>
+    <Image
+        alt=""
+        loading="lazy"
+        width="167"
+        height="57"
+        decoding="async"
+        data-nimg="1"
+        className="m-1 inline-block"
+        style={{
+            color: "transparent",
+            margin: "auto" 
+        }}
+        src={logoAppStore}
+    />
+</Link>
+### Requirement
+
+<Tabs items={["Android", "IOS"]}>
+    <Tab>
+    - Android versi 7.0 atau versi lebih baru
+    </Tab>
+    
+    <Tab>
+    - IOS versi 13.0 atau versi lebih baru
+    </Tab>
+</Tabs>
+
+## Login Apps
+
+Anda bisa memulai aplikasi porta pro mobile dengan login terlebih dahulu:
+
+1. Jalankan aplikasi porta pro mobile pada perangkat anda, lalu akan tampil halaman login seperti berikut:
+
+<Image
+    loading="lazy"
+    src={screenLogin}
+    width={250}
+    height={250}
+    style={{ margin: "auto" }}
+></Image>
+
+2. Isi kode perusahaan anda yang sudah terdaftar pada aplikasi Porta Pro
+3. Isi username dan password dengan data user yang telah terdaftar pada aplikasi Porta Pro/ECes.Q
+
+## Lupa Password
+Anda dapat meng-klik link **Lupa Password** pada halaman login aplikasi untuk dapat me reset password login anda.
+Selanjutnya anda akan diarahkan pada isian halaman lupa password:
+
+1. Isi kode perusahaan anda yang telah terdaftar pada aplikasi
+2. Isi alamat email anda
+3. Klik/Tap tombol **RESET**
+4. Aplikasi akan mengirimkan arahan selanjutnya melalui email yang telah anda isi
+
+<Callout type="info" emoji="ℹ️">
+    `Untuk dapat melakukan proses reset password, aplikasi membutuhkan alamat email anda yang telah terdaftar pada aplikasi.
+    jadi, pastikan sebelumnya anda sudah melengkapi alamat email pada aplikasi`
+</Callout>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Bagaimana jika belum terdaftar sebagai user pada aplikasi porta pro ?">
+    Anda dapat menghubungi tim administrator aplikasi porta pro/eces.q di
+    perusahaan anda, untuk dapat dibuatkan user login pada aplikasi
+</FAQBox>

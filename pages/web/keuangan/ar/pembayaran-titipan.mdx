@@ -1,0 +1,154 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pta1 from "@/public/image/web/keuangan/ar/pembayaran-titipan/a1.png";
+import pta2 from "@/public/image/web/keuangan/ar/pembayaran-titipan/a2.png";
+import pte1 from "@/public/image/web/keuangan/ar/pembayaran-titipan/e1.png";
+import pte2 from "@/public/image/web/keuangan/ar/pembayaran-titipan/e2.png";
+import pth1 from "@/public/image/web/keuangan/ar/pembayaran-titipan/h1.png";
+
+# Pembayaran Titipan
+
+Menu **Pembayaran Titipan** ini digunakan untuk mencatat penerimaan uang titipan dari konsumen
+yang sumbernya berasal dari item nilai titipan pada booking/ kontrak penjualan
+(Biaya Notaris, BPHTB, Admin Bank, dll).
+
+## Langkah-langkah menambahkan pembayaran titipan
+
+<Steps>
+    1. Pilih nama **Proyek**.
+    2. Pilih **tanggal bukti**.
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Data Penerimaan",
+                "Detail Penerimaan",
+            ]}
+        >
+            <Tab>
+            <Image
+            src={pta1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            3. Pilih **Nomor Kontrak**, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+            menampilkan UI List Kontrak. Pilih Nomor Unit yang tertera pada table List Kontrak,
+            sistem akan otomatis menampilkan Informasi Proyek, Nama Customer dan Unit Properti.
+
+            `Catatan: pastikan tunggakan pembayaran titipan ditemukan di sistem.`
+
+            4. Checklist **jenis penerimaan**.
+            5. Tentukan **metode pembayaran**.
+            6. Tentukan Kas-Bank (Rekening) untuk menempatkan dana yang diterima,
+            dengan cara tekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>. Sistem akan menampilkan Daftar Rekening
+            pada tabel UI List Rekening. Pilih nama kas/bank pada table.
+            7. Isi nomor referensi/ giro/ cek dan nomor kwitansi(jika dibutuhkan).
+            8. Isikan keterangan.
+
+            </Tab>
+
+            <Tab>
+            <Image
+            src={pta2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            9. Isi nilai pembayaran.
+            `Catatan: Pastikan Nominal pembayaran tidak bisa lebih besar dari saldo titipan`
+
+            10. Isikan keterangan.
+
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Penerimaan** apabila akan mencetak bukti penerimaan.
+
+</Steps>
+
+## Langkah-langkah mengubah pembayaran titipan
+
+<Steps>
+    ### Klik **Nomor Bukti** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data tidak bisa diubah/dihapus karena sudah terdaftar pada posting jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Ubah data pada halaman edit data.
+    1. Ubah nama **Proyek**.
+    2. Ubah **tanggal bukti**.
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Data Penerimaan",
+                "Detail Penerimaan",
+            ]}
+        >
+            <Tab>
+            <Image
+            src={pte1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            3. Ubah **Nomor Kontrak**, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+            menampilkan UI List Kontrak. Pilih Nomor Unit yang tertera pada table List Kontrak,
+            sistem akan otomatis menampilkan Informasi Proyek, Nama Customer dan Unit Properti.
+
+            `Catatan: pastikan tunggakan pembayaran titipan ditemukan di sistem.`
+
+            4. Checklist **jenis penerimaan**.
+            5. Ubah **metode pembayaran**.
+            6. Ubah Kas-Bank (Rekening) untuk menempatkan dana yang diterima,
+            dengan cara tekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>. Sistem akan menampilkan Daftar Rekening
+            pada tabel UI List Rekening. Pilih nama kas/bank pada table.
+            7. Ubah nomor referensi/ giro/ cek dan nomor kwitansi(jika dibutuhkan).
+            8. Ubah keterangan.
+
+            </Tab>
+
+            <Tab>
+            <Image
+            src={pte2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            9. Ubah nilai pembayaran.
+            `Catatan: Pastikan Nominal pembayaran tidak bisa lebih besar dari saldo titipan`
+
+            10. Ubah keterangan.
+
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Update** untuk mengubah data.
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Penerimaan** apabila akan mencetak bukti penerimaan.
+
+</Steps>
+
+## Langkah-langkah menghapus pembayaran titipan
+
+    <Steps>
+    ### Klik **Nomor Bukti** pada data yang akan dihapus, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data tidak bisa diubah/dihapus karena sudah terdaftar pada posting jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={pth1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Isikan alasan melakukan penghapusan data lalu klik **Oke**
+
+    </Steps>

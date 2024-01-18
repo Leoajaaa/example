@@ -1,0 +1,57 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import Image from "next/image";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import mta1 from "@/public/image/web/marketing/marketing-tools/a1.png";
+import mte1 from "@/public/image/web/marketing/marketing-tools/e1.png";
+
+
+# Marketing Tools
+
+Menu **Marketing Tools** digunakan untuk melakukan pencatatan terhadap alat yang dipakai pada kegiatan
+penjualan atau kegiatan (Follow Up) konsumen.
+
+## Langkah-langkah menambah marketing tools
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data marketing tools
+    <Image
+            src={mta1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Pilih nama **Proyek**.
+    2. Pilih **jenis marketing tools**.
+    3. Isikan pada text box **keterangan**.
+    4. Upload file gambar.
+    
+    `Catatan: Format upload harus JPG/JPEG/PNG dan ukuran upload tidak lebih dari 2MB.`
+
+    ### Klik tombol **Upload** untuk menyimpan marketing tools
+    </Steps>
+
+## Langkah-langkah menghapus marketing tools
+
+    <Steps>
+    ### Pilih nama **Proyek**.
+    ### Pilih **Jenis Media**
+    ### Klik tombol **Tampilkan**
+    ### Klik gambar yang akan dihapus
+    ### Klik tombol **Hapus** untuk menghapus data.
+    <Image
+            src={mte1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    Klik **Ya** untuk menghapus data, Klik **Tidak** untuk membatalkan
+    penghapusan data.
+
+    </Steps>

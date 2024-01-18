@@ -1,0 +1,85 @@
+import { Steps } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import itemkpra1 from "@/public/image/web/data-master/data-kpr/item-kpr/a1.png";
+import itemkprp1 from "@/public/image/web/data-master/data-kpr/item-kpr/p1.png";
+import itemkpre1 from "@/public/image/web/data-master/data-kpr/item-kpr/e1.png";
+
+
+# Item Proses KPR
+
+Menu **Item Proses KPR** digunakan untuk menetapkan item Proses KPR
+yang ada pada masing-masing bank.
+
+## Langkah-langkah menambahkan item proses KPR
+
+    <Steps>
+    ### Klik tombol **Tambah**.
+    ### Isikan data Item Proses KPR.
+    <Image
+            src={itemkpra1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Ketik **Kode** Item pada kolom **Kode KPR**
+    2. Ketik **Nama** Item pada kolom **Nama KPR**
+
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    `Catatan: Kode KPR dan Nama KPR wajib diisi`
+    </Steps>
+
+## Langkah-langkah menyimpan proses bank pada setiap item
+
+    <Steps>
+    ### Pilih item yang dipilih.
+    ### Berikan tanda ceklist untuk setiap baris proses pada bank yang dikehendaki.
+    <Image
+            src={itemkprp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Isi no urut proses untuk setiap item proses.
+    2. Isikan jangka waktu yang dibutuhkan (dalam hitungan hari), acuan hitungan hari berdasarkan kepada item proses yang ada pada urutan pertama.
+    ### Klik tombol **Simpan** untuk menyimpan hasil perubahan data.
+    </Steps>
+
+## Langkah-langkah merubah item proses KPR
+
+    <Steps>
+    ### Klik **Kode** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Lakukan perubahan yang diinginkan.
+    <Image
+            src={itemkpre1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Ubah **Kode** Item pada kolom **Kode KPR**
+    2. Ubah **Nama** Item pada kolom **Nama KPR**
+    ### Klik tombol **Update** untuk menyimpan data.
+    `Catatan: Kode KPR dan Nama KPR wajib diisi`
+    </Steps>
+
+## Langkah-langkah menghapus item proses KPR
+
+    <Steps>
+    ### Klik **Kode** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={itemkpre1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    ### Klik tombol **Delete** untuk menyimpan data.
+    Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+    penghapusan data.
+    </Steps>

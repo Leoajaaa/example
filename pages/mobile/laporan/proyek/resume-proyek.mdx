@@ -1,0 +1,85 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import Image from 'next/image';
+
+import resumep0 from "@/public/image/mobile/proyek/resume-proyek/p0.jpg";
+import resumed0 from "@/public/image/mobile/proyek/resume-proyek/d0.jpg";
+
+# Resume Proyek
+
+Menu **Resume Proyek**, berfungsi sebagai laporan pencatatan perhitungan antara untung dan ruginya pihak developer dalam merencanakan suata anggaran biaya.
+Pada modul ini, pengguna dapat melakukan review data terkait :
+
+-   Menampilkan nilai Target Penjualan, KPR, Penerimaan Booking Fee, Target & Cash In, Realisasi Pengeluaran, Progres Bangunan dan Progres Perijinan.
+-   Mendownload laporan resume proyek, langsung dari aplikasi
+
+---
+
+## Preview Progres
+
+<Steps>
+
+### Buka Aplikasi Porta Pro di Smartphone
+
+### Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+### Pilih modul Proyek
+
+### Pilih menu Resume Proyek
+
+### Pilih modul proyek
+
+### Pilih menu resume proyek
+
+### Pilih proyek
+
+<Image
+            src={resumep0}
+            
+            width={500}
+            height={500}
+                
+        />
+
+</Steps>
+
+## Download Data Resume Proyek
+
+<Steps>
+
+### Tekan dan tahan pada form data Rab realisasi
+
+### Pilih download Resume Proyek 
+
+<Image
+            src={resumed0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih ya
+
+</Steps>
+---
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

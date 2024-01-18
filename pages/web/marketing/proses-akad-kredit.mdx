@@ -1,0 +1,64 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import search from "@/public/icon/icon_search.png";
+
+
+import prosesakadkreditu1 from "@/public/image/web/marketing/proses-akad-kredit/u1.png";
+
+# Proses Akad kredit
+
+<Steps>
+## Update Proses Akad kredit
+
+### Pilih proyek
+
+Pilih Proyek Kemudian klik tombol **Tampilkan** untuk menampilkan daftar konsumen dan unit pada tabel.
+
+### Isi data proses akad kredit
+
+<Image
+            src={prosesakadkreditu1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Lengkapi isian attribut Nomor SP3K
+2. Pilih Tanggal SP3K
+3. Pilih Status Akad
+4. Pilih Tanggal Akad 
+5. Pilih Bank KPR/KPA, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+sistem akan menampilkan UI kas/bank, Klik nama bank yang akan dipilih.
+6. Pilih Rekening, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+sistem akan menampilkan UI List Rekening, Klik nama bank yang akan dipilih.
+
+### Klik Simpan
+Klik tombol **Simpan** untuk menyimpan update data proses Akad Kredit
+</Steps>
+
+    ## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Approval Konfirmasi Reserve / Booking. 
+  
+</FAQBox>

@@ -1,0 +1,78 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pab1 from "@/public/image/web/laporan/marketing/rekap-pembatalan/pab1.png";
+import pm1 from "@/public/image/web/laporan/marketing/rekap-pembatalan/pm1.png";
+import pt1 from "@/public/image/web/laporan/marketing/rekap-pembatalan/pt1.png";
+import pu1 from "@/public/image/web/laporan/marketing/rekap-pembatalan/pu1.png";
+
+# <span style={{ fontSize: '28px' }}> Rekap Pembatalan </span>
+
+Menu Laporan Rekap Pembatalan digunakan untuk memonitor data aktivitas marketing terkait penjualan dan informasi status calon konsumen
+
+## <span style={{ fontSize: '24px' }}> Preview Rekap Pembatalan </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Tampilkan </span>
+
+<Tabs
+            items={[
+                "Alasan Batal",
+                "Marketing",
+                "Type",
+                "Unit",
+               
+            ]}
+        >
+<Tab>
+<Image
+            src={pab1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. Tekan tombol tampilkan untuk menampilkan data Laporan Rekap Pembatalan
+</Tab>
+
+<Tab>
+<Image
+            src={pt1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. Tekan tombol tampilkan untuk menampilkan data Laporan Rekap Pembatalan
+</Tab>
+ </Tabs>
+
+ </Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Bagaimana cara mengupdate laporan Rekap Pembatalan ?">
+  **Ya**, . 
+  
+</FAQBox>

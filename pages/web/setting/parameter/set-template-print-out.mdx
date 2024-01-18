@@ -1,0 +1,91 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import cetakspru1 from "@/public/image/web/setting/parameter/setting-template-print-out/u1.png";
+import cetakspru2 from "@/public/image/web/setting/parameter/setting-template-print-out/u2.png";
+
+
+# Setting Template Print Out
+
+<Tabs items={["Upload Template Cetak", "Upload Template SPR"]}>
+
+<Tab>
+
+<Steps>
+
+## Update Template Cetak
+
+Tab **Upload Template Cetak** digunakan untuk mengatur template cetak
+
+
+### Isikan data template cetak
+
+<Image
+            src={cetakspru1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih Perusahaan
+2. Pilih proyek
+3. Pilih Jenis Template
+4. Pilih file template cetak dengan cara klik tombol **Upload file bertipe HTML**
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Klik Simpan
+
+Klik tombol **Simpan** untuk menyimpan update template cetak
+
+</Steps>
+
+</Tab>
+
+<Tab>
+
+<Steps>
+
+## Update Cetak SPR
+
+Tab **Upload Template SPR** digunakan untuk mengatur template Surat Pemesanan Rumah
+
+
+
+### Isikan data template SPR
+
+<Image
+            src={cetakspru2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih Perusahaan
+2. Pilih Proyek
+3. Pilih SPR
+4. Lengkapi attribut text area Persyaratan & Ketentuan atau lainnya
+5. Lengkapi attribut Pejabat Penandatangan (Nama, Jabatan)
+6. Upload Logo untuk posisi pada bagian kiri SPR
+7. Upload Logo untuk posisi pada bagian kanan SPR
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Klik Simpan
+
+Klik tombol **Simpan** untuk menyimpan update template SPR
+
+</Steps>
+
+</Tab>
+
+</Tabs>

@@ -1,0 +1,94 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+
+import Image from 'next/image';
+import siteplanp1 from "@/public/image/mobile/siteplan/p1.jpg";
+import siteplanp2 from "@/public/image/mobile/siteplan/p2.jpg";
+import siteplanp3 from "@/public/image/mobile/siteplan/p3.jpg";
+import siteplanp4 from "@/public/image/mobile/siteplan/p4.jpg";
+import siteplanp5 from "@/public/image/mobile/siteplan/p5.jpg";
+
+
+
+# <span style={{ fontSize: '28px' }}>Site Plan</span>
+
+Menu **Site Plan**, berfungsi untuk menampilkan penjualan unit properti yang bertipe landed secara grafis melalui Site plan proyek.
+
+---
+<Steps>
+## <span style={{ fontSize: '24px' }}>Preview Site Plan</span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul SitePlan
+
+ <Image
+            src={siteplanp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih Proyek
+
+ <Image
+            src={siteplanp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Pilih urutan gambar SitePlan
+
+ <Image
+            src={siteplanp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. klik tombol tampilkan
+
+ <Image
+            src={siteplanp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+</Steps>
+
+7. Melalui serangkaian langkah-langkah ini, Anda dapat mengakses dan menampilkan gambar SitePlan dari proyek tertentu menggunakan Aplikasi Porta Pro pada perangkat smartphone Anda.
+ <Image
+            src={siteplanp5}
+            
+            width={250}
+            height={250}
+                
+        />
+---
+ ## <span style={{ fontSize: '24px' }}>FAQ</span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>
+       

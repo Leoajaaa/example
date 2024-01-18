@@ -1,0 +1,117 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import Image from 'next/image';
+
+import aktifitasp3 from "@/public/image/mobile/proyek/aktifitas-proyek/p3.jpg";
+import aktifitasp4 from "@/public/image/mobile/proyek/aktifitas-proyek/p4.jpg";
+import aktifitasu0 from "@/public/image/mobile/proyek/aktifitas-proyek/u0.jpg";
+import aktifitasu1 from "@/public/image/mobile/proyek/aktifitas-proyek/u1.jpg";
+import aktifitasd0 from "@/public/image/mobile/proyek/aktifitas-proyek/d0.jpg";
+
+
+
+# <span style={{ fontSize: '28px'}}>Aktifitas Proyek</span>
+
+Modul **Aktifitas Proyek**, berfungsi sebagai pencatatan presentase Aktifitas Proyek sesuai dengan keadaan sebenarnya.
+Pada modul ini, pengguna dapat melakukan update data terkait :
+
+-   Nilai presentasi progres pembangunan, berdasarkan bobot pekerjaan yang telah ditentukan sebelumnya
+-   Upload photo bukti progres Aktifitas Proyek, melalui aplikasi Porta Pro
+-   Bukti photo yang diupload, akan langsung terdapat watermark lokasi saat photo tersebut diambil
+
+---
+
+## <span style={{ fontSize: '24px' }}>Preview Progres</span>
+
+<Steps>
+
+
+### <span style={{ fontSize: '22px' }}>Buka Aplikasi Porta Pro di Smartphone</span>
+
+### <span style={{ fontSize: '22px' }}>Setelah itu, jika user belum login maka silahkan login terlebih dahulu.</span>
+
+### <span style={{ fontSize: '22px' }}>Pilih modul Proyek</span>
+
+### <span style={{ fontSize: '22px' }}>Pilih menu aktivitas proyek</span>
+
+### <span style={{ fontSize: '22px' }}>Pilih filter proyek</span>
+
+ <Image
+            src={aktifitasp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### <span style={{ fontSize: '22px' }}>Pilih aktivitas proyek</span>
+
+### <span style={{ fontSize: '22px' }}>Pilih group aktivitas proyek</span>
+ <Image
+            src={aktifitasp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+</Steps>
+
+## <span style={{ fontSize: '24px' }}>Update Aktifitas Proyek</span>
+<Steps>
+### <span style={{ fontSize: '22px' }}>Pilih baris data aktivitas proyek yang akan di update</span>
+ <Image
+            src={aktifitasu0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### <span style={{ fontSize: '22px' }}>Klik tombol aktivitas proyek</span>
+
+<Image
+            src={aktifitasd0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### <span style={{ fontSize: '22px' }}>Isi form data aktivitas proyek</span>
+
+ <Image
+            src={aktifitasu1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. klik icon update gambar untuk mengupdate gambar
+7. Ambil gambar dari foto atau galeri 
+
+8. Klik update aktivitas proyek
+
+</Steps>
+
+---
+## <span style={{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

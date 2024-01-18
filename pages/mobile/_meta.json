@@ -1,0 +1,21 @@
+{
+    "introduction": "Introduction",
+    "getting-started": "Getting Started",
+    "dashboard": {
+        "display": "hidden"
+    },
+   
+    
+   
+    "siteplan": {
+        "title": "Siteplan",
+        "href": "/mobile/proyek/siteplan-marketing"
+
+    },
+    "proyek": "Proyek",
+    "marketing": "Marketing",
+    "keuangan": "Keuangan",
+    "akuntansi": "Akuntansi",
+    "approval": "Approval"
+
+}

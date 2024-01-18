@@ -1,0 +1,190 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import ppba1 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-pembatalan/a1.png";
+import ppba2 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-pembatalan/a2.png";
+import ppba3 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-pembatalan/a3.png";
+import ppbe1 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-pembatalan/e1.png";
+import ppbe2 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-pembatalan/e2.png";
+import ppbe3 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-pembatalan/e3.png";
+import ppbh1 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-pembatalan/h1.png";
+
+# Pengembalian Pembatalan
+
+Menu **Pengembalian Pembatalan**, digunakan untuk memfasilitasi
+Pengembalian uang dari pembatalan penjualan ke Konsumen.
+
+## Langkah-langkah menambahkan Pengembalian Pembatalan
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data pada halaman tambah data.
+
+    1. Pilih nama **Proyek**
+    2. Pilih **tanggal Pengembalian**
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Data Pembatalan",
+                "Rekening Pengeluaran",
+                "Detail Pengeluaran",
+            ]}
+        >
+            <Tab>
+
+            <Image
+            src={ppba1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            3. Pilih Nomor Reff/Memo, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+                menampilkan UI List Pembatalan Unit. Pilih Nomor Reff yang tertera pada table List Pembatalan.
+                Sistem akan otomatis menampilkan Informasi Proyek, Nama Customer, Unit Properti dan Nominal yang diterima sebelumnya dari konsumen berdasarkan penerimaan yang tercatat pada sistem.
+
+           
+            </Tab>
+
+            <Tab>
+
+            <Image
+            src={ppba2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            
+            Lengkapi isian data atribut (metode pembayaran,no.rekening,bank,referensi no.cek/giro/EDC)
+
+            4. Masukan metode pembayaran (Giro/Cek,cash,tranfer,dan EDC)
+
+            5. Pilih no.rekening dengan klik icon cari, bank akan otomatis terisi Ketika sudah mengisi no.rekening
+
+            6. Masukan referensi no.Cek/Giro/EDC
+            
+            </Tab>
+            <Tab>
+
+            <Image
+            src={ppba3}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            
+            `Catatan: Total penerimaan akan terisi otomatis berdasarkan nilai penerimaan yang sudah di inputkan`
+            
+            7. lengkapi data pada text box di tab detail pengeluaran (potongan pembatalan, nilai pengembalian, potongan pph, potongan admin bank)
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    Klik tombol **Print Out Pengembalian Pembatalan** lalu
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Bukti Pembayaran** apabila akan mencetak bukti pembayaran.
+
+    </Steps>
+
+## Langkah-langkah mengubah Pengembalian Pembatalan
+
+    <Steps>
+    ### Klik **Nomor Bukti** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data Pengembalian Pembatalan tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Isikan data pada halaman edit data.
+
+    1. Pilih **Proyek**
+    2. Isi Perubahan
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Data Pembatalan",
+                "Rekening Pengeluaran",
+                "Detail Pengeluaran",
+            ]}
+        >
+            <Tab>
+
+            <Image
+            src={ppbe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            3. Pilih Nomor Reff/Memo, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+                menampilkan UI List Pembatalan Unit. Pilih Nomor Reff yang tertera pada table List Pembatalan.
+                Sistem akan otomatis menampilkan Informasi Proyek, Nama Customer, Unit Properti dan Nominal yang diterima sebelumnya dari konsumen berdasarkan penerimaan yang tercatat pada sistem.
+
+           
+            </Tab>
+
+            <Tab>
+
+            <Image
+            src={ppbe2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            Lengkapi isian data atribut (metode pembayaran,no.rekening,bank,referensi no.cek/giro/EDC)
+
+            4. Masukan metode pembayaran (Giro/Cek,cash,tranfer,dan EDC)
+
+            5. Pilih no.rekening dengan klik icon cari, bank akan otomatis terisi Ketika sudah mengisi no.rekening
+
+            6. Masukan referensi no.Cek/Giro/EDC
+            
+            </Tab>
+            <Tab>
+
+            <Image
+            src={ppbe3}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            `Catatan: Total penerimaan akan terisi otomatis berdasarkan nilai penerimaan yang sudah di inputkan`
+            
+            7. lengkapi data pada text box di tab detail pengeluaran (potongan pembatalan, nilai pengembalian, potongan pph, potongan admin bank)
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Update** untuk mengubah data.
+    Klik tombol **Print Out Pengembalian Pembatalan** lalu
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Bukti Pembayaran** apabila akan mencetak bukti pembayaran.
+
+    </Steps>
+
+## Langkah-langkah menghapus Pengembalian Pembatalan
+
+    <Steps>
+    ### Pilih Proyek
+    ### Pilih Periode
+    ### Klik **Nomor Bukti Pengembalian** pada data yang akan dihapus, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data Pengembalian Pembatalan tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Isikan alasan melakukan penghapusan data lalu klik **Oke**
+
+    <Image
+            src={ppbh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    </Steps>

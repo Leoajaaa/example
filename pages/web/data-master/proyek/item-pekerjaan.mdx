@@ -1,0 +1,91 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+import search from "@/public/image/web/data-master/proyek/item-pekerjaan/akun_search.png";
+
+# Item Pekerjaan
+
+Menu **Item pekerjaan** digunakan untuk mendefinisikan item pekerjaan
+pembangunan rumah pada proyek, dan berfungsi juga sebagai setting bobot
+pekerjaan tersebut untuk masing-masing tipe unit yang akan dibangun.
+
+## Menampilkan data item pekerjaan
+
+`Catatan: Langkah ini berlaku untuk semua menu tabs Pembangunan unit dan umum.`
+
+<Steps>
+    ### Pilih proyek yang akan dipilih.
+
+    ![tampil item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/tampil_item_pekerjaan1.png)
+
+    ### Klik tombol **Tampilkan**
+
+    ![tampil item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/tampil_item_pekerjaan2.png)
+
+</Steps>
+
+## Langkah-langkah menambah data item pekerjaan
+
+<Tabs items={["Item Pekerjaan", "Umum"]}>
+  <Tab>
+    <Steps>
+
+    ### Klik pilih tab **Pembangunan Unit**
+
+    ![tambah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/tambah_item_pekerjaan1.png)
+
+    ### Klik pilih tab **Item Pekerjaan**
+
+    ![tambah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/tambah_item_pekerjaan2.png)
+
+    ### Klik tombol **Buat Baru**
+
+    ![tambah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/tambah_item_pekerjaan3.png)
+
+    ### Isikan form tambah item pekerjaan
+
+    1. Isikan pada text box kode pekerjaan dan nama pekerjaan.
+    2. (Opsional) Pilih nama akun,
+    dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> sistem akan menampilkan UI list akun.
+    3. (Opsional) Pilih nama sub akun,
+    dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search sub akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> sistem akan menampilkan UI list sub akun.
+    4. Berikan ceklist pada kolom proyek, untuk menandakan bahwa perkerjaan
+    tersebut ada pada proyek yang dipilih.
+
+    ![tambah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/tambah_item_pekerjaan4.png)
+
+    `CATATAN: pada form penambahan, text box kode pekerjaan dan nama pekerjaan harus wajib diisi setiap menambahkan data item pekerjaan.`
+
+    ### Klik tombol **Simpan** untuk menyimpan data yang telah diinputkan.
+
+    ![tambah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/tambah_item_pekerjaan5.png)
+
+    </Steps>
+
+  </Tab>
+</Tabs>
+
+## Langkah-langkah merubah data item pekerjaan
+
+<Tabs items={["Item Pekerjaan", "Jenis Pekerjaan Unit per Tipe", "Umum"]}>
+  <Tab>
+    <Steps>
+    ### Klik data item pekerjaan yang dipilih di tabs item pekerjaan
+    ![ubah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/ubah_item_pekerjaan1.png)
+
+    ### Ubah data item pekerjaan
+    1. Isikan pada text box kode pekerjaan dan nama pekerjaan.
+    2. (Opsional) Pilih nama akun,
+    dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> sistem akan menampilkan UI list akun.
+    3. (Opsional) Pilih nama sub akun,
+    dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search sub akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> sistem akan menampilkan UI list sub akun.
+    4. Berikan ceklist pada kolom proyek, untuk menandakan bahwa perkerjaan
+    tersebut ada pada proyek yang dipilih.
+    ![ubah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/ubah_item_pekerjaan2.png)
+
+    ### Klik tombol **Update** untuk mengubah data yang telah diubah.
+    ![ubah item pekerjaan](@/public/image/web/data-master/proyek/item-pekerjaan/ubah_item_pekerjaan3.png)
+
+    </Steps>
+
+  </Tab>
+</Tabs>

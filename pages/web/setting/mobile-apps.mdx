@@ -1,0 +1,227 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import mopa1 from "@/public/image/web/setting/mobile-apps/a1.png";
+import mopp1 from "@/public/image/web/setting/mobile-apps/p1.png";
+import mopp2 from "@/public/image/web/setting/mobile-apps/p2.png";
+import mopp3 from "@/public/image/web/setting/mobile-apps/p3.png";
+import mopp4 from "@/public/image/web/setting/mobile-apps/p4.png";
+import mope1 from "@/public/image/web/setting/mobile-apps/e1.png";
+
+# Mobile Apps
+
+<div style={{ padding: "1rem" }}>
+    **Mobile Apps** digunakan untuk mengisi detail informasi Mobile Apps yang ada pada developer properti, Seperti : **Nama Mobile Apps**, **alamat**, **rekening** serta **logo** yang digunakan oleh Mobile Apps.
+</div>
+
+<Tabs items={["Nilai Default", "Batas Wakti", "Syarat & Ketentuan", "Template Email/WA"]}>
+<Tab>
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+Tombol aksi **Buat Baru** terdapat pada halaman awal modul **Mobile Apps**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info Mobile Apps
+
+<Image
+            src={mopa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih proyek
+2. Lengkapi isian pada atribut persenan uang muka, nilai booking fee, nilai reservasi.
+
+### Simpan Data
+
+1. Klik tombol **Simpan** untuk menyimpan data nilai Default yang baru ditambahkan
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+
+
+
+
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih Mobile Apps
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+Sistem akan menampilkan data Nilai Default (Persen uang muka, Nilai Booking Fee, Nilai Reservasi.) secara otomatis pada masing-masing jenis data.
+
+<Image
+            src={mope1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+### Simpan perubahan data
+
+
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih Proyek
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Hapus Data
+
+1. Klik tombol **Hapus** untuk menghapus data.
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Nilai Default data hanya bisa dilakukan jika Nilai Default tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+</Tab>
+
+<Tab>
+
+## Tambah Data
+
+<Steps>
+
+### Info Batas Waktu
+
+<Image
+            src={mopp2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Lengkapi isian pada atribut Batas Maksimum.
+2. Lengkapi isian pada atribut Satuan Waktu.
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan Data
+
+1. Klik tombol **Simpan** untuk menyimpan data Batas Waktu
+
+</Steps>
+
+
+</Tab>
+
+<Tab>
+
+<Steps>
+
+### Info Syarat dan Ketentuan Booking
+
+<Image
+            src={mopp3}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih Perusahaan.
+2. Pilih Proyek.
+3. Pilih kategori upload format (upload file bertipe HTML, atau membuat format dengan HTML Editor)
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan Data
+
+1. Klik tombol **Simpan** untuk menyimpan data Syarat dan Ketentuan
+
+</Steps>
+
+</Tab>
+
+<Tab>
+
+<Steps>
+
+### Info Syarat dan Ketentuan Booking
+
+<Image
+            src={mopp4}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih Perusahaan.
+2. Pilih Proyek.
+3. pilih jenis template
+4. Edit Template Pesan WA pada Atribut Text Area
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan Data
+
+1. Klik tombol **Simpan** untuk menyimpan data Template WA
+
+</Steps>
+
+</Tab>
+
+
+</Tabs>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Mobile Apps. 
+  
+</FAQBox>
+
+

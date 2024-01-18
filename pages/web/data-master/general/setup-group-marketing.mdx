@@ -1,0 +1,73 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import setgrupmarketinga1 from "@/public/image/web/data-master/general/set-group-marketing/a1.png";
+
+import setgrupmarketinge1 from "@/public/image/web/data-master/general/set-group-marketing/e1.png";
+
+# Setup Group Marketing
+
+Menu **Setup Group Marketing** digunakan untuk menentukan nilai prosentase fee
+yang akan didapatkan untuk setiap Group marketing per proyeknya. Berdasarkan
+prosentase ini, nantinya besaran nilai fee marketing akan dihitung secara otomatis
+oleh aplikasi.
+
+## Langkah-langkah menambahkan setup group marketing
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data Grup Marketing.
+    <Image
+            src={setgrupmarketinga1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Pilih nama **Proyek**.
+    2. Isikan pada text box **Group Marketing** dan nilai **Prosentasi**.
+
+    ### Klik tombol **Simpan** untuk menyimpan data
+    `Catatan: Proyek dan Group Marketing wajib diisi`
+    </Steps>
+
+## Langkah-langkah merubah setup group marketing
+
+    <Steps>
+    ### Klik **Group Marketing** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: Jika ada pesan "Nama group marketing tidak dapat dirubah karena sudah digunakan pada data karyawan" maka hanya bisa diubah nilai prosentasi dan tidak bisa dihapus.`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Lakukan perubahan yang diinginkan.
+    <Image
+            src={setgrupmarketinge1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Ubah nama **Proyek**.
+    2. Ubah pada text box **Group Marketing** dan nilai **Prosentasi**.
+    ### Klik tombol **Update** untuk mengubah data.
+    `Catatan: Proyek dan Group Marketing wajib diisi`
+    </Steps>
+
+## Langkah-langkah menghapus setup group marketing
+
+    <Steps>
+    ### Klik **Group Marketing** pada data yang akan dihapus, yang tampil di tabel.
+    `Catatan: Jika ada pesan "Nama group marketing tidak dapat dirubah karena sudah digunakan pada data karyawan" maka hanya bisa diubah nilai prosentasi dan tidak bisa dihapus.`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={setgrupmarketinge1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+    penghapusan data.
+    </Steps>

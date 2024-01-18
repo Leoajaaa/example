@@ -1,0 +1,50 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import dpu1 from "@/public/image/web/laporan/keuangan/penerimaan-uang/p1.png";
+
+# <span style={{ fontSize: '28px' }}> Daftar Penerimaan Uang </span>
+
+Menu Laporan Daftar Penerimaan Uang betujuan untuk memonitoring uang yang masuk dari pembayaran **Pokok, Denda, dan Reservasi**
+
+## <span style={{ fontSize: '24px' }}> Preview Penerimaan Uang </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Tampilkan </span>
+
+<Image
+            src={dpu1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. klik tombol tampilkan untuk menampilkan data Daftar Penerimaan Uang
+
+ </Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Ya**, . 
+  
+</FAQBox>

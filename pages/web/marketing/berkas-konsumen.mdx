@@ -1,0 +1,41 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import berkasu1 from "@/public/image/web/marketing/berkas-konsumen/u1.png";
+import berkasu2 from "@/public/image/web/marketing/berkas-konsumen/u2.png";
+
+# Berkas Konsumen
+
+Menu **Berkas Konsumen** berfungsi untuk ceklist data kelengkapan berkas yang telah
+dilengkapi oleh konsumen terkait keperluan proses penjualan unit. Berkas-berkas
+tersebut dapat meliputi : Form Aplikasi KPR, Foto Copy KTP, Pas Photo, Slip Gaji,
+Dsb.
+
+## Cara update berkas konsumen
+
+    <Steps>
+    ### Pilih nama **Proyek**.
+
+    ### Klik tombol **Tampilkan** untuk mulai pencarian data.
+
+    ### Proses update berkas konsumen
+    <Image
+            src={berkasu2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Setelah data ditampilkan pada tabel, klik tombol **Update**.
+    2. Sistem akan menampilkan UI Update Berkas Konsumen.
+    3. Klik tombol **Update** untuk menambahkan berkas.
+    4. Ketika berhasil akan muncul centang berwarna hijau.
+    5. Klik tombol **Selesai**.
+
+    `Catatan: Pastikan kelengkapan berkas yang bersifat wajib harus tercentang/terupdate.`
+
+    </Steps>

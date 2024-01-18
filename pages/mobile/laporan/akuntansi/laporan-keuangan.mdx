@@ -1,0 +1,163 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+import { Callout } from "nextra/components";
+
+import Image from 'next/image';
+import laporankeuanganp1 from "@/public/image/mobile/akuntansi/laporan-keuangan/p1.jpg";
+import laporankeuanganp2 from "@/public/image/mobile/akuntansi/laporan-keuangan/p2.jpg";
+import laporankeuanganp3 from "@/public/image/mobile/akuntansi/laporan-keuangan/p3.jpg";
+import laporankeuanganp4 from "@/public/image/mobile/akuntansi/laporan-keuangan/p4.jpg";
+import laporankeuanganp5 from "@/public/image/mobile/akuntansi/laporan-keuangan/p5.jpg";
+import laporankeuanganp6 from "@/public/image/mobile/akuntansi/laporan-keuangan/p6.jpg";
+
+import laporankeuangand1a from "@/public/image/mobile/akuntansi/laporan-keuangan/d1-1.jpg";
+import laporankeuangand1d from "@/public/image/mobile/akuntansi/laporan-keuangan/d1-2.jpg";
+import laporankeuangand1k from "@/public/image/mobile/akuntansi/laporan-keuangan/d1-3.jpg";
+
+
+# <span style={{ fontSize: '28px' }}> __Laporan Keuangan__ </span>
+
+ <div style={{ fontSize: '20px'}}> Menu Laporan Keuangan berfungsi untuk memfasilitasi pencatatan Laporan Keuangan yang dilakukan oleh Akuntansi. </div>
+---
+---
+<Steps>
+## <span style={{ fontSize: '24px' }}>  __Menampilkan Laporan Keuangan__ </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Akuntansi
+
+<Image
+            src={laporankeuanganp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih menu Laporan Keuangan
+
+<Image
+            src={laporankeuanganp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Pilih Perusahaan
+
+<Image
+            src={laporankeuanganp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. Pilih Proyek
+
+<Image
+            src={laporankeuanganp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+7. Pilih Periode
+
+<Image
+            src={laporankeuanganp5}
+            
+            width={250}
+            height={250}
+                
+        />
+
+
+</Steps>
+---
+<Steps>
+## <span style={{ fontSize: '24px' }}> __Detail Laporan Keuangan__ </span>
+
+### <span style={{ fontSize: '22px' }}> Detail Laporan Keuangan </span>
+
+
+<Tabs
+            items={[
+                "All",
+                "Debet",
+                "Kredit"
+                
+            ]}
+        >
+        <Tab>
+pada Tab all menampilkan seluruh jenis laporan keuangan yang termasuk Debet maupun Kredit
+<Image
+            src={laporankeuangand1a}
+            
+            width={250}
+            height={250}
+                
+        />
+    </Tab>
+        <Tab>
+pada Tab Debet Laporan keuangan yang ditampilkan hanya jenis laporan keuangan yang termasuk kedalam Debet saja
+<Image
+            src={laporankeuangand1d}
+            
+            width={250}
+            height={250}
+                
+        />
+    </Tab>
+        <Tab>
+pada Tab Kredit Laporan keuangan yang ditampilkan hanya jenis laporan keuangan yang termasuk kedalam Kredit saja
+<Image
+            src={laporankeuangand1k}
+            
+            width={250}
+            height={250}
+                
+        />
+    </Tab>
+</Tabs>
+
+### <span style={{ fontSize: '22px' }}>Detail Jurnal </span>
+untuk menampilkan detail laporan jurnal dari list detail laporan keuangan klik baris laporan keuangan
+</Steps>
+
+
+<Steps>
+## <span style={{ fontSize: '24px' }}> __Print Laporan Keuangan__ </span>
+
+1. klik dan tahan layar pada halaman form Laporan Keuangan
+
+2. Pilih Download Neraca
+
+3. Pilih Share Neraca
+
+</Steps>
+
+---
+## <span style={{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

@@ -1,0 +1,133 @@
+import Image from "next/image";
+import { Steps } from "nextra/components";
+import search from "@/public/image/web/data-master/proyek/biodata-proyek/rekening_search.png";
+import { Callout } from "nextra/components";
+// import { Bleed } from 'nextra-theme-docs';
+
+# Biodata Proyek
+
+<div style={{ padding: "1rem" }}>
+    **Biodata Proyek** digunakan untuk mengisi detail informasi proyek yang ada pada developer properti, Seperti : **Nama proyek**, **alamat**, **rekening** serta **logo** yang digunakan oleh proyek.
+</div>
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+Tombol aksi **Buat Baru** terdapat pada halaman awal modul **Biodata Proyek**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+![tambah proyek 1](@/public/image/web/data-master/proyek/biodata-proyek/tambah_proyek1.png)
+{/* </Bleed> */}
+
+### Info Proyek
+
+1. Pilih perusahaan yang tersedia.
+2. Lengkapi isian pada atribut proyek, contact person, email, alamat, kode, no. telp, dan kota.
+3. Pilih salah satu untuk kategori proyek (Landed atau Apartemen).
+4. Beri tanda ceklist pada isian **General**, jika data yang anda isikan bukan merupakan proyek pengembangan properti (Contoh: kantor pusat)
+5. Beri tanda ceklist pada isian **Close**, jika data proyek yang diisikan sudah selesai pengelolaan pengembangannya.
+6. Klik tombol **Simpan** untuk menyimpan data.
+
+![tambah proyek 2](@/public/image/web/data-master/proyek/biodata-proyek/tambah_proyek2.png)
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Rekening proyek
+
+**opsional jika data proyek memiliki nomor rekening**
+
+1. Pilih nama bank, dengan cara klik tombol <Image src={search} alt="search rekening" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> sistem akan menampilkan UI list rekening.
+2. Isi pada text box nomor rekening.
+3. Isi pada text box atas nama rekening.
+4. Klik tombol **Simpan** untuk menyimpan data.
+
+![tambah proyek 3](@/public/image/web/data-master/proyek/biodata-proyek/tambah_proyek3.png)
+
+### Upload Logo
+
+Drag file atau klik **Unggah Gambar**, untuk memulai upload logo proyek
+![tambah proyek 4](@/public/image/web/data-master/proyek/biodata-proyek/tambah_proyek4.png)
+
+<Callout type="warning" emoji="⚠️">
+    `Ekstensi file yang diijinkan untuk diupload : JPG/JPEG/PNG dan ukuran file tidak boleh lebih
+    dari 2MB`
+</Callout>
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih proyek
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+![edit proyek 1](@/public/image/web/data-master/proyek/biodata-proyek/edit_proyek1.png)
+
+### Isi perubahan data
+
+Sistem akan menampilkan data Proyek (perusahaan, proyek, Kode, contact person, No.Telp, email, Kota, alamat,
+kategori proyek, status proyek, rekening proyek dan berkas hasil upload) secara otomatis pada masing-masing
+jenis data.
+
+![edit proyek 2](@/public/image/web/data-master/proyek/biodata-proyek/edit_proyek2.png)
+
+### Simpan perubahan data
+
+![edit proyek 3](@/public/image/web/data-master/proyek/biodata-proyek/edit_proyek3.png)
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih proyek
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+![hapus proyek 1](@/public/image/web/data-master/proyek/biodata-proyek/edit_proyek1.png)
+
+### Hapus proyek
+
+1. Tekan tombol "Hapus", untuk menghapus data.
+2. Klik "Hapus" untuk menghapus data, Klik "Batal" untuk membatalkan
+   penghapusan data.
+
+![hapus proyek 2](@/public/image/web/data-master/proyek/biodata-proyek/delete_proyek.png)
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan data hanya bisa dilakukan jika proyek tersebut belum terhubung ke data pada modul lain, seperti : stok unit proyek, penjualan serta modul-modul lainnya`
+</Callout>
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah terdapat batasan pada penambahan proyek ?">
+  **Ya**, terdapat batasan pada penambahan data proyek. 
+  Hal ini tergantung pada paket pembelian lisensi penggunaan aplikasi yang telah anda gunakan.
+  Konsultasikan dengan produk support kami untuk informasi lisensi yang telah anda gunakan saat ini, baik pada aplikasi ECes.Q ataupun PortaPro.
+</FAQBox>
+
+<FAQBox title="Apa yang dimakud dengan General pada isian data proyek ?">
+  Yang dimaksud General adalah bahwa entitas tersebut bukan merupakan salah satu proyek pengembangan properti.
+  Misal seperti : **Kantor Pusat**, **Holding** dsb.
+</FAQBox>

@@ -1,0 +1,68 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import mailp1 from "@/public/image/web/setting/tools/mail-server/p1.png";
+import maila1 from "@/public/image/web/setting/tools/mail-server/a1.png";
+import maile1 from "@/public/image/web/setting/tools/mail-server/e1.png";
+
+# Setup Mail Server
+
+## Tambah Setup Mail Server
+
+<Steps>
+### Klik **Buat Baru**
+
+### Info Mail Server
+
+<Image
+            src={maila1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. pilih proyek
+2. Isikan pada text box **SSL Addr**,**SSL Port**, **From Mail**, **From Name**, **Password**.
+
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Klik Simpan
+
+Klik tombol **Simpan** untuk menyimpan Setup Mail Server
+</Steps>
+
+## Edit Setup Mail Server
+
+<Steps>
+
+### Klik SSL Addr
+1. Tentukan data yang akan diedit, kemudian klik 1x pada data dikolom SSL ADDR.
+2. Kemudian akan muncul popup Edit Setup Mail Server
+
+### Isi Perubahan
+
+<Image
+            src={maile1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+System akan menampilkan Setup Mail Server Ubah data (Proyek,SSL Addr
+SSL Port, From Mail, From Name, Password)
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan perubahan data
+Klik tombol **Ubah** untuk menyimpan perubahan Setup Mail Server.
+</Steps>

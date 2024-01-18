@@ -1,0 +1,106 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+import update from "@/public/image/web/data-master/proyek/item-rab/centang.png";
+import search from "@/public/image/web/data-master/proyek/item-rab/search.png";
+import trash from "@/public/image/web/data-master/proyek/item-rab/trash.png";
+
+# Item RAB
+
+Menu **Item RAB** digunakan untuk menetapkan template item RAB yang
+akan digunakan pada masing-masing proyek.
+
+## Langkah-langkah menambah data item RAB
+
+    <Steps>
+        ### Klik tombol **Tambah** pada halaman utama
+        ketika membuka halaman pertama pada menu item RAB terdapat tombol tambah setelah itu, baris baru muncul berdasarkan nomor berikutnya.
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab1.png)
+
+        ### Pilih baris baru Post Cashflow (Pemasukan dan Pengeluaran) pada kolom POS Cashflow
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab2.png)
+
+        ### Pilih kelompok item RAB pada kolom Group 1
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab3.png)
+
+        ### Pilih sub kelompok item RAB pada kolom Group 2
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab4.png)
+
+        ### Ketik nomor urut tampil (nomor urut tampil pada saat pengisian RAB) pada kolom No. Urut.
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab5.png)
+
+        ### Ketik Kode RAB pada kolom Kode.
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab6.png)
+
+        ### Ketik Nama RAB pada kolom Nama.
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab7.png)
+
+        ### Klik tombol “Simpan” lalu klik "Ya" untuk menyimpan data.
+        ![tambah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab8.png)
+
+    </Steps>
+
+## Langkah-langkah merubah data item RAB
+
+<Tabs items={["Item RAB", "Akun RAB", "RAB Per Proyek", "RAB HPP"]}>
+  <Tab>
+    <Steps>
+        ### Ubah Baris yang ingin diubah 
+        1. Pilih Pos Cashflow (Pemasukan atau Pengeluaran) pada kolom Pos
+Cashflow. 
+        2. Pilih kelompok item RAB pada kolom Group 1
+        3. Pilih sub kelompok item RAB pada kolom Group 2
+        4. Ketik nomor urut tampil (nomor urut tampil pada saat pengisian RAB) pada kolom No. Urut.
+        5. Ketik Kode RAB pada kolom Kode.
+        6. Ketik Nama RAB pada kolom Nama.
+        ![ubah item RAB](@/public/image/web/data-master/proyek/item-rab/ubah_rab.png)
+
+        ### Klik tombol “Simpan” lalu klik "Ya" untuk mengubah data item RAB.
+        ![ubah item RAB](@/public/image/web/data-master/proyek/item-rab/tambah_rab8.png)
+
+        ### [OPSIONAL] Klik tombol  <Image src={update} alt="ubah item RAB" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> lalu klik "Ok" untuk mengubah data item RAB.
+        ![ubah item RAB](@/public/image/web/data-master/proyek/item-rab/ubah_rab2.png)
+    </Steps>
+
+  </Tab>
+  <Tab>
+   <Steps>
+         ### Pilih Akun dengan cara ketik karakter di baris. lalu klik tombol <Image src={search} alt="ubah akun RAB" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> Sistem akan memunculkan **UI List Kode Akun**.Kemudian Klik 2x pada Tabel Akun.
+        ![ubah akun RAB](@/public/image/web/data-master/proyek/item-rab/akun_rab1.png)
+
+         ### Pilih Sub Akun dengan cara ketik karakter di baris. lalu klik tombol <Image src={search} alt="ubah akun RAB" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> Sistem akan memunculkan **UI List Kode Sub Akun**.Kemudian Klik 2x pada Tabel Sub Akun.
+        ![ubah akun RAB](@/public/image/web/data-master/proyek/item-rab/akun_rab2.png)
+
+         ### Klik tombol “Simpan” lalu klik "Ya" untuk mengubah data akun RAB.
+        ![ubah akun RAB](@/public/image/web/data-master/proyek/item-rab/akun_rab3.png)
+    </Steps>
+
+  </Tab>
+  <Tab>
+     <Steps>
+        ### Checklist nama RAB sesuai dengan proyek yang tersedia.
+        ![ubah RAB Per proyek](@/public/image/web/data-master/proyek/item-rab/rab_perproyek.png)
+
+     </Steps>
+
+  </Tab>
+
+  <Tab>
+     <Steps>
+        ### Checklist nama RAB sesuai dengan HPP yang tersedia.
+        ![ubah RAB Per proyek](@/public/image/web/data-master/proyek/item-rab/rab_hpp.png)
+
+     </Steps>
+
+  </Tab>
+</Tabs>
+
+## Langkah-langkah menghapus data item RAB
+
+  <Steps>
+    ### Pilih Baris yang ingin dihapus.
+    ![delete RAB](@/public/image/web/data-master/proyek/item-rab/ubah_rab.png)
+
+    ### klik tombol <Image src={trash} alt="delete" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, klik "Ok" untuk menghapus data item RAB.
+    ![delete RAB](@/public/image/web/data-master/proyek/item-rab/delete_rab.png)
+
+  </Steps>

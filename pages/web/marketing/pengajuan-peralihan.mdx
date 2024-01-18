@@ -1,0 +1,119 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import peralihanbd1 from "@/public/image/web/marketing/pengajuan-peralihan/bd1.png";
+import peralihanbd2 from "@/public/image/web/marketing/pengajuan-peralihan/bd2.png";
+
+import peralihanbds1 from "@/public/image/web/marketing/pengajuan-peralihan/bds1.png";
+import peralihanbds2 from "@/public/image/web/marketing/pengajuan-peralihan/bds2.png";
+import peralihanbdsa1 from "@/public/image/web/marketing/pengajuan-peralihan/bdsa1.png";
+import peralihanbdsb1 from "@/public/image/web/marketing/pengajuan-peralihan/bdsb1.png";
+
+# Pengajuan Peralihan Penjualan Unit
+
+Menu **Pengajuan Peralihan Penjualan Unit** berfungsi untuk melakukan pengajuan peralihan penjualan unit
+booking dan kontrak.
+
+## Cara Mengajukan Peralihan Penjualan Unit
+
+    <Steps>
+    ### Pilih nama **Proyek**
+    Pilih filter tombol **Belum Diajukan** pada menu pilihan.
+
+    ### Klik tombol **Tampilkan** untuk mulai pencarian data.
+
+    ### Proses Pengajuan Peralihan
+    <Image
+            src={peralihanbd1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    - Setelah data ditampilkan pada tabel, berikan tanda **ceklist** pada kolom **Pilih**
+    untuk baris data yang akan diinput.
+    - Beri **Catatan** pada kolom **Diajukan**.
+
+    ### Klik tombol **Ajukan Peralihan** untuk mengajukan peralihan.
+    <Image
+            src={peralihanbd2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    Pastikan mengecek terlebih dahulu data yang akan diajukan lalu klik **Simpan** untuk diajukan data,
+    Klik **Batal** untuk membatalkan data.
+
+    ### Klik tombol **Belum Disetujui**
+    <Image
+            src={peralihanbds1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    - Sistem akan menampilkan UI persetujuan approval
+    - Status yang dipilih akan berganti menjadi **Dalam proses peralihan**
+
+    ### Klik tombol **Approval** untuk melakukan approval
+    <Image
+            src={peralihanbds2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    Pastikan data sudah terceklist terlebih dahulu lalu mengecek tanggal diajukan dan catatan yang diajukan.
+    lalu klik **Simpan** untuk diajukan data, Klik **Batal** untuk membatalkan data.
+
+    ### Proses Approval Pengajuan Peralihan Penjualan Unit
+    <Image
+            src={peralihanbdsa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    - Isikan nomor memo, tanggal approval, keterangan, nama user dan password user.
+    - Pastikan Pejabat Approval telah terdaftar pada database.
+    - Minimal isi keterangan approval berisi 10 karakter.
+
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    </Steps>
+
+## Cara membatalkan pengajuan pembatalan peralihan
+
+    <Steps>
+    ### Pilih nama **Proyek**
+    Pilih filter tombol **Belum Disetujui** pada menu pilihan.
+
+    ### Klik tombol **Tampilkan** untuk mulai pencarian data.
+
+    ### Proses pengajuan pembatalan peralihan
+    <Image
+            src={peralihanbds1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    - Setelah data ditampilkan pada tabel, berikan tanda **ceklist** pada kolom **Pilih**
+    untuk baris data yang akan diinput.
+    - Beri **Catatan** pada kolom **Diajukan**.
+
+    ### Klik tombol **Batalkan Peralihan** untuk membatalkan peralihan.
+    <Image
+            src={peralihanbdsb1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+     klik **Simpan** untuk membatalkan data, Klik **Batal** untuk menghentikan proses membatalan data.
+
+    </Steps>

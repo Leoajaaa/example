@@ -1,0 +1,168 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import Image from 'next/image';
+
+import rabp3 from "@/public/image/mobile/proyek/rab-realisasi/p3.jpg";
+import rabp4 from "@/public/image/mobile/proyek/rab-realisasi/p4.jpg";
+import rabp5 from "@/public/image/mobile/proyek/rab-realisasi/p5.jpg";
+import rabp6 from "@/public/image/mobile/proyek/rab-realisasi/p6.jpg";
+import rabp7 from "@/public/image/mobile/proyek/rab-realisasi/p7.jpg";
+import rabp8 from "@/public/image/mobile/proyek/rab-realisasi/p8.jpg";
+import rabd0 from "@/public/image/mobile/proyek/rab-realisasi/d0.jpg";
+
+
+
+# RAB - Realisasi
+
+Modul **RAB - Realisasi**, berfungsi sebagai laporan pencatatan RAB dan Realisasi yang bertujuan untuk membandingkan antara RAB dengan Realisasi.
+
+Pada modul ini, pengguna dapat melihat data terkait :
+
+-   Nilai dan Item RAB yang sudah dibuat
+-   Nilai realisasi dari item RAB
+-   Nilai Saldo
+-   Tanggal mulai RAB
+-   Target selesai
+-   Status dan presentase RAB yang dibuat
+
+---
+
+## Menampilkan RAB - Realisasi
+
+<Steps>
+
+### Buka Aplikasi Porta Pro di Smartphone
+
+### Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+### Pilih modul Proyek
+
+### Pilih menu RAB - Realisasi
+
+### Pilih modul proyek
+
+### Pilih menu RAB - Realisasi
+
+### Pilih proyek
+
+<Tabs
+    items={[
+                "RAB",
+                "REALISASI",
+                "SALDO",
+                "MULAI",
+                "TARGET",
+                "STATUS",
+                                
+            ]}
+        >
+        <Tab>
+        Tab Rab menampilkan laporan pencatatan Rab 
+        <Image
+            src={rabp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+        </Tab>
+        <Tab>
+        Tab Realisasi menampilkan laporan pencatatan Realisasi dari RAB sesuai transaksi yang dicatat 
+
+         <Image
+            src={rabp4}
+            
+            width={250}
+            height={250}
+                
+        />
+        </Tab>
+        Tab Saldo menampilkan laporan pencatatan Saldo pada setiap item RAB 
+        <Tab>
+         <Image
+            src={rabp5}
+            
+            width={250}
+            height={250}
+                
+        />
+
+        </Tab>
+        
+        <Tab>
+         <Image
+            src={rabp6}
+            
+            width={250}
+            height={250}
+                
+        />
+        </Tab>
+
+        <Tab>
+         <Image
+            src={rabp7}
+            
+            width={250}
+            height={250}
+                
+        />
+
+        </Tab>
+
+        <Tab>
+         <Image
+            src={rabp8}
+            
+            width={250}
+            height={250}
+                
+        />
+        </Tab>
+
+
+</Tabs>
+
+</Steps>
+
+## Download Data RAB - Realisasi
+
+<Steps>
+
+### Tekan dan tahan pada form data Rab realisasi
+
+### Pilih download RAB - Realisasi 
+
+<Image
+            src={rabd0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih ya
+
+</Steps>
+---
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

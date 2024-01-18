@@ -1,0 +1,69 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import constantap1 from "@/public/image/web/setting/parameter/data-constanta/p1.png";
+import constantaa1 from "@/public/image/web/setting/parameter/data-constanta/a1.png";
+import constantae1 from "@/public/image/web/setting/parameter/data-constanta/e1.png";
+
+# Data constanta
+
+## Tambah Data Constanta
+
+<Steps>
+### Klik **Buat Baru**
+
+### Info Constanta
+
+<Image
+            src={constantaa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Isikan pada text box **Kode Constanta**,**Nama Constanta**, **Keterangan**, **Nama Label**, **Nilai Constanta 1** dan **Nilai Constanta 2**.
+2. Pilih Nama Constanta
+3. Pilih Kode Akun
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Klik Simpan
+
+Klik tombol **Simpan** untuk menyimpan Data Constanta
+</Steps>
+
+## Edit Data Constanta
+
+<Steps>
+
+### Klik Kode Constanta
+1. Tentukan data yang akan diedit, kemudian klik 1x pada data Kode Constanta.
+2. Kemudian akan muncul popup Edit data constanta
+
+### Isi Perubahan
+
+<Image
+            src={constantae1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+System akan menampilkan data constanta Ubah data (Kode Constanta,Nama Constanta
+Jenis Constanta, Akun, Keterangan, Nama Label, Nilai
+Constanta 1, Nilai Constanta 2)
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan perubahan data
+Klik tombol **Ubah** untuk menyimpan perubahan data constanta.
+</Steps>

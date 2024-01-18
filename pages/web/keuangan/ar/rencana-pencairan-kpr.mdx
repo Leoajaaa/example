@@ -1,0 +1,44 @@
+import { Steps, Callout } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import rpke1 from "@/public/image/web/keuangan/ar/rencana-pencairan-kpr/e1.png";
+
+# Rencana Pencairan KPR
+
+Menu **Rencana Pencairan KPR** digunakan untuk mencatat nilai plafond yang disetujui,
+kekurangan uang muka apabila nilai plafond turun, jadwal pencairan retensi dari
+bank pemberi Fasilitas KPR/KPA. Didalamnya user dapat mengisi tanggal rencana
+pencairan awal KPR/ KPA, kekurangan uang muka, rencana pencairan masing-masing jenis retensi serta nominal masing-masing rencana pencairan dari bank
+pemberi fasilitas KPR.
+
+## Langkah-langkah menambahkan retensi bank
+
+    <Steps>
+    ### Pilih nama **Proyek**.
+    ### Klik tombol **Tampilkan**.
+    ### Setelah data ditampilkan pada tabel, tandai baris data yang akan diisi dengan memberi tanda ceklist pada kolom **Check**.
+
+    <Image
+            src={rpke1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    1. Isi nilai plafon kredit yang disetujui oleh bank.
+    2. Isi tanggal dan nilai pencairan KPR Pertama.
+    3. Isi tanggal dan nilai kekurangan uang muka (jika turun plafon).
+    4. Isi tanggal dan nilai pada masing-masing kolom retensi yang tersedia.
+    5. Beri tanda ceklist pada kolom Incl PPn, jika pada nilai pencairan termasuk PPn
+    ### Klik tombol **SIMPAN** untuk menyimpan data.
+    <Callout type="info" emoji="ℹ️">
+    Catatan: Untuk proses pencatatan penerimaan pencairan dari bank, prosesnya sama seperti penerimaan uang muka/angsuran dari konsumen.
+    </Callout>
+
+    <Callout type="error" emoji="️🚫">
+    Catatan: jika ada pesan "Proses penyimpanan data gagal, terdapat selisih nilai yang disetujui / selisih nilai kekurangan uang muka" maka nilai yang disetujui/selisih kurang dari nilai uang muka .
+    </Callout>
+
+    </Steps>

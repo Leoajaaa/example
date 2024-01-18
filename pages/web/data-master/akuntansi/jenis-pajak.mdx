@@ -1,0 +1,143 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import Image from "next/image";
+import search from "@/public/icon/icon_search.png";
+
+import ppha1 from "@/public/image/web/data-master/akuntasi/jenis-pajak/pha1.png";
+import pphe1 from "@/public/image/web/data-master/akuntasi/jenis-pajak/phe1.png";
+
+import ppna1 from "@/public/image/web/data-master/akuntasi/jenis-pajak/pna1.png";
+import ppne1 from "@/public/image/web/data-master/akuntasi/jenis-pajak/pne1.png";
+
+# Jenis Pajak
+
+Menu **Jenis Pajak** digunakan untuk menentukan nilai prosentasi pajak yang
+akan digunakan pada transaksi keuangan.
+
+<Tabs items={["Jenis PPH", "Item PPN"]}>
+    <Tab>
+    ## Langkah-langkah menambahkan pajak PPH
+
+        <Steps>
+        ### Klik button **Buat Baru**.
+        ### Isikan data Jenis Pajak PPH
+
+        <Image
+            src={ppha1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+        1.  Isikan pada text box kode PPH, Jenis PPH dan prosentasi.
+        2.  Pilih kode akun, dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+            sistem akan menampilkan UI kas/bank, Klik nama akun yang akan dipilih.
+        3.  Pilih status jenis PPH. (Bisa memilih keduanya).
+        ### Klik tombol **Simpan** untuk menyimpan data
+        `Catatan: kode PPH, Jenis PPH, prosentasi dan kode akun wajib diisi`
+        </Steps>
+
+    ## Langkah-langkah mengubah pajak PPH
+
+        <Steps>
+        ### Klik **Kode PPH** pada data yang akan diubah, yang tampil di tabel.
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+        ### Lakukan perubahan yang diinginkan.
+
+        <Image
+            src={pphe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+        1.  Ubah pada text box kode PPH, Jenis PPH dan prosentasi.
+        2.  Ubah kode akun, dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+            sistem akan menampilkan UI kas/bank, Klik nama akun yang akan dipilih.
+        3.  Ubah status jenis PPH. (Bisa memilih keduanya)
+        ### Klik tombol **Update** untuk mengubah data.
+        </Steps>
+
+    ## Cara mengubah status jenis pajak PPH melalui tabel
+
+    Anda bisa mengubah status jenis pajak secara langsung melalui tabel, dengan cara Anda tinggal mengklik checkbox pada kolom status jenis pajak yang tersedia.
+    ![tampil jenis pajak PPH](@/public/image/web/data-master/akuntasi/jenis-pajak/jenis_pajak1.png)
+
+    ## Langkah-langkah menghapus pajak PPH
+
+        <Steps>
+        ### Klik **Kode PPH** pada data yang akan dihapus, yang tampil di tabel.
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+        ### Klik tombol **Hapus** untuk menghapus data.
+        Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+        penghapusan data.
+        </Steps>
+
+    </Tab>
+    <Tab>
+    ## Langkah-langkah menambahkan pajak PPN
+
+        <Steps>
+        ### Klik button **Buat Baru**.
+        ### Isikan data Jenis Pajak PPN.
+
+        <Image
+            src={ppna1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+        1. Isikan pada text box kode PPN.
+        2. Pilih jenis PPN (PPN Masukan atau PPN Keluaran).
+        3. Isikan pada text box prosentasi.
+        4. Pilih kode akun, dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+           sistem akan menampilkan UI kas/bank, Klik nama akun yang akan dipilih.
+        5. Pilih status jenis PPN. (Bisa memilih keduanya)
+        6. Isikan pada text box deskripsi PPN.
+        ### Klik tombol **Simpan** untuk menyimpan data
+        `Catatan: kode PPN, jenis PPN, prosentasi, kode akun dan deskripsi PPN wajib diisi`
+        </Steps>
+
+    ## Langkah-langkah mengubah pajak PPN
+        <Steps>
+        ### Klik **Kode PPN** pada data yang akan diubah, yang tampil di tabel.
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+        ### Lakukan perubahan yang diinginkan.
+
+        <Image
+            src={ppne1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+        1. Ubah pada text box kode PPN.
+        2. Ubah jenis PPN (PPN Masukan atau PPN Keluaran).
+        3. Ubah pada text box prosentasi.
+        4. Ubah kode akun, dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+           sistem akan menampilkan UI kas/bank, Klik nama akun yang akan dipilih.
+        5. Ubah status jenis PPN. (Bisa memilih keduanya)
+        6. Ubah pada text box deskripsi PPN.
+        ### Klik tombol **Update** untuk mengubah data.
+        </Steps>
+
+    ## Cara mengubah status jenis pajak PPN melalui tabel
+    Anda bisa mengubah status jenis pajak secara langsung melalui tabel, dengan cara Anda tinggal mengklik checkbox pada kolom status jenis pajak yang tersedia.
+    ![tampil jenis pajak PPN](@/public/image/web/data-master/akuntasi/jenis-pajak/jenis_pajak2.png)
+
+    ## Langkah-langkah menghapus pajak PPN
+
+        <Steps>
+        ### Klik **Kode PPN** pada data yang akan dihapus, yang tampil di tabel.
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+        ### Klik tombol **Hapus** untuk menghapus data.
+        Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+        penghapusan data.
+        </Steps>
+    </Tab>
+
+</Tabs>

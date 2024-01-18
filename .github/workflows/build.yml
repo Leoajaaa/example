@@ -1,0 +1,40 @@
+on:
+    push:
+        branches:
+            [dev, master]
+            # - dev
+    workflow_dispatch:
+
+jobs:
+    run_pull:
+        name: run pull
+        runs-on: ubuntu-latest
+
+        steps:
+            # deploy to server dev #
+            - name: install ssh keys on dev server
+              # check this thread to understand why its needed:
+              # https://stackoverflow.com/a/70447517
+              if: ${{ github.ref == 'refs/heads/dev' }}
+              run: |
+                  install -m 600 -D /dev/null ~/.ssh/id_rsa
+                  echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+                  ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+            - name: "connect and pull to dev server"
+              if: ${{ github.ref == 'refs/heads/dev' }}
+              run: ssh support@103.195.31.196 "cd /var/www/html/portapro/temp_dev_help/ && sudo git pull && sudo ./deploy.sh"
+            # end deploy to server dev
+
+            # deploy to server prod
+            - name: "install ssh keys on prod server"
+              if: ${{ github.ref == 'refs/heads/master' }}
+              run: |
+                  install -m 600 -D /dev/null ~/.ssh/id_rsa
+                  echo "${{ secrets.SSH_KEY_PROD }}" > ~/.ssh/id_rsa
+                  ssh-keyscan -H ${{ secrets.SSH_HOST_PROD }} > ~/.ssh/known_hosts
+            - name: "connect and pull to prod server"
+              if: ${{ github.ref == 'refs/heads/master' }}
+              run: ssh root@156.67.217.98 "cd /var/www/html/frontend/portapro_doc_temp/ && sudo git pull && sudo ./deploy.sh"
+            # end deploy to server prod
+            - name: cleanup
+              run: rm -rf ~/.ssh

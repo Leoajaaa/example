@@ -1,0 +1,120 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+import { Callout } from "nextra/components";
+
+import Image from 'next/image';
+import statusunitp1 from "@/public/image/mobile/marketing/laporan-statusunit/p1.jpg";
+import statusunitp2 from "@/public/image/mobile/marketing/laporan-statusunit/p2.jpg";
+import statusunitp3 from "@/public/image/mobile/marketing/laporan-statusunit/p3.jpg";
+
+import statusunita0 from "@/public/image/mobile/marketing/laporan-statusunit/a0.jpg";
+import statusunita1 from "@/public/image/mobile/marketing/laporan-statusunit/a1.jpg";
+import statusunita2 from "@/public/image/mobile/marketing/laporan-statusunit/a2.jpg";
+
+
+# Laporan Status Unit
+
+Menu **Laporan Status Unit**, berfungsi untuk menampilkan jumlah status unit properti yang sudah dilakukan transaksi secara grafis melalui Laporan Status Unit.
+
+---
+
+<Steps>
+
+## **Preview Laporan Status Unit**
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Marketing
+
+<Image
+            src={statusunitp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih menu Laporan Status Unit
+
+<Image
+            src={statusunitp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Pilih Proyek
+
+<Image
+            src={statusunitp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+</Steps>
+
+<Steps>
+
+## Detail Laporan Status Unit
+
+### Pilih modul marketing
+
+### Pilih menu laporan status Unit
+
+### Pilih proyek
+
+### Pilih count box reservasi, booking, kontrak, SP3K, akad, AJB, BAST, batal
+
+<Image
+            src={statusunita0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih filter proyek 
+
+<Image
+            src={statusunita1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih filter periode
+
+<Image
+            src={statusunita2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

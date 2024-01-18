@@ -1,0 +1,50 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import lsup1 from "@/public/image/web/laporan/marketing/status-unit/p1.png";
+
+# <span style={{ fontSize: '28px' }}> Laporan Status Unit </span>
+
+Menu Laporan Laporan Status Unit betujuan untuk memonitoring transaksi uang yang keluar dan sumber dana pengeluaran uang tersebut
+
+## <span style={{ fontSize: '24px' }}> Preview Status Unit </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Tampilkan </span>
+
+<Image
+            src={lsup1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. Tekan tombol tampilkan untuk menampilkan data Laporan Status Unit
+
+ </Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Bagaimana cara mengupdate laporan status unit ?">
+  **Ya**, . 
+  
+</FAQBox>

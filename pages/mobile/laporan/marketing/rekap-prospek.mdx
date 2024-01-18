@@ -1,0 +1,121 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+
+import Image from 'next/image';
+import laporanprospekp1 from "@/public/image/mobile/marketing/laporan-prospek/p1.jpg";
+import laporanprospekp2 from "@/public/image/mobile/marketing/laporan-prospek/p2.jpg";
+import laporanprospekp3 from "@/public/image/mobile/marketing/laporan-prospek/p3.jpg";
+import laporanprospekp4 from "@/public/image/mobile/marketing/laporan-prospek/p4.jpg";
+import laporanprospekp5 from "@/public/image/mobile/marketing/laporan-prospek/p5.jpg";
+import laporanprospekp6 from "@/public/image/mobile/marketing/laporan-prospek/p6.jpg";
+
+# Laporan Prosfek
+---
+
+
+Menu Laporan Prosfek, berfungsi untuk memfasilitasi pencatatan calon konsumen yang dilakukan oleh Marketing dalam bentuk grafik maupun tabel data.
+
+---
+<Steps>
+## Preview Laporan Prosfek
+
+### Buka Aplikasi 
+Anda perlu membuka Aplikasi Porta Pro yang telah terpasang di smartphone Anda. Dengan mengetuk ikon aplikasi, layar ponsel Anda akan terangkat dan menampilkan tampilan antarmuka Aplikasi Porta Pro.
+
+### Login pada Aplikasi
+jika Anda belum masuk ke akun Anda pada aplikasi tersebut, langkah berikutnya adalah melakukan proses login terlebih dahulu. Anda dapat memasukkan informasi akun Anda seperti kode perusahaan, nama pengguna dan kata sandi untuk mengakses akun Anda.
+
+### Pilih Modul Marketing
+Setelah Anda berhasil login, langkah berikutnya adalah memilih modul Marketing dari menu yang tersedia dalam aplikasi. Anda dapat menemukan opsi ini dengan mengetuk atau mengklik pada modul "Marketing".
+
+ <Image
+            src={laporanprospekp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih Menu Laporan Prosfek
+Di dalam modul Marketing, Anda akan melihat berbagai opsi menu yang berhubungan dengan fitur-fitur marketing. Langkah selanjutnya adalah memilih menu yang berjudul "Laporan Prosfek".
+
+ <Image
+            src={laporanprospekp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih Proyek
+Setelah Anda memilih "Laporan Prosfek," Anda akan memasuki laman atau layar yang berisi data Prosfek. Di sini, langkah selanjutnya adalah memilih proyek tertentu yang ingin Anda analisis. Anda dapat melakukannya dengan mengklik atau mengetuk opsi "Proyek."
+
+ <Image
+            src={laporanprospekp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih Marketing
+Setelah memilih proyek, Anda dapat memfilter data lebih lanjut dengan memilih opsi "Filter Marketing." Ini akan membantu Anda menyaring data yang relevan dengan kriteria tertentu.
+
+ <Image
+            src={laporanprospekp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih Status
+Langkah selanjutnya adalah memilih opsi "Filter Status" untuk mempersempit hasil data Prosfek sesuai dengan status tertentu yang Anda inginkan.
+
+ <Image
+            src={laporanprospekp5}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### Pilih Periode
+Selanjutnya, Anda perlu memilih opsi "Filter Periode" untuk menentukan rentang waktu data Prosfek yang ingin Anda lihat dalam laporan.
+
+ <Image
+            src={laporanprospekp6}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### 
+Akhirnya, Anda memiliki dua pilihan untuk menampilkan data Prosfek, yaitu dalam bentuk grafik atau dalam bentuk tabel. Jika Anda ingin melihatnya dalam bentuk grafik, aktifkan tombol "Grafik" dengan mengetuknya. Tetapi jika Anda lebih suka melihat data dalam bentuk tabel, aktifkan tombol "Tabel" dengan mengetuknya.
+
+
+Melalui serangkaian langkah-langkah ini, Anda dapat mengakses, menyaring, dan menampilkan data Prosfek dengan cara yang sesuai dengan kebutuhan Anda melalui Aplikasi Porta Pro di smartphone Anda.
+
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>
+

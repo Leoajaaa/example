@@ -1,0 +1,94 @@
+import { Steps } from "nextra/components";
+
+import Image from 'next/image';
+import pembatalanp1 from "@/public/image/mobile/marketing/laporan-pembatalan/p1.jpg";
+import pembatalanp2 from "@/public/image/mobile/marketing/laporan-pembatalan/p2.jpg";
+import pembatalanp3 from "@/public/image/mobile/marketing/laporan-pembatalan/p3.jpg";
+import pembatalanp4 from "@/public/image/mobile/marketing/laporan-pembatalan/p4.jpg";
+
+# Laporan Pembatalan
+
+Menu **Laporan Pembatalan**, berfungsi untuk memfasilitasi pencatatan pembatalan yang dilakukan oleh Marketing. Menu Laporan pemabtalan menyajikan rekap laporan pembatalan dalam bentuk grafik dan tabel data berdasarkan filter Proyek
+
+---
+<Steps>
+## Preview Laporan Pembatalan
+
+ 1. 
+Anda perlu membuka Aplikasi Porta Pro yang telah terpasang di smartphone Anda. Dengan mengetuk ikon aplikasi, layar ponsel Anda akan terangkat dan menampilkan tampilan antarmuka Aplikasi Porta Pro.
+
+ 2.
+jika Anda belum masuk ke akun Anda pada aplikasi tersebut, langkah berikutnya adalah melakukan proses login terlebih dahulu. Anda dapat memasukkan informasi akun Anda seperti kode perusahaan, nama pengguna dan kata sandi untuk mengakses akun Anda.
+
+Setelah Anda berhasil masuk, Anda dapat melanjutkan dengan "Preview Laporan Pembatalan".
+
+ 3.
+Langkah pertama dalam "Preview Laporan Pembatalan" adalah memilih modul Marketing. Pada antarmuka aplikasi, carilah dan pilih opsi yang bertuliskan "Marketing".
+
+<Image
+            src={pembatalanp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+ 4.
+Setelah Anda masuk ke modul Marketing, langkah selanjutnya adalah memilih menu "Laporan Pembatalan". Temukan dan tap pada opsi ini untuk melanjutkan.
+
+<Image
+            src={pembatalanp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+ 5.
+Setelah memilih "Laporan Pembatalan", Anda akan melihat beberapa opsi filter yang perlu Anda atur. Langkah berikutnya adalah memilih filter "Proyek" yang relevan dengan laporan pembatalan yang ingin Anda lihat.
+
+<Image
+            src={pembatalanp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+ 6.
+Setelah mengatur filter Proyek, lanjutkan dengan memilih filter "Periode" untuk menentukan rentang waktu laporan pembatalan yang ingin Anda lihat.
+
+<Image
+            src={pembatalanp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+ 7. Setelah mengatur kedua filter tersebut, Anda akan memiliki dua pilihan tampilan data: grafik dan tabel. Untuk melihat data dalam bentuk grafik, pilih tombol yang bertuliskan "Grafik". Namun, jika Anda lebih suka melihat data dalam bentuk tabel, pilih tombol yang bertuliskan "Tabel".
+---
+
+Melalui serangkaian langkah-langkah tersebut, Anda dapat melakukan "Preview Laporan Pembatalan" dengan memanfaatkan Aplikasi Porta Pro di smartphone Anda. Anda akan dapat melihat informasi yang relevan dengan laporan pembatalan dalam format yang Anda pilih, baik itu grafik atau tabel.
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

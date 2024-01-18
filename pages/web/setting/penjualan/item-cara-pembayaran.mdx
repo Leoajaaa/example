@@ -1,0 +1,129 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+
+import ipd1 from "@/public/image/web/setting/penjualan/item-pembayaran/d1.png";
+import ipe1 from "@/public/image/web/setting/penjualan/item-pembayaran/e1.png";
+
+
+# Item Pembayaran
+
+<div style={{ padding: "1rem" }}>
+    **Item Pembayaran** digunakan untuk mengisi detail informasi Item Pembayaran yang ada pada developer properti, Seperti : **Nama Item Pembayaran**, **alamat**, **rekening** serta **logo** yang digunakan oleh Item Pembayaran.
+</div>
+
+## Tambah Data
+
+<Steps>
+### Klik **Tambah**
+Tombol aksi **Tambah** terdapat pada halaman awal modul **Item Pembayaran**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info Item Cara Pembayaran
+
+<Image
+            src={ipe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Lengkapi isian pada tabel kolom Nama, Jenis, Nomor Urut.
+2. Ceklis Nama Proyek untuk menambahkan Item Cara Pembayaran pada Proyek
+4. Klik tombol **Simpan** untuk menyimpan data.
+
+
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan Data
+
+1. Klik tombol simpan untuk menyimpan data
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih Item Pembayaran
+
+Tentukan data yang akan diedit, kemudian Klik 2x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+<Image
+            src={ipe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+Edit data pada tabel dikolom (Nama, Jenis, Nomor Urut, Nama Proyek).
+
+### Simpan perubahan data
+
+Klik tombol simpan untuk menyimpan perubahan data
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih Item Pembayaran
+
+Tentukan data yang akan dihapus, kemudian Klik icon *hapus* pada data tersebut yang
+tampil di tabel.
+
+<Image
+            src={ipd1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+
+### Hapus Data
+
+1. Klik tombol **Hapus** untuk menghapus data.
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Prospek data hanya bisa dilakukan jika Item Pembayaran tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak** Item Pembayaran yang sudah terdaftar dan sudah digunakan pada aplikasi, maka status tersebut tidak dapat dihapus.
+</FAQBox>

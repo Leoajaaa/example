@@ -1,0 +1,93 @@
+import { Steps } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import reservea1 from "@/public/image/web/marketing/reservasi/a1.png";
+import reservee1 from "@/public/image/web/marketing/reservasi/e1.png";
+import reservee2 from "@/public/image/web/marketing/reservasi/e2.png";
+import reserveh1 from "@/public/image/web/marketing/reservasi/h1.png";
+
+# Reservasi
+
+Menu **Reservasi**, digunakan untuk memfasilitasi pencatatan reservasi yang
+dilakukan oleh Marketing. Reservasi dapat berfungsi untuk mem-blok unit oleh
+Marketing, yang diperuntukan untuk Calon Customer bila data nomor unit
+dimasukkan pada proses input data reserve.
+Pada proyek apartemen, Nomor Urut Reservasi dipergunakan sebagai NUP
+(Nomor Urut Pemesanan).
+
+## Langkah-langkah menambah data reservasi
+
+    <Steps>
+    ### Klik button **Buat Baru**.
+    ### Isikan data.
+
+    <Image
+            src={reservea1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    1. Pilih nama **Proyek**.
+    2. Isikan nama marketing atau klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list marketing yang tersedia.
+    3. Pilih tanggal reservasi.
+    4. Nomor reservasi akan terotomatis berdasarkan tanggal, proyek, tipe, blok, kategori, cluster dan nama marketing.
+    5. Nomor bukti akan terotomatis berdasarkan tanggal reservasi, proyek, rekening dan kode bukti.
+    6. Nomor kwitansi akan terisi secara otomatis.
+    7. Isikan nama konsumen/prospek atau klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list prospek yang tersedia.
+    8. Isikan text box nomor handphone, email, alamat, keterangan dan nilai reservasi.
+    9. pilih kategori properti, cluster, tipe, nomor unit dan metode pembayaran
+    10. Pilih rekening dengan klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list bank yang tersedia.
+
+    ### Klik tombol **Simpan** untuk menyimpan data.
+
+    </Steps>
+
+## Langkah-langkah mengubah data reservasi
+
+    <Steps>
+    ### Klik **NO. BUKTI** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Lakukan perubahan yang diinginkan.
+
+    <Image
+            src={reservee1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    1. Ubah nama **Proyek**.
+    2. Ubah nama marketing atau klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list marketing yang tersedia.
+    3. Ubah tanggal reservasi.
+    4. Nomor reservasi akan terotomatis berdasarkan tanggal, proyek, tipe, blok, kategori, cluster dan nama marketing.
+    5. Nomor bukti akan terotomatis berdasarkan tanggal reservasi, proyek, rekening dan kode bukti.
+    6. Nomor kwitansi akan terisi secara otomatis.
+    7. Ubah nama konsumen/prospek atau klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list prospek yang tersedia.
+    8. Ubah text box nomor handphone, email, alamat, keterangan dan nilai reservasi.
+    9. Ubah kategori properti, cluster, tipe, nomor unit dan metode pembayaran
+    10. Ubah rekening dengan klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list bank yang tersedia.
+    ### Klik tombol **Update** untuk mengubah data.
+    </Steps>
+
+## Langkah-langkah menghapus data reservasi
+
+    <Steps>
+    ### Klik **NO. BUKTI** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={reserveh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    ### Klik tombol **Delete** untuk menghapus data.
+    - Beri Alasan untuk menghapus data
+    Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+    penghapusan data.
+    </Steps>

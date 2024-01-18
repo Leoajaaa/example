@@ -1,0 +1,146 @@
+import { Steps } from "nextra/components";
+
+import Image from 'next/image';
+import marketingtoolsp1 from "@/public/image/mobile/marketing/marketing-tools/p1.jpg";
+import marketingtoolsp2 from "@/public/image/mobile/marketing/marketing-tools/p2.jpg";
+import marketingtoolsp3 from "@/public/image/mobile/marketing/marketing-tools/p3.jpg";
+import marketingtoolsp4 from "@/public/image/mobile/marketing/marketing-tools/p4.jpg";
+
+import marketingtoolsa0 from "@/public/image/mobile/marketing/marketing-tools/a0.jpg";
+import marketingtoolsa1 from "@/public/image/mobile/marketing/marketing-tools/a1.jpg";
+import marketingtoolsa2 from "@/public/image/mobile/marketing/marketing-tools/a2.jpg";
+import marketingtoolsa3 from "@/public/image/mobile/marketing/marketing-tools/a3.jpg";
+
+#  <span style= {{ fontSize: '24px' }}> Marketing Tools </span>
+
+<div style={{ padding: "1rem" }}>
+    Menu **Marketing Tools** digunakan untuk menambahkan media, konten promosi yang akan digunakan oleh bagian Marketing. 
+
+</div>
+
+##  <span style= {{ fontSize: '24px' }}>Preview Marketing Tools</span>
+
+<Steps>
+###  <span style= {{ fontSize: '22px' }}>Pilih Proyek</span>
+
+<Image
+            src={marketingtoolsp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+###  <span style= {{ fontSize: '22px' }}>Pilih Jenis Media</span>
+
+<Image
+            src={marketingtoolsp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+</Steps>
+
+##  <span style= {{ fontSize: '24px' }}>Add Marketing Tools</span>
+
+<Steps>
+###  <span style= {{ fontSize: '22px' }}> Buka tombol **Buat Baru** </span>
+ketika membuka halaman pertama pada menu Marketing Tools terdapat tombol buat baru.
+<Image
+            src={marketingtoolsa0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+###  <span style= {{ fontSize: '22px' }}> Pilih Proyek </span>
+
+ketika melakukan klik pada filter Pilih proyek, selanjutnya aplikasi akan menampilkan list proyek yang terdaftar
+
+<Image
+            src={marketingtoolsa1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+###  <span style= {{ fontSize: '22px' }}> Pilih jenis media </span>
+
+ketika melakukan klik pada filter Pilih jenis media, selanjutnya aplikasi akan menampilkan list jenis media yang terdaftar
+
+<Image
+            src={marketingtoolsa2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+###  <span style= {{ fontSize: '22px' }}> Upload Sumber Dokumen </span>
+
+Upload media dokumen digunakan untuk melakukan upload format file dokumen berupa gambar atau file pdf
+. Pilih dokument yang sudah ditentukan atau Klik tombol “Upload MEdia” Maka akan muncul tampilan lokasi pengambilan media yang akan di upload.
+`Catatan: Format upload harus JPG/JPEG/PNG/PDF dan ukuran upload tidak lebih dari 2MB.`
+
+<Image
+            src={marketingtoolsa3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+</Steps>
+
+##  <span style= {{ fontSize: '24px' }}>Edit Marketing Tools </span>
+
+<Steps>
+
+###  <span style= {{ fontSize: '22px' }}> Pilih Proyek </span>
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+###  <span style= {{ fontSize: '22px' }}>Pilih jenis media </span>
+
+
+###  <span style= {{ fontSize: '22px' }}>Klik Tombol Upload Media </span>
+
+Sistem akan menampilkan data Proyek (perusahaan, proyek, Kode, contact person, No.Telp, email, Kota, alamat,
+kategori proyek, status proyek, rekening proyek dan berkas hasil upload) secara otomatis pada masing-masing
+jenis data.
+
+
+
+###  <span style= {{ fontSize: '22px' }}> Klik tombol **Ubah** untuk mengubah data </span>
+
+
+
+</Steps>
+
+##  <span style= {{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>
+
+
+

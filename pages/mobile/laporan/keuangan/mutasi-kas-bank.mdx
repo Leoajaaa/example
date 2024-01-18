@@ -1,0 +1,65 @@
+import { Steps } from "nextra/components";
+
+import Image from 'next/image';
+import menu from "@/public/image/mobile/keuangan/mutasi-kas-bank/0.jpg";
+import mutasi from "@/public/image/mobile/keuangan/mutasi-kas-bank/1.jpg";
+
+# Mutasi Kas Bank
+
+Menu mutasi kas bank digunakan untuk melihat mutasi rekening bank dan kas berdasarkan proyek, rekening, dan periode tanggal
+
+    ---
+    **Akses Menu Mutas Kas/Bank**
+    <table>
+    <tbody>
+        <tr>
+        <td align="left" width="350px">
+        <Steps>
+            1. Buka modul **Keuangan**
+
+            2. Buka Menu **Mutasi Kas/Bank**
+        </Steps>
+        </td>
+        <td width="50px"></td>
+        <td align="center">
+        <Image
+                src={menu}
+                width={300}
+                height={300}
+            />
+        </td>
+        </tr>
+        ---
+         **Menampilkan data Mutasi Kas/Bank**
+        <tr>
+        <td align="left" width="350px">
+        <Steps>
+            1. Pilih data **Proyek**
+            2. Pilih data **Rekening**
+            3. Pilih **periode** mutasi kas/bank
+            4. Aktifkan tombol tampilkan data yang sudah di posting
+            ```
+            Apabila tombol aktif, maka data yang muncul hanya data yang
+            sudah diposting
+            ```
+            5. Tampilan Saldo awal dan saldo akhir mutasi kas bank semua rekening dan per rekening
+            ```
+            Data saldo awal dan saldo akhir yang muncul berdasarkan filter
+            proyek, rekening, dan periode yang dipilih
+            ```
+        </Steps>
+        </td>
+        <td width="50px"></td>
+        <td align="center">
+        <Image
+                src={mutasi}
+                width={300}
+                height={300}
+            />
+        </td>
+        </tr>
+        ---
+
+    </tbody>
+    </table>
+

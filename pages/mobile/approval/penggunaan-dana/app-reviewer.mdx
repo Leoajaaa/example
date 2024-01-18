@@ -1,0 +1,153 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+
+import Image from 'next/image';
+import appreviewerp1 from "@/public/image/mobile/approval/appreviewer/p1.jpg";
+import appreviewerp2 from "@/public/image/mobile/approval/appreviewer/p2.jpg";
+import appreviewerp3 from "@/public/image/mobile/approval/appreviewer/p3.jpg";
+import appreviewerp4 from "@/public/image/mobile/approval/appreviewer/p4.jpg";
+import appreviewerp5 from "@/public/image/mobile/approval/appreviewer/p5.jpg";
+import appreviewerp6 from "@/public/image/mobile/approval/appreviewer/p6.jpg";
+import appreviewera1 from "@/public/image/mobile/approval/appreviewer/a1.jpg";
+import appreviewera2 from "@/public/image/mobile/approval/appreviewer/a2.jpg";
+import appreviewera3 from "@/public/image/mobile/approval/appreviewer/a3.jpg";
+
+
+# <span style={{ fontSize: '28px' }}> Approval Reviewer </span>
+
+Menu Approval Reviewer merupakan Approval tahap kedua yang bisa dijalan apabila telag melalui proses persetujuan ditahapan reviewer dokumen.
+
+## <span style={{ fontSize: '24px' }}> Menampilkan Approval Reviewer </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Approval
+
+<Image
+            src={appreviewerp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih menu Approval Reviewer
+
+<Image
+            src={appreviewerp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Pilih Proyek
+
+<Image
+            src={appreviewerp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. Pilih jenis Approval
+
+<Image
+            src={appreviewerp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+7. Pilih Periode Transaksi
+
+<Image
+            src={appreviewerp5}
+            
+            width={250}
+            height={250}
+                
+        />
+
+## <span style={{ fontSize: '24px' }}> Melakukan Approval Reviewer </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Approval
+
+4. Pilih menu Approval Reviewer
+
+5. Pilih Proyek
+
+6. Pilih jenis Approval
+
+7. Pilih Periode Transaksi
+
+8. Pilih baris data transaksi yang ingin di Approve
+
+<Image
+            src={appreviewerp6}
+            
+            width={250}
+            height={250}
+                
+        />
+
+9. Isi Form Sumber Dana
+
+<Image
+            src={appreviewera1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+        <Image
+            src={appreviewera2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+10. Pilih tombol MENYETUJUI jika pengajuan disetujui dan Pilih tombol TOLAK jika pengajuan tidak disetujui
+
+<Image
+            src={appreviewera3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+11. Masukan Username dan Password 
+
+12. Isi Keterangan Pengajuan
+
+13. Pilih tombol MENYETUJUI jika pengajuan disetujui dan Pilih tombol TOLAK jika pengajuan tidak disetujui
+---
+## <span style={{ fontSize: '24px' }}> FAQ Prosfek Konsumen </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

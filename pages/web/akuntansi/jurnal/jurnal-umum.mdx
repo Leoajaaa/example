@@ -1,0 +1,147 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import jup1 from "@/public/image/web/akutansi/jurnal-umum/p1.png";
+import jup2 from "@/public/image/web/akutansi/jurnal-umum/p2.png";
+
+import jue1 from "@/public/image/web/akutansi/jurnal-umum/e1.png";
+
+import juh1 from "@/public/image/web/akutansi/jurnal-umum/h1.png";
+
+# <span style={{ fontSize: '28px' }}> Jurnal Umum </span>
+
+Menu Jurnal Umum, digunakan untuk membuat jurnal secara manual seperti Jurnal Memorial, Amortisasi dan Jurnal Penyesuaian.
+
+## <span style={{ fontSize: '24px' }}> Tambah Data </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Buat Baru </span>
+
+<Image
+            src={jup1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. tombol aksi buat baru terdapat pda halaman awal modul jurnal umum. Seperti
+pada gambar berikut
+
+### <span style={{ fontSize: '22px' }}> Isi Jurnal Umum </span>
+
+<Image
+            src={jup2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. pilih proyek
+2. lengkapi isian pada jurnal umum tanggal jurnal, nomor jurnal, tanggal bukti,
+nomor bukti, tanggal referensi, dan keterangan
+3. lengkapi tabel dengan nama akun, sub akun, dengan menggunakan tombol cari,
+debet, kredit, rekanan, uraian.
+
+### klik simpan
+1. Klik tombol **simpan** untuk menyimpan data.
+
+</Steps>
+---
+
+## <span style={{ fontSize: '24px' }}> Edit Data </span>
+
+<Steps>
+
+### pilih proyek
+
+pilih proyek (contoh : MSI land) tentukan data yang akan diedit, kemudian klik 1x pada data tersebut yang tampil di
+tabel.
+
+### Isi perubahan data
+
+<Image
+            src={jue1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+System akan menampilkan data jurnal umum (pilih proyek, tanggal jurnal, nomor
+jurnal, tanggal bukti, nomor bukti, tanggal referensi, nomor referensi dan keterangan).
+
+1. Isikan pada tabel kode akun.
+2. (optional) pilih nama akun , dengan cara klik tombol cari sistm akan
+menampilkan UI list akun.
+3. (Optional) Pilih sub akun, dengan cara klik tombol cari system akan menampilkan
+UI list sub akun.
+4. Isikan debet dan kredit menggunakan angka
+5. (Optional) pilih rekanan dengan cara klik tombol cari system akan menampilkan
+UI list Rekanan.
+6. Isikan uraian
+
+### Klik Update
+
+7. Klik **update** jika ingin mengupdate data jurnal umum
+8. Kemudian muncul popup konfirmasi klik update jika ingin mengupdate dan batal
+jika batal untuk mengupdate
+9. Kemudian muncul popup pemberitahuan bahwa data berhasil di update, jika ingin
+datanya diprnit out maka klik print out traksasi, jika tidak maka klik tombol
+selesai.
+
+</Steps>
+
+---
+
+## <span style={{ fontSize: '28px' }}> Hapus Data </span>
+
+<Steps>
+
+### Pilih Proyek
+
+1. Pilih proyek (contoh : MSI land)
+Tentukan data yang akan diedit, kemudian klik 1x pada data tersebut yang tampil di
+tabel.
+
+### Klik Hapus
+
+<Image
+            src={juh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+2. System akan menampilkan data tersebut pada masing-masing text box.
+3. Klik tombol **hapus** untuk menghapus data        
+
+</Steps>
+
+---
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Ya**, . 
+  
+</FAQBox>

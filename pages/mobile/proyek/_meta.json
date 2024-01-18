@@ -1,0 +1,12 @@
+{
+    "progress-pembangunan": "Progress Pembangunan",
+    "perencanaan": {
+        "display": "hidden"
+        
+    },
+    "aktivitas-proyek": {
+        "title": "Aktivitas Proyek",
+        "href": "/mobile/proyek/perencanaan/aktivitas-proyek"
+
+    }
+}

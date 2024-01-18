@@ -1,0 +1,72 @@
+import Image from "next/image";
+import logoChrome from "@/public/image/icons-chrome.svg";
+import screenLogin from "@/public/image/web/screen_login.png";
+import { Tabs, Tab } from "nextra/components";
+
+# Porta Pro Web Apps
+
+## Akses Aplikasi
+Untuk memulai aplikasi porta pro web, anda dapat mengakses link url dibawah ini
+
+https://apps.portapro.co.id/
+
+
+### Requirement
+
+Web browser yang disarankan
+
+Chrome
+    <Image
+        alt=""
+        loading="lazy"
+        width="48"
+        height="48"
+        decoding="async"
+        data-nimg="1"
+        className="m-1 inline-block"
+        style={{
+            color: "transparent",
+            margin: "auto" 
+        }}
+        src={logoChrome}
+        text="Chrome"
+    />
+
+
+## Login
+
+Anda bisa memulai aplikasi porta pro web dengan login terlebih dahulu:
+
+1. Akses url https://apps.portapro.co.id/ pada perangkat anda, lalu akan tampil halaman login seperti berikut:
+
+<Image
+    loading="lazy"
+    src={screenLogin}
+    width={1363}
+    height={544}
+    style={{ margin: "auto" }}
+></Image>
+
+2. Isi kode perusahaan anda yang sudah terdaftar pada aplikasi Porta Pro
+3. Isi username dan password dengan data user yang telah telah terdaftar pada aplikasi Porta Pro/ECes.Q
+
+### FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Bagaimana jika belum terdaftar sebagai user pada aplikasi porta pro ?">
+    Anda dapat menghubungi tim administrator aplikasi porta pro/eces.q di
+    perusahaan anda, untuk dapat dibuatkan user login pada aplikasi
+</FAQBox>

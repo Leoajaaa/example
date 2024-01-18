@@ -1,0 +1,76 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import itemhadiaha1 from "@/public/image/web/data-master/general/item-hadiah/a1.png";
+import itemhadiahp1 from "@/public/image/web/data-master/general/item-hadiah/p1.png";
+import itemhadiahe1 from "@/public/image/web/data-master/general/item-hadiah/e1.png";
+
+# Item Hadiah Penjualan
+
+Menu **Item Hadiah Penjualan** digunakan untuk mendefinisikan Jenis bonus yang
+akan diberikan ke pada calon konsumen, (seperti Bebas BPHTB, TV dsb). Data ini
+digunakan pada saat transaksi Booking Unit.
+
+## Langkah-langkah menambahkan Item Hadiah Penjualan
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data Item Hadiah Penjualan.
+    <Image
+            src={itemhadiaha1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Isikan pada text box **Kode Hadiah**, **Nama Hadiah** dan *Harga Hadiah*.
+    2. Pilih nama **Biaya Unit**.
+    3. Pilih proyek terlebih dahulu dengan klik checklist di sebelah kolom **KODE**.
+    4. Tentukan urutan Bonus saat nanti tampil di transaksi, dengan cara isi Nomor pada kolom **No Urut**.
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    `Catatan: Kode Hadiah, nama Hadiah dan urutan bonus sesuai proyek wajib diisi`
+    </Steps>
+
+## Langkah-langkah merubah Item Hadiah Penjualan
+
+    <Steps>
+    ### Klik **KODE** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: Jika ada pesan "Data tidak bisa diubah , Karena sudah terdaftar pada modul Booking unit" maka tidak bisa diubah maupun dihapus`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+
+    ### Lakukan perubahan yang diinginkan.
+    <Image
+            src={itemhadiahe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Ubah pada text box **Kode Hadiah**, **Nama Hadiah** dan *Harga Hadiah*.
+    2. Ubah nama **Biaya Unit**.
+    3. Ubah proyek terlebih dahulu dengan klik checklist di sebelah kolom **KODE**.
+    4. Ubah urutan Bonus saat nanti tampil di transaksi, dengan cara isi Nomor pada kolom **No Urut**.
+    ### Klik tombol **Update** untuk mengubah data.
+    `Catatan: Kode Hadiah, nama Hadiah dan urutan bonus sesuai proyek wajib diisi`
+    </Steps>
+
+## Langkah-langkah menghapus Item Hadiah Penjualan
+
+    <Steps>
+    ### Klik **KODE** pada data yang akan dihapus, yang tampil di tabel.
+    `Catatan: Jika ada pesan "Data tidak bisa diubah , Karena sudah terdaftar pada modul Booking unit" maka tidak bisa diubah maupun dihapus`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+        <Image
+                    src={itemhadiahe1}
+                    
+                    width={1000}
+                    height={1000}
+                        
+                />
+    ### Klik tombol **Hapus** untuk mengubah data.
+    Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+    penghapusan data.
+    </Steps>

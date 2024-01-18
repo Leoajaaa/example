@@ -1,0 +1,188 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pra1 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-reserve/a1.png";
+import pra2 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-reserve/a2.png";
+import pra3 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-reserve/a3.png";
+import pre1 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-reserve/e1.png";
+import pre2 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-reserve/e2.png";
+import pre3 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-reserve/e3.png";
+import prh1 from "@/public/image/web/keuangan/pengembalian-uang/pengembalian-reserve/h1.png";
+
+# Pengebalian Reserve
+
+Menu **Pengebalian Reserve**, digunakan untuk memfasilitasi
+Pengembalian uang dari Reservasi penjualan ke Konsumen.
+
+## Langkah-langkah menambahkan Pengebalian Reserve
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data pada halaman tambah data.
+
+    1. Pilih nama **Proyek**
+    2. Pilih **tanggal Pengembalian**
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Data Penjualan",
+                "Rekening Pengeluaran",
+                "Detail Pengeluaran",
+            ]}
+        >
+            <Tab>
+        <Image
+            src={pra1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            3. Pilih Nomor Reservasi, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+                menampilkan UI List Reservasi Unit. Pilih Nomor Reff yang tertera pada table List Reservasi.
+                Sistem akan otomatis menampilkan Informasi Proyek, Nama Customer, Unit Properti dan Nominal yang diterima sebelumnya dari konsumen berdasarkan penerimaan yang tercatat pada sistem.
+          
+            </Tab>
+
+            <Tab>
+
+         <Image
+            src={pra2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            Lengkapi isian data atribut (metode pembayaran,no.rekening,bank,referensi no.cek/giro/EDC)
+
+            4. Pilih metode pembayaran (Giro/Cek,cash,tranfer,dan EDC)
+
+            5. Pilih no.rekening dengan klik icon cari, bank akan otomatis terisi Ketika sudah mengisi no.rekening
+
+            6. Masukan referensi no.Cek/Giro/EDC
+            
+            </Tab>
+            <Tab>
+        <Image
+            src={pra3}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            `Catatan: Total penerimaan akan terisi otomatis berdasarkan nilai penerimaan yang sudah di inputkan`
+            
+            7. lengkapi data pada text box di tab detail pengeluaran (nilai pengembalian, Keterangan)
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    Klik tombol **Print Out Pengebalian Reserve** lalu
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Bukti Pembayaran** apabila akan mencetak bukti pembayaran.
+
+    </Steps>
+
+## Langkah-langkah mengubah Pengebalian Reserve
+
+    <Steps>
+    ### Klik **Nomor Bukti** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data Pengebalian Reserve tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Isikan data pada halaman edit data.
+
+    1. Pilih **Proyek**
+    2. Isi Perubahan
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Data Reservasi",
+                "Rekening Pengeluaran",
+                "Detail Pengeluaran",
+            ]}
+        >
+            <Tab>
+
+                    <Image
+            src={pre1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            3. Pilih Nomor Reff/Memo, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+                menampilkan UI List Reservasi Unit. Pilih Nomor Reff yang tertera pada table List Reservasi.
+                Sistem akan otomatis menampilkan Informasi Proyek, Nama Customer, Unit Properti dan Nominal yang diterima sebelumnya dari konsumen berdasarkan penerimaan yang tercatat pada sistem.
+
+           
+            </Tab>
+
+
+            <Tab>
+
+            
+                    <Image
+            src={pre2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            Lengkapi isian data atribut (metode pembayaran,no.rekening,bank,referensi no.cek/giro/EDC)
+
+            4. Masukan metode pembayaran (Giro/Cek,cash,tranfer,dan EDC)
+
+            5. Pilih no.rekening dengan klik icon cari, bank akan otomatis terisi Ketika sudah mengisi no.rekening
+
+            6. Masukan referensi no.Cek/Giro/EDC
+            
+            </Tab>
+            <Tab>
+
+                    <Image
+            src={pre3}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            `Catatan: Total penerimaan akan terisi otomatis berdasarkan nilai penerimaan yang sudah di inputkan`
+            
+            7. lengkapi data pada text box di tab detail pengeluaran (nilai pengembalian, Keterangan)
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Update** untuk mengubah data.
+    Klik tombol **Print Out Pengebalian Reserve** lalu
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Bukti Pembayaran** apabila akan mencetak bukti pembayaran.
+
+    </Steps>
+
+## Langkah-langkah menghapus Pengebalian Reserve
+
+    <Steps>
+    ### Pilih Proyek
+    ### Pilih Periode
+    ### Klik **Nomor Bukti Pengembalian** pada data yang akan dihapus, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data Pengebalian Reserve tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Isikan alasan melakukan penghapusan data lalu klik **Oke**
+
+            <Image
+            src={prh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    </Steps>

@@ -1,0 +1,103 @@
+import { Steps, Callout } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import penerimaana1 from "@/public/image/web/keuangan/pembukuan/penerimaan-kasbank/a1.png";
+import penerimaane1 from "@/public/image/web/keuangan/pembukuan/penerimaan-kasbank/e1.png";
+import penerimaanh1 from "@/public/image/web/keuangan/pembukuan/penerimaan-kasbank/h1.png";
+
+# Penerimaan Kas-Bank
+
+Menu **Penerimaan Kas-Bank**, berfungsi untuk memfasilitasi perpindahan sejumlah uang dari/ke Kas - Setara Kas, (Kas ke Kas atau Kas ke Bank 
+atau Bank ke Bank). Transaksi ini hanya berlaku untuk Rekening/Kas Proyek yang sama.
+
+## Input Data Penerimaan Kas-Bank
+
+<Steps>
+### Klik buat baru
+Tombol aksi buat baru terdapat pada halaman awal modul Pindah.
+<Image
+            src={penerimaana1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+### Pilih proyek
+Lengkapi isian pada atribut tanggal penerimaan, nomor bukti penerimaan, diterima
+dari,tanggal referensi, nomor referensi, cara bayar, no rekening,kas/bank, referensi :
+no cek/giro/edc,
+### Diterima dari menggunakan icon cari
+system akan menampilkan popup list rekanan
+1. Pilih rekanan (rekanan, konsumen, karyawan, bank, dan rekening)
+2. Pilih cara bayar (cash, giro/cek, transfer,dan EDC)
+3 Pilih no.rekening menggunakan icon cari
+System akan menampilkan list rekening
+### Isi tabel akun
+Lengkapi isian (kode akun, akun,subakun, unit property, nominal(RP),uraian)
+1. Klik pada icon PPN dan akan otomatis terisi
+2. Isi biaya lainnya
+3. Klik **simpan** untuk menyimpan klik **batal** untuk membatalkan simpan
+</Steps>
+
+## Edit Data Penerimaan Kas-Bank
+
+<Steps>
+### Pilih proyek
+Tentukan data yang akan diedit, kemudian klik 1x pada data nomor bukti
+
+### Isi perubahan
+<Image
+            src={penerimaane1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+System akan menampilkan data penerimaan kas-bank Ubah data (pilih proyek,tanggal
+penerimaan, no.bukti penerimaan, diterima dari, tanggal referensi,no.referensi,cara
+bayar,no.rekening,kas/bank, no.ref/cek/giro/EDC)
+
+### Simpan perubahan Data.
+</Steps>
+
+## Hapus Data Penerimaan Kas-Bank
+
+<Steps>
+### Pilih proyek
+Tentukan data yang akan dihapus, kemudian klik 1x pada data tersebut yang tampil
+ditabel.
+<Image
+            src={penerimaanh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+1. Tekan tombol “Hapus”, untuk menghapus data.
+2. Klik “Hapus” untuk menghapus data, klik “Batal” untuk membatalkan penghapusan
+data
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Approval Konfirmasi Reserve / Booking. 
+  
+</FAQBox>

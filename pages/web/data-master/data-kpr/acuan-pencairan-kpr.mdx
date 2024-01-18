@@ -1,0 +1,87 @@
+import { Steps } from "nextra/components";
+import Image from "next/image";
+import search from "@/public/icon/icon_search.png";
+
+
+import acuankpra1 from "@/public/image/web/data-master/data-kpr/acuan-kpr/a1.png";
+import acuankprp1 from "@/public/image/web/data-master/data-kpr/acuan-kpr/p1.png";
+import acuankpre1 from "@/public/image/web/data-master/data-kpr/acuan-kpr/e1.png";
+
+# Acuan Pencairan KPR
+
+Menu **Acuan Pencairan KPR** digunakan untuk menentukan default acuan lama waktu dan prosentase
+pencairan per retensi yang nantinya akan dicairkan dari bank pemberi fasilitas
+KPR/KPA.
+
+## Langkah-langkah menambahkan acuan pencairan KPR
+
+    <Steps>
+    ### Klik tombol **Tambah**.
+    ### Isikan data Acuan Pencairan KPR.
+    <Image
+            src={acuankpra1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Isi Kas/Bank pada kolom **Kas/Bank** atau pilih dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+    sistem akan menampilkan UI list bank, Klik kode yang akan dipilih.
+    2. Isi masing-masing kolom pada setiap item retensi. (ceklist, isi jumlah hari dan nilai persentase pencairan)
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    `Catatan: Kas/Bank wajib diisi`
+    </Steps>
+
+## Langkah-langkah menyimpan perubahan pada setiap bank
+
+    <Steps>
+    ### Pilih kode nama bank yang dipilih.
+    ### Berikan tanda ceklist untuk setiap baris proses pada bank yang dikehendaki.
+    <Image
+            src={acuankprp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Isi jumlah hari pada setiap item proses.
+    2. Isi angka persentase pencairan pada setiap item proses.
+    ### Klik tombol **Simpan Perubahan** untuk menyimpan hasil perubahan data.
+    </Steps>
+
+## Langkah-langkah mengubah acuan pencairan KPR
+
+    <Steps>
+    ### Klik **Kode ** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Lakukan perubahan yang diinginkan.
+    <Image
+            src={acuankpre1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Ubah Kas/Bank pada kolom **Kas/Bank** atau pilih dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+    sistem akan menampilkan UI list bank, Klik kode yang akan dipilih.
+    2. Ubah masing-masing kolom pada setiap item retensi. (ceklist, isi jumlah hari dan nilai persentase pencairan)
+    ### Klik tombol **Update** untuk menyimpan data.
+    `Catatan: Kas/Bank wajib diisi`
+    </Steps>
+
+## Langkah-langkah menghapus acuan pencairan KPR
+
+    <Steps>
+    ### Klik **Kode ** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={acuankpre1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    ### Klik tombol **Delete** untuk menyimpan data.
+    Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+    penghapusan data.
+    </Steps>

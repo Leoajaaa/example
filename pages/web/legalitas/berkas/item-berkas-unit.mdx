@@ -1,0 +1,78 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import itemberkasa1 from "@/public/image/web/legalitas/berkas/item-berkas/a1.png";
+import itemberkasp1 from "@/public/image/web/legalitas/berkas/item-berkas/p1.png";
+import itemberkase1 from "@/public/image/web/legalitas/berkas/item-berkas/e1.png";
+
+# Item Berkas Unit
+
+Menu **Item Berkas Unit**, digunakan menandakan dokumen/berkas apa
+saja yang sudah selesai terkait unit tertentu. Misal (Sertifikat Split, IMB, Dsb).
+
+## Langkah-langkah menambah item berkas unit
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+
+    ### Isikan data item berkas unit
+    <Image
+            src={itemberkasa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Pilih **Dokumen**.
+    Jika tidak ada daftar dokumen, klik tombol **+** untuk menambah data dokumen unit dengan mengisikan **Default Nama** dan **Dokumen**
+    2. Pilih **Retensi**.
+    3. Input di kolom **no.urut** dan berikan tanda ceklist pada kolom **Check** untuk baris data yang dimaksud akan diisi.
+
+    ### Klik tombol **Simpan** untuk menyimpan data item berkas unit.
+
+    </Steps>
+
+## Langkah-langkah mengubah item berkas unit
+
+    <Steps>
+    ### Klik **Dokumen** pada data yang akan diubah, yang tampil di tabel.
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={itemberkase1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    ### Lakukan perubahan yang diinginkan.
+    1. Ubah **Dokumen**.
+    Jika tidak ada daftar dokumen, klik tombol **+** untuk menambah data dokumen unit dengan mengisikan **Default Nama** dan **Dokumen**
+    2. Ubah **Retensi**.
+    3. Ubah di kolom **no.urut** dan berikan tanda ceklist pada kolom **Check** untuk baris data yang dimaksud akan diisi.
+
+    ### Klik tombol **Update** untuk mengubah data.
+
+    </Steps>
+
+## Langkah-langkah menghapus item berkas unit
+
+    <Steps>
+    ### Klik **Dokumen** pada data yang akan diubah, yang tampil di tabel.
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={itemberkase1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Klik **Hapus** untuk menghapus data, Klik **Cancel** untuk membatalkan
+    penghapusan data.
+
+    </Steps>

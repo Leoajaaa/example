@@ -1,0 +1,141 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+
+import Image from 'next/image';
+import apppenjualanp1 from "@/public/image/mobile/approval/apppenjualan/p1.jpg";
+import apppenjualanp2 from "@/public/image/mobile/approval/apppenjualan/p2.jpg";
+import apppenjualanp3 from "@/public/image/mobile/approval/apppenjualan/p3.jpg";
+import apppenjualanp4 from "@/public/image/mobile/approval/apppenjualan/p4.jpg";
+import apppenjualanp5 from "@/public/image/mobile/approval/apppenjualan/p5.jpg";
+import apppenjualanp6 from "@/public/image/mobile/approval/apppenjualan/p6.jpg";
+import apppenjualanp7 from "@/public/image/mobile/approval/apppenjualan/p7.jpg";
+import apppenjualana0 from "@/public/image/mobile/approval/apppenjualan/a0.jpg";
+
+# <span style={{ fontSize: '28px' }}> Approval Konfirmasi Penjualan </span>
+
+## <span style={{ fontSize: '24px' }}> Menampilkan Approval Konfirmasi Penjualan </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Approval
+
+<Image
+            src={apppenjualanp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih menu Approval Konfirmasi Penjualan
+
+<Image
+            src={apppenjualanp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Pilih jenis Transaksi
+
+<Image
+            src={apppenjualanp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+
+
+<Image
+            src={apppenjualanp4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. Pilih Proyek
+
+<Image
+            src={apppenjualanp5}
+            
+            width={250}
+            height={250}
+                
+        />
+        
+
+7. Pilih Status Approval Transaksi    
+
+<Image
+            src={apppenjualanp6}
+            
+            width={250}
+            height={250}
+                
+        />
+
+## <span style={{ fontSize: '24px' }}> Melakukan Approval Konfirmasi Penjualan </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Approval
+
+4. Pilih menu Approval Konfirmasi Penjualan
+
+5. Pilih Proyek
+
+6. Pilih jenis Transaksi
+
+7. Pilih Status Transaksi "Menunggu Verifikasi"
+
+8. Pilih baris data transaksi yang ingin di Approve
+
+<Image
+            src={apppenjualanp7}
+            
+            width={250}
+            height={250}
+                
+        />
+
+9. Pilih tombol MENYETUJUI jika pengajuan disetujui dan Pilih tombol TOLAK jika pengajuan tidak disetujui
+
+<Image
+            src={apppenjualana0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+10. Pilih "Ya" jika Penjualan disetujui
+
+---
+## <span style={{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>
+
+

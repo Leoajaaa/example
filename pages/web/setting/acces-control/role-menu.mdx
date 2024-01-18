@@ -1,0 +1,148 @@
+import Image from "next/image";
+import { Steps } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import menup1 from "@/public/image/web/setting/acces-control/role-menu/p1.png";
+import menue1 from "@/public/image/web/setting/acces-control/role-menu/e1.png";
+import menua1 from "@/public/image/web/setting/acces-control/role-menu/a1.png";
+import menud1 from "@/public/image/web/setting/acces-control/role-menu/d1.png";
+import menuh1 from "@/public/image/web/setting/acces-control/role-menu/h1.png";
+import menud2 from "@/public/image/web/setting/acces-control/role-menu/d2.png";
+
+# Role Menu
+
+<div style={{ padding: "1rem" }}>
+    **Role Menu** digunakan untuk membuat hak akses aplikasi per kelompok pengguna atau user
+</div>
+## Tambah Data
+
+<Steps>
+### Klik **Tambah**
+Tombol aksi **Tambah** terdapat pada halaman awal modul **Role Menu**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info Role Menu
+
+<Image
+            src={menua1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Tambahkan data kelompok pengguna
+2. Klik tombol **Simpan** untuk menyimpan data.
+
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih Role Menu
+
+Tentukan data yang akan diedit, kemudian klik 1x icon edit di kolom action yang
+tampil di tabel.
+
+
+### Isi perubahan data
+<Image
+            src={menue1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+System akan menampilkan edit data kelompok pengguna
+
+
+
+### Simpan perubahan data
+System akan menampilkan popup bahwa data berhasil di edit
+
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### klik tampilkan
+
+Tentukan data yang akan dihapus, kemudian Klik 1x icon hapus pada kolom action yang
+tampil di tabel.
+
+
+### Klik Icon Hapus
+<Image
+            src={menuh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+1. Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang tampil di tabel.
+2. Sistem akan menampilkan halaman pop up konfirmasi penghapusan data Role Menu
+3. Klik tombol **Hapus** untuk menghapus data.
+
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Role Menu data hanya bisa dilakukan jika Role Menu tersebut belum terhubung ke data pada modul lain, seperti : Account User, User Role serta modul-modul lainnya`
+</Callout>
+
+</Steps>
+
+## Setting Kelompok User
+
+<Steps>
+### klik **tampilan**
+
+### kelompok menu
+<Image
+            src={menud1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 1. pilih menu yang akan diberikan pada kelompok pengguna tersebut, pada Daftar tabel **Hak Akses**, dengan cara klik 1x pada nama Menu yang dipilih
+ kemudian klik icon **>**. Menu yang dipilih tersebut berpindah ke Tabel **Hak Akses yang diberikan** (Daftar tabel sebelah kanan).
+ 2. untuk membatalkan/menghilangkan hak akses menu tertentu dari menu yang diberikan, klik 1x pada nama Menu yang dipilih
+ kemudian klik icon ** < **. Menu tersebut akan berpindah ke Daftar tabel Hak Akses (Daftar tabel sebelah kiri)
+
+ ### klik **Simpan**
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah data Role Menu dapat dihapus ?">
+  **Tidak** Role Menu yang sudah terinput tidak dapat dihapus dari aplikasi.
+  jika Role Menu sudah tidak aktif, maka dapat dilakukan Penonaktifan Role Menu.
+</FAQBox>

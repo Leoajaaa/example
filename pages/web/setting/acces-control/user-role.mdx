@@ -1,0 +1,132 @@
+import Image from "next/image";
+import { Steps } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+
+import aca1 from "@/public/image/web/setting/acces-control/user-role/a1.png";
+import acp1 from "@/public/image/web/setting/acces-control/user-role/p1.png";
+import ace1 from "@/public/image/web/setting/acces-control/user-role/e1.png";
+
+# User Role
+
+<div style={{ padding: "1rem" }}>
+    **User Role** digunakan untuk mengisi detail informasi User Role yang ada pada developer properti, Seperti : **Nama User Role**, **alamat**, **rekening** serta **logo** yang digunakan oleh User Role.
+</div>
+## Tambah Data
+
+<Steps>
+### Klik **Tambah**
+Tombol aksi **Tambah** terdapat pada halaman awal modul **User Role**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info User Role
+
+<Image
+            src={aca1}
+            
+            width={500}
+            height={500}
+                
+        />
+
+1. Pilih data Karyawan
+2. Lengkapi isian pada atribut Username
+3. Pilih status User Role (Aktif atau Non Aktif)
+4. Pilih dan pindahkan Role User pada form data sebelah kanan
+5. Klik tombol **Simpan** untuk menyimpan data.
+6. 
+
+
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih User Role
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+Sistem akan menampilkan data User Role (Nama karyawan, Username, Email, Status) secara otomatis pada masing-masing
+jenis data.
+
+<Image
+            src={ace1}
+            
+            width={500}
+            height={500}
+                
+        />
+
+1. Pilih data Karyawan
+2. Lengkapi isian pada atribut Username
+3. Pilih status User Role (Aktif atau Non Aktif)
+4. Pilih dan pindahkan Role User pada form data sebelah kanan
+5. Klik tombol **Simpan** untuk menyimpan data.
+
+
+
+### Simpan perubahan data
+
+
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih User Role
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Non aktifkan User Role
+
+1. Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang tampil di tabel.
+2. Sistem akan menampilkan data User Role, pilih status menjadi non aktif
+3. Klik tombol **Simpan** untuk menyimpan data.
+
+
+
+<Callout type="error" emoji="️🚫">
+  `Penonaktifan User Role data hanya bisa dilakukan jika User Role tersebut belum terhubung ke data pada modul lain, seperti : stok unit User Role, penjualan serta modul-modul lainnya`
+</Callout>
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah data User dapat dihapus ?">
+  **Tidak** User yang sudah terdaftar tidak dapat dihapus dari aplikasi.
+  jika User sudah tidak aktif, maka dapat dilakukan Penonaktifan User.
+</FAQBox>

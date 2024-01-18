@@ -1,0 +1,212 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import spa1 from "@/public/image/web/setting/penjualan/status-prospek/a1.png";
+import spp1 from "@/public/image/web/setting/penjualan/status-prospek/p1.png";
+import spe1 from "@/public/image/web/setting/penjualan/status-prospek/e1.png";
+import spe2 from "@/public/image/web/setting/penjualan/status-prospek/e2.png";
+import spa2 from "@/public/image/web/setting/penjualan/status-prospek/a2.png";
+import spp2 from "@/public/image/web/setting/penjualan/status-prospek/p2.png";
+
+# Status Prospek
+
+<div style={{ padding: "1rem" }}>
+    **Status Prospek** digunakan untuk mengisi detail informasi Status Prospek yang ada pada developer properti, Seperti : **Nama Status Prospek**, **alamat**, **rekening** serta **logo** yang digunakan oleh Status Prospek.
+</div>
+<Tabs items={["Status", "Sumber"]}>
+<Tab>
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+Tombol aksi **Buat Baru** terdapat pada halaman awal modul **Status Prospek**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info Status Prospek
+
+<Image
+            src={spa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Lengkapi isian pada atribut Status Prospek, kode Status Prospek, nama Status Prospek, Nomor Urut.
+2. Pilih salah satu Is Close (Iya atau Tidak)
+3. Pilih Warna
+4. Klik tombol **Simpan** untuk menyimpan data.
+
+
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Pilih Warna
+
+### Simpan Data
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih Status Prospek
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+<Image
+            src={spe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+Sistem akan menampilkan data Status Prospek (kode Status Prospek, nama Status Prospek, Kode warna, Nomor Urut) secara otomatis pada masing-masing jenis data.
+
+### Simpan perubahan data
+
+
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih Status Prospek
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Hapus Data
+
+1. Klik tombol **Hapus** untuk menghapus data.
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Prospek data hanya bisa dilakukan jika Status Prospek tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+</Tab>
+
+<Tab>
+
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+Tombol aksi **Buat Baru** terdapat pada halaman awal modul **Status Prospek**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info Nama Sumber
+
+<Image
+            src={spa2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Lengkapi isian pada atribut Sumber Nama
+2. Klik tombol **Simpan** untuk menyimpan data.
+
+
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih Sumber Nama
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+Sistem akan menampilkan data Sumber Nama
+
+<Image
+            src={spe2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+### Simpan perubahan data
+
+1. klik tombol **Update** untuk menyimpan perubahan Sumber Nama
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih Nama Sumber
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Hapus Data
+
+1. Klik tombol **Hapus** untuk menghapus data.
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Prospek data hanya bisa dilakukan jika Status Prospek tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+
+</Tab>
+
+</Tabs>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah data Status Prospek dapat dihapus ?">
+  **Tidak** Status Prospek yang sudah terdaftar dan sudah digunakan pada aplikasi, maka status tersebut tidak dapat dihapus.
+</FAQBox>

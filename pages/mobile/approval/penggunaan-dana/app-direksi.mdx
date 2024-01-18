@@ -1,0 +1,174 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+
+import Image from 'next/image';
+import appdireksip1 from "@/public/image/mobile/approval/appdireksi/p1.jpg";
+import appdireksip2 from "@/public/image/mobile/approval/appdireksi/p2.jpg";
+import appdireksip3 from "@/public/image/mobile/approval/appdireksi/p3.jpg";
+import appdireksip4 from "@/public/image/mobile/approval/appdireksi/p4.jpg";
+import appdireksip5 from "@/public/image/mobile/approval/appdireksi/p5.jpg";
+
+import appdireksia0 from "@/public/image/mobile/approval/appdireksi/a0.jpg";
+import appdireksia1 from "@/public/image/mobile/approval/appdireksi/a1.jpg";
+import appdireksia2 from "@/public/image/mobile/approval/appdireksi/a2.jpg";
+import appdireksia3 from "@/public/image/mobile/approval/appdireksi/a3.jpg";
+import appdireksia4 from "@/public/image/mobile/approval/appdireksi/a4.jpg";
+import appdireksia5 from "@/public/image/mobile/approval/appdireksi/a5.jpg";
+
+
+# <span style={{ fontSize: '28px' }}> Approval Direksi </span>
+
+Approval Direksi merupakan approval tahap akhir yang akan menyatakan bahwa dana yang diajukan tersebut bisa dikeluarkan atau tidaknya oleh kasir.
+
+## <span style={{ fontSize: '24px' }}> Menampilkan Approval Direksi </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Approval
+
+<Image
+            src={appdireksip1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih menu Approval Direksi
+
+<Image
+            src={appdireksip2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Pilih Proyek
+
+<Image
+            src={appdireksip3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. Pilih jenis Approval
+
+<Image
+            src={appdireksip4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+7. Pilih Periode Transaksi
+
+<Image
+            src={appdireksip5}
+            
+            width={250}
+            height={250}
+                
+        />
+
+## <span style={{ fontSize: '24px' }}> Melakukan Approval Direksi </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Approval
+
+4. Pilih menu Approval Direksi
+
+5. Pilih Proyek
+
+6. Pilih jenis Approval
+
+7. Pilih Periode Transaksi
+
+8. Pilih baris data transaksi yang ingin di Approve
+
+<Image
+            src={appdireksia0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+9. klik icon dokumen untuk melihat dokumen pengajuan
+
+<Image
+            src={appdireksia1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+10. Pilih tombol MENYETUJUI jika pengajuan disetujui dan Pilih tombol TOLAK jika pengajuan tidak disetujui
+
+<Image
+            src={appdireksia2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+11. Masukan Username dan Password 
+
+<Image
+            src={appdireksia3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+12. Isi Keterangan Pengajuan
+
+<Image
+            src={appdireksia4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+13. Pilih tombol MENYETUJUI jika pengajuan disetujui dan Pilih tombol TOLAK jika pengajuan tidak disetujui
+
+<Image
+            src={appdireksia5}
+            
+            width={250}
+            height={250}
+                
+        />
+
+---
+## <span style={{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>
+

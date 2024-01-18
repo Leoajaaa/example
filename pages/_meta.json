@@ -1,0 +1,24 @@
+{
+    "index": {
+        "title": "Home",
+        "type": "page"
+    },
+    "contact": {
+        "title": "Hubungi Kami",
+        "type": "page",
+        "href": "https://api.whatsapp.com/send?phone=6285314322157&text=Selamat%20Datang%20",
+        "newWindow": true
+    },
+    "tentang-kami": {
+        "title": "Tentang Kami",
+        "type": "page"
+    },
+    "mobile": {
+        "title": "Mobile",
+        "type": "page"
+    },
+    "web": {
+        "title": "Web",
+        "type": "page"
+    }
+}

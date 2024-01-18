@@ -1,0 +1,222 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+
+import Image from 'next/image';
+import reservep1 from "@/public/image/mobile/marketing/reserve/p1.jpg";
+import reservep2 from "@/public/image/mobile/marketing/reserve/p2.jpg";
+import reservep3 from "@/public/image/mobile/marketing/reserve/p3.jpg";
+import reservep4 from "@/public/image/mobile/marketing/reserve/p4.jpg";
+
+
+import reservea1 from "@/public/image/mobile/marketing/reserve/a1.jpg";
+import reservea2 from "@/public/image/mobile/marketing/reserve/a2.jpg";
+import reservea3 from "@/public/image/mobile/marketing/reserve/a3.jpg";
+import reservea4 from "@/public/image/mobile/marketing/reserve/a4.jpg";
+import reservea5 from "@/public/image/mobile/marketing/reserve/a5.jpg";
+import reservea6 from "@/public/image/mobile/marketing/reserve/a6.jpg";
+import reservea8 from "@/public/image/mobile/marketing/reserve/a8.jpg";
+import reservea9 from "@/public/image/mobile/marketing/reserve/a9.jpg";
+import reservea10 from "@/public/image/mobile/marketing/reserve/a10.jpg";
+import reservea11 from "@/public/image/mobile/marketing/reserve/a11.jpg";
+
+# <span style={{ fontSize: '28px' }}>Reserve Unit </span>
+
+Menu **Reserve Unit**, berfungsi untuk memfasilitasi pencatatan reservasi yang dilakukan oleh Marketing. Reservasi dapat berfungsi untuk mem-blok unit oleh Marketing, yang diperuntukan Calon Customer bila data nomor unit dimasukan pada proses Input data Reserve.
+
+---
+
+### <span style={{ fontSize: '22px' }}> Preview Reserve Unit </span>
+
+1. Buka Aplikasi Porta Pro di Smartphone
+
+2. Setelah itu, jika user belum login maka silahkan login terlebih dahulu.
+
+3. Pilih modul Marketing
+
+<Image
+            src={reservep1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih menu Reserve Unit
+
+<Image
+            src={reservep1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Pilih Proyek
+
+<Image
+            src={reservep1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+---
+
+### <span style={{ fontSize: '22px' }}> Add Reserve Unit </span>
+
+1. Pilih modul Marketing
+
+2. Pilih menu Reserve Unit
+
+3. Klik tombol Buat Baru
+
+<Image
+            src={reservea1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+4. Pilih Proyek
+
+<Image
+            src={reservea2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+5. Klik tombol Cari Data Prosfek
+
+<Image
+            src={reservea3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. Pilih kategori
+
+<Image
+            src={reservea4}
+            
+            width={250}
+            height={250}
+                
+        />
+
+7. Lengkapi Data Reservasi
+
+<Image
+            src={reservea5}
+            
+            width={250}
+            height={250}
+                
+        />
+
+8. Isi nominal reserve
+
+<Image
+            src={reservea6}
+            
+            width={250}
+            height={250}
+                
+        />
+
+7. Klik tombol Lanjut Pembayaran
+
+8. Pilih metode Pembayaran
+
+<Image
+            src={reservea8}
+            
+            width={250}
+            height={250}
+                
+        />
+
+9. Pilih nomor rekening
+
+<Image
+            src={reservea9}
+            
+            width={250}
+            height={250}
+                
+        />
+
+10. pilih nomor rekening
+
+<Image
+            src={reservea10}
+            
+            width={250}
+            height={250}
+                
+        />
+
+11. Kirim rincian pembayaran
+
+<Image
+            src={reservea11}
+            
+            width={250}
+            height={250}
+                
+        />
+
+---
+
+### <span style={{ fontSize: '22px' }}> Update Reserve Unit </span>
+
+1. Pilih modul Marketing
+
+2. Pilih menu Reserve Unit
+
+3. Klik bari Reserve yang akan di Ubah
+
+4. Pilih Proyek
+
+5. Lengkapi Data Reservasi
+
+6. Klik tombol Lanjut Pembayaran
+
+7. Pilih metode Pembayaran
+
+8. Pilih nomor rekening
+
+9. klik tombol kirim ulang rincian Pembayaran
+
+---
+## <span style={{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah bisa melakukan reservasi tanpa memilih unit ataupun cluster ?">
+  **Ya**, anda dapat melakukan penginputan data reservasi tanpa memilih unit ataupun cluster. 
+  Hal ini tergantung pada situasi dilapangan apakah pada saat reservasi memilih unit ataupun tidak memilih unit.
+</FAQBox>
+
+<FAQBox title="Apakah bisa melakukan cetak kwitansi reservasi ?">
+  **Ya**, anda dapat melakukan cetak kwitansi dengan format file kwitansi pdf. 
+</FAQBox>
+
+
+

@@ -1,0 +1,149 @@
+import { Tab, Tabs, Steps } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pembatalana1 from "@/public/image/web/marketing/pembatalan-penjualan/a1.png";
+import pembatalana2 from "@/public/image/web/marketing/pembatalan-penjualan/a2.png";
+import pembatalane1 from "@/public/image/web/marketing/pembatalan-penjualan/e1.png";
+import pembatalane2 from "@/public/image/web/marketing/pembatalan-penjualan/e2.png";
+import pembatalanh1 from "@/public/image/web/marketing/pembatalan-penjualan/h1.png";
+import pembatalano1 from "@/public/image/web/marketing/pembatalan-penjualan/o1.png";
+import pembatalanc1 from "@/public/image/web/marketing/pembatalan-penjualan/c1.png";
+
+# Pembatalan Penjualan
+
+Menu **Pembatalan Penjualan** digunakan untuk memfasilitasi pencatatan
+pembatalan Pengikatan Perjanjian Jual Beli antara customer dengan Pengembang.
+Selain data kontrak, menu **Pembatalan Penjualan Unit** digunakan untuk
+pencatatan pembatalan booking dengan syarat pencatatan transaksi **penerimaan
+booking fee** sudah dilakukan sebelumnya.
+
+## Langkah-langkah menambah data pembatalan
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+
+    ### Isikan data di halaman tambah pembatalan penjualan.
+    1. Pilih nama **Proyek**.
+    2. Pilih **Tanggal Pembatalan**.
+        <Tabs
+            items={[
+                    "Data Penjualan",
+                    "Detail Penjualan",
+                ]}
+            >
+            <Tab>
+        <Image
+            src={pembatalana1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            3. Pilih Jenis Transaksi Penjualan (Kontrak atau Booking). **Kontrak** untuk
+            membatalkan Penjualan Unit, bila proses transaksi sudah sampai dengan
+            Kontrak Penjualan. Dan pilih **Booking**, bila pembatalan dilakukan pada
+            saat transaksi baru sampai dengan Booking.
+            4. Pilih **Nomor Reff. (Booking/Kontrak)** dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>,
+            apabila memilih kontrak maka sistem akan menampilkan UI List Kontrak AR dan apabila
+            memilih booking, maka sistem akan menampilkan UI List Booking. Klik pada kolom Nomor Unit / Booking yang dipilih.
+            </Tab>
+
+            <Tab>
+        <Image
+            src={pembatalana2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            5. Isikan prosentase atau nominal pemotongan Penjualan Unit jika ada pemotongan.
+            6. Isikan alasan pembatalan dan uraikan alasan pembatalan.
+            </Tab>
+        </Tabs>
+    ### Klik tombol **Simpan** untuk menyimpan data
+    </Steps>
+
+## Langkah-langkah merubah data pembatalan
+
+    <Steps>
+    ### Klik **Nomor Pembatalan** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data tidak bisa diubah/dihapus karena sudah terdaftar pada modul pengembalian pembatalan (Refund)" maka data tersebut tidak bisa diubah maupun dihapus`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Lakukan perubahan yang diinginkan.
+     <Tabs
+            items={[
+                    "Detail Penjualan",
+                ]}
+            >
+            <Tab>
+        <Image
+            src={pembatalane2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            1. Ubah prosentase atau nominal pemotongan Penjualan Unit jika ada pemotongan.
+            2. Ubah alasan pembatalan dan uraikan alasan pembatalan.
+            </Tab>
+        </Tabs>
+    ### Klik tombol **Update** untuk mengubah data.
+
+    </Steps>
+
+## Cara membuat surat pernyataan pembatalan pembelian
+
+    <Steps>
+    ### Klik **Nomor Pembatalan** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Klik tombol **Cetak** untuk mencetak data.
+    <Image
+            src={pembatalanc1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    </Steps>
+
+## Langkah-langkah menghapus data pembatalan
+
+    <Steps>
+    ### Klik **Nomor Pembatalan** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Tuliskan alasan untuk menghapus data, lalu klik tombol **OK**.
+    <Image
+            src={pembatalanh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    `Catatan: jika ada pesan "Maaf data pembatalan tidak bisa dihapus. Karena No Unit : xx Sudah ada kontrak penjualan pada transaksi yang lain" maka data tidak bisa dihapus`
+    </Steps>
+
+## Open Unit
+
+Fungsi menu **Open Unit** adalah untuk membuka kembali unit yang sudah
+dibatalkan pada saat menu **approval** di fungsikan. Karena apabila tidak di
+fungsikan menu approval, pada saat **pembatalan** di **simpan** secara otomatis unit
+langsung terbuka/ bisa dijual kembali.
+
+    <Steps>
+    ### **Checklist** di kolom **Open Unit**.
+    ### Klik Tombol Open Unit.
+    ### Isikan data Approval Pembatalan.
+    <Image
+            src={pembatalano1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    - Isikan **Nama User** dan **Password User**.
+    ###  Klik tombol **Approve**.
+    </Steps>

@@ -1,0 +1,123 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import Image from 'next/image';
+import React from 'react';
+
+import progresp3 from "@/public/image/mobile/proyek/progres-bangunan/p3.jpg";
+import progresp4 from "@/public/image/mobile/proyek/progres-bangunan/p4.jpg";
+import progresu0 from "@/public/image/mobile/proyek/progres-bangunan/u0.jpg";
+import progresd0 from "@/public/image/mobile/proyek/progres-bangunan/d0.jpg";
+import progresu1 from "@/public/image/mobile/proyek/progres-bangunan/u1.jpg";
+
+
+#  <span style={{ fontSize: '28px' }}>Progres Pembangunan Unit</span>
+
+<span style={{ fontSize: '18px' }}> Modul **Progres Pembangunan Unit**, berfungsi sebagai pencatatan presentase progres pembangunan unit sesuai dengan keadaan sebenarnya.
+Pada modul ini, pengguna dapat melakukan input data terkait :</span>
+
+-   Nilai presentasi progres pembangunan, berdasarkan bobot pekerjaan yang telah ditentukan sebelumnya
+-   Upload photo bukti progres fisik unit, langsung dari aplikasi
+-   Bukti photo yang diupload, akan langsung terdapat watermark lokasi saat photo tersebut diambil
+
+---
+
+## <span style={{ fontSize: '24px' }}>Preview Progres</span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}>Buka Aplikasi Porta Pro di Smartphone</span>
+
+### <span style={{ fontSize: '22px' }}>Jika user belum login maka silahkan login terlebih dahulu.</span>
+
+### <span style={{ fontSize: '22px' }}>Pilih modul Proyek</span>
+
+### <span style={{ fontSize: '22px' }}>Pilih menu Progres Bangunan</span>
+
+### <span style={{ fontSize: '22px' }}>Pilih Proyek</span>
+
+ <Image
+            src={progresp3}
+            
+            width={250}
+            height={250}
+                
+        />
+
+6. Pilih Cluster
+
+ <Image
+            src={progresp4}
+            
+            width={250}
+            height={250}
+                
+        />
+</Steps>
+## <span style={{ fontSize: '24px' }}>Update Progres</span>
+<Steps>
+### <span style={{ fontSize: '22px' }}>Pilih Cluster</span>
+
+ <Image
+            src={progresd0}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### <span style={{ fontSize: '22px' }}>Klik Update Progres Pekerjaan</span>
+
+ <Image
+            src={progresu0}
+            
+            width={250}
+            height={250}
+                
+        />
+### <span style={{ fontSize: '22px' }}>Isi Progres Pekerjaan</span>
+
+ <Image
+            src={progresu1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+        <span style={{ fontSize: '16px' }}> 
+3. Pilih No SPK
+
+4. Pilih Jenis Pekerjaan
+
+5. Masukan Persentase Pekerjaan
+
+6. Upload Gambar
+
+7. Pilih Ambil Gambar dari Galeri atau dari Kamera
+
+8. Klik Update Progres Pekerjaan
+</span>
+`Catatan: presentase pekerjaan wajib di isi dan nilai nilai presentase harus lebih besar dari presentasi progres sebelumnya.`
+
+</Steps>
+---
+## <span style={{ fontSize: '24px' }}>FAQ</span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah bisa upload gambar progres lebih dari satu gambar?">
+  **Ya**, gambar Progress bangunan dalam di upload maksimal 4 gambar dalam satu progres bangunan. Akan tetapi jika gambar progres bangunan dicek
+  pada Eces desktop gambar yang ditampilkan hanya gambar progres terakhir yang tampil.
+</FAQBox>

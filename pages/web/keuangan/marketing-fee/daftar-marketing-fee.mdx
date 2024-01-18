@@ -1,0 +1,63 @@
+import { Steps, Callout } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import daftarfeeu1 from "@/public/image/web/keuangan/marketing-fee/daftar-fee/u1.png";
+
+# Daftar Marketing Fee
+
+Menu **Daftar Marketing Fee**, digunakan untuk memfasilitasi pada saat pengisian besaran fee yang akan diberikan kepada marketing
+dari masing-masing unit yang terjual.
+
+## Edit Marketing Fee
+
+<Steps>
+
+### Pilih proyek
+1. Pilih royek (contoh : MSI land)
+2. Klik 1x tombol tampilkan
+System otomatis menampilkan data tersebut dalam bentuk tabel
+
+### Info marketing fee
+
+<Image
+            src={daftarfeeu1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. klik pada kolom nilai Fee (%) atau kolom nilai fee (nominal)
+2. isi nilai kolom nilai Fee (%) atau kolom nilai fee (nominal)
+3. isi kolom keterangan
+
+### Klik **Simpan**
+Klik tombol simpan pada bagian kanan atas tabel daftar marketing fee, untuk menyimpan daftar nilai marketing fee
+
+
+
+</Steps>
+
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah Marketing Fee Bisa Berjenjang?">
+  **Ya**, . 
+  
+</FAQBox>

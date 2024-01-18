@@ -1,0 +1,223 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import sra1 from "@/public/image/web/setting/penjualan/setting-rekening/a1.png";
+import srp1 from "@/public/image/web/setting/penjualan/setting-rekening/p1.png";
+import sre1 from "@/public/image/web/setting/penjualan/setting-rekening/e1.png";
+import sre2 from "@/public/image/web/setting/penjualan/setting-rekening/e2.png";
+import sra2 from "@/public/image/web/setting/penjualan/setting-rekening/a2.png";
+import srp2 from "@/public/image/web/setting/penjualan/setting-rekening/p2.png";
+
+# Rekening Pembayaran
+
+<div style={{ padding: "1rem" }}>
+    **Rekening Pembayaran** digunakan untuk mengisi detail informasi Rekening Pembayaran yang ada pada developer properti, Seperti : **Nama Rekening Pembayaran**, **alamat**, **rekening** serta **logo** yang digunakan oleh Rekening Pembayaran.
+</div>
+
+<Tabs items={["Rekening Pembayaran", "Group Pembayaran"]}>
+<Tab>
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+Tombol aksi **Buat Baru** terdapat pada halaman awal modul **Rekening Pembayaran**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info Rekening Pembayaran
+
+<Image
+            src={sra1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih proyek
+2. Lengkapi isian pada atribut Rekening Pembayaran, kode Rekening Pembayaran, nama Rekening Pembayaran, Keterangan.
+3. Pilih Group Pembayaran
+4. Pilih Nomor Rekening
+
+### Simpan Data
+
+Klik tombol **Simpan** untuk menyimpan data rekening pembayaran yang baru ditambahkan
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+
+
+
+
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih Rekening Pembayaran
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+Sistem akan menampilkan data Rekening Pembayaran (kode Rekening Pembayaran, nama Rekening Pembayaran, Group Pembayaran, Nomor Rekening, Keterangan.) secara otomatis pada masing-masing jenis data.
+
+<Image
+            src={sre1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+### Simpan perubahan data
+
+
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih Rekening Pembayaran
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Hapus Data
+
+1. Klik tombol **Hapus** untuk menghapus data.
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Rekening data hanya bisa dilakukan jika Rekening Pembayaran tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+</Tab>
+
+<Tab>
+
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+Tombol aksi **Buat Baru** terdapat pada halaman Rekening Pembayaran Tab **Group Pembayaran** . Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info Group Pembayaran
+
+<Image
+            src={sra2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Lengkapi isian pada atribut Group Pembayaran, Nama Group Pembayaran, Keterangan.
+2. Pilih Status konfirmasi Konsumen
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan Data
+
+1. Klik tombol **Simpan** untuk menyimpan data Group Pembayaran
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih Rekening Pembayaran
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+Sistem akan menampilkan data Rekening Pembayaran (kode Rekening Pembayaran, nama Rekening Pembayaran, Group Pembayaran, Nomor Rekening, Keterangan.) secara otomatis pada masing-masing jenis data.
+
+<Image
+            src={sre2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+### Simpan perubahan data
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih Nama group Pembayaran
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data Nama Group Pembayaran tersebut yang
+tampil di tabel.
+
+
+### Hapus Data
+
+1. Klik tombol **Hapus** untuk menghapus data.
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Group Pembayaran data hanya bisa dilakukan jika Status Group Pembayaran tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+
+</Tab>
+
+
+</Tabs>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah terdapat batasan pada penambahan Rekening Pembayaran ?">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Rekening Pembayaran. 
+  
+</FAQBox>
+
+<FAQBox title="Apakah data Rekening Pembayaran dapat dihapus ?">
+  **Iya** Rekening Pembayaran yang sudah terinput dapat dihapus dari aplikasi.
+  jika Rekening Pembayaran sudah dihapus, maka nomor Rekening Pembayaran tidak akan tampil pada transaksi Pembayaran di aplikasi Porta Pro (mobile).
+</FAQBox>

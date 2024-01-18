@@ -1,0 +1,108 @@
+import { Steps } from "nextra/components";
+
+import Image from 'next/image';
+import menu from "@/public/image/mobile/keuangan/daftar-tunggakan/0.jpg";
+import tampilkandata from "@/public/image/mobile/keuangan/daftar-tunggakan/1.jpg";
+import tampilkanbulan from "@/public/image/mobile/keuangan/daftar-tunggakan/2.jpg";
+import detailtunggakan from "@/public/image/mobile/keuangan/daftar-tunggakan/3.jpg";
+
+# DAFTAR TUNGGAKAN
+
+Menu daftar tunggakan digunakan untuk melihat daftar piutang konsumen
+
+---
+
+**Akses Menu Daftar Tunggakan**
+<table>
+  <tbody>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Buka modul **Keuangan**
+
+         2. Buka Menu **Daftar Tunggakan**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={menu}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+    **Menampilkan Daftar Tunggakan**
+
+    _Daftar Tunggakan yang ditampilkan adalah **pertahun**_
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Pilih data **Proyek**
+
+         2. Aktifkan fitur **tampilkan tagihan ke bank(KPR/KPA)**
+         ```
+         Setelah diaktifkan data tagihan akan terakumulasi tagihan ke 
+         bank (KPR/KPA)
+         ```
+         3. Tekan baris **tahun** Untuk menampilkan data **tunggakan perbulan**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={tampilkandata}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+
+**Menampilkan Daftar Tunggakan perbulan**
+
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         4. Tampilan data **tunggakan perbulan**
+        ```
+        Bulan yang tampil hanya bulan yang terdapat tunggakan saja
+        ```
+         5. Tekan baris **bulan** Untuk menampilkan **detail tunggakan**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={tampilkanbulan}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+
+**Menampilkan Detail Tunggakan**
+
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         6. Tampilan data **detail tunggakan**
+        ```
+        Detail tunggakan yang ditampilkan yaitu cluster, tipe, nomor unit,
+        nama konsumen, dan total tunggakan
+        ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={detailtunggakan}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+  </tbody>
+</table>

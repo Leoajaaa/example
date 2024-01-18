@@ -1,0 +1,105 @@
+import { Steps, Callout } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pinbuka1 from "@/public/image/web/keuangan/pembukuan/pemindahbukuan/a1.png";
+import pinbuke1 from "@/public/image/web/keuangan/pembukuan/pemindahbukuan/e1.png";
+import pinbukh1 from "@/public/image/web/keuangan/pembukuan/pemindahbukuan/h1.png";
+
+# Pindah Buku
+
+Menu **Pindah Buku**, berfungsi untuk memfasilitasi perpindahan sejumlah uang dari/ke Kas - Setara Kas, (Kas ke Kas atau Kas ke Bank 
+atau Bank ke Bank). Transaksi ini hanya berlaku untuk Rekening/Kas Proyek yang sama.
+
+## Input Data Pindah Buku
+
+<Steps>
+### Klik buat baru
+Tombol aksi buat baru terdapat pada halaman awal modul Pindah.
+<Image
+            src={pinbuka1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+1. Pilih proyek
+2. Lengkapi isian pada atribut tanggal bukti, nomor bukti, tanggal referensi, nomor
+referensi, nominal, metode pembayaran, referensi : no cek/giro/edc,
+3. rekening asal menggunakan icon cari
+system akan menampilkan popup list Rekening,bank asal akan otomatis terisi Ketika
+memilih rekening asal
+4. nomot bukti keluar akan otomastis terisi Ketika sudah memilih rekening asal dan
+bank asal
+5. rekening tujuan bisa ngenggunakan icon cari,
+system akan menampilakn popup List Rekening, Bak tujuan akan otomatis terisi
+Ketika sudah memilih rekening tujuan.
+6. Nomor bukti terima
+Akan otomatis terisi Ketika sudah memilih Rekening asal,bank asal, rekening tujuan,
+dan bank tujuan
+7. Klik tombol simpan untuk menyimpan data
+System akan menampilkan popup data berhasil tersimpan klik selesai untuk selesai
+</Steps>
+
+## Edit Data Pindah Buku
+
+<Steps>
+### Pilih proyek
+Tentukan data yang akan diedit, kemudian klik 1x pada data nomor bukti
+
+### Isi perubahan
+<Image
+            src={pinbuke1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+System akan menampilkan data Pindah Buku &gt; Ubah data (pilihproyek, tanggal bukti,
+nomor bukti, tanggal referensi, nomor referensi, nominal,metode transfer, referensi :
+no cek/giro/edc,rekening asal,bank asal,rekening tujuan, bank tujuan) secara otomatis
+pada masing-masing jenis data.
+
+### Simpan perubahan Data.
+</Steps>
+
+## Hapus Data Pindah Buku
+
+<Steps>
+### Pilih proyek
+Tentukan data yang akan dihapus, kemudian klik 1x pada data tersebut yang tampil
+ditabel.
+<Image
+            src={pinbukh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+1. Tekan tombol “Hapus”, untuk menghapus data.
+2. Klik “Hapus” untuk menghapus data, klik “Batal” untuk membatalkan penghapusan
+data
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Approval Konfirmasi Reserve / Booking. 
+  
+</FAQBox>

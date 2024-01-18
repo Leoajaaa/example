@@ -1,0 +1,67 @@
+import { Cards, Card } from "nextra/components";
+import Image from "next/image";
+import webDashboard from "@/public/image/web-dashboard.png";
+import mobileDashboard from "@/public/image/mobile-dashboard.jpg";
+
+# PortaPro
+
+**PortaPro** merupakan versi lanjutan dari aplikasi yang telah kami kembangkan sebelumnya, yaitu **ECes.Q**.
+Portapro tersedia pada platform **Web** dan **Mobile**,
+hadir untuk dapat memenuhi kebutuhan para pengembang properti dalam kegiatan pengelolaan proyek
+secara lebih dinamis, efektif, interaktif serta penyajian tampilan yang lebih mudah digunakan.
+
+Pelajari lebih lanjut :
+
+<Cards num={2}>
+    <Card image arrow title="Web App" href="/web/introduction">
+        <Image
+            src={webDashboard}
+            alt="Dashboard Web"
+            width={500}
+            height={500}
+            priority        
+        />
+    </Card>
+
+    <Card image arrow title="Mobile App" href="/mobile/introduction">
+        <Image
+            src={mobileDashboard}
+            alt="Dashboard Mobile"
+            width={500}
+            height={500}
+            priority
+        />
+    </Card>
+
+</Cards>
+
+## PortaPro FAQ
+
+Kumpulan beberapa pertanyaan yang sering diajukan, jika anda memiliki pertanyaan yang belum terjawab. Silahkan hubungi
+[Customer Support](https://api.whatsapp.com/send?phone=6281322636662&text=Selamat%20Datang%20) Kami
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            open
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-lg">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Dapatkah saya beralih dari ECes.Q ke PortaPro ?">
+    **Ya**, jika anda sudah menggunakan aplikasi ECes.Q. maka anda dapat beralih
+    ke aplikasi portapro. Namun tentunya ada beberapa hal yang perlu kami
+    sesuaikan terkait data yang sudah anda gunakan pada aplikasi ECes.Q. Untuk
+    lebih lanjut, bisa anda konsultasikan dengan tim support kami.
+</FAQBox>
+
+<FAQBox title="Apakah akun login yang digunakan pada PortaPro, sama dengan akun login ECes.Q ?">
+    **Ya**, jika anda beralih dari ECes.Q ke PortaPro, maka akun yang digunakan
+    akan tetap sama dengan akun pada ECes.Q
+</FAQBox>

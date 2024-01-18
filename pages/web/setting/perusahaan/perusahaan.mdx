@@ -1,0 +1,134 @@
+import Image from "next/image";
+import { Steps } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import perusahaana1 from "@/public/image/web/setting/perusahaan/a1.png";
+
+# Perusahaan
+
+<div style={{ padding: "1rem" }}>
+    **Perusahaan** digunakan untuk mengisi detail informasi perusahaan yang ada pada developer properti, Seperti : **Nama perusahaan**, **alamat**, **rekening** serta **logo** yang digunakan oleh perusahaan.
+</div>
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+Tombol aksi **Buat Baru** terdapat pada halaman awal modul **Perusahaan**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Info perusahaan
+
+1. Lengkapi isian pada atribut perusahaan, kode perusahaan, nama perusahaan, kota, provinsi, alamat, no. telp, email, Website, NPWP
+2. Lengkapi isian pada atribut perusahaan, contact person, email, alamat, kode, no. telp, dan kota.
+3. Pilih salah satu jenis perusahaan (Holding atau Cabang).
+4. Pilih status perusahaan (Aktif atau Non Aktif)
+5. Pilih tanggal pengukuhan
+6. Klik tombol **Simpan** untuk menyimpan data.
+
+<Image
+            src={perusahaana1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Rekening perusahaan
+
+**opsional jika data perusahaan memiliki nomor rekening**
+
+1. Pilih nama bank, dengan cara klik tombol  sistem akan menampilkan UI list rekening.
+2. Isi pada text box nomor rekening.
+3. Isi pada text box atas nama rekening.
+4. Klik tombol **Simpan** untuk menyimpan data.
+
+
+
+### Upload Logo
+
+Drag file atau klik **Unggah Gambar**, untuk memulai upload logo perusahaan
+
+
+<Callout type="warning" emoji="⚠️">
+    `Ekstensi file yang diijinkan untuk diupload : JPG/JPEG/PNG dan ukuran file tidak boleh lebih
+    dari 2MB`
+</Callout>
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih perusahaan
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+Sistem akan menampilkan data perusahaan (kode perusahaan, nama perusahaan, kota, provinsi, alamat, no. telp, email, Website, NPWP
+jenis perusahaan, status perusahaan, tanggal pengukuhan dan berkas hasil upload logo perusahaan) secara otomatis pada masing-masing
+jenis data.
+
+
+
+### Simpan perubahan data
+
+
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### Pilih perusahaan
+
+Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Non aktifkan perusahaan
+
+1. Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang tampil di tabel.
+2. Sistem akan menampilkan data perusahaan, pilih status menjadi non aktif
+3. Klik tombol **Simpan** untuk menyimpan data.
+
+
+
+<Callout type="error" emoji="️🚫">
+  `Penonaktifan perusahaan data hanya bisa dilakukan jika perusahaan tersebut belum terhubung ke data pada modul lain, seperti : stok unit perusahaan, penjualan serta modul-modul lainnya`
+</Callout>
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            open
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah data perusahaan dapat dihapus ?">
+  **Tidak** Perusahaan yang sudah terdaftar dan sudah digunkan/terhubung ke data lain, maka data perusahaan tersebut tidak dapat dihapus dari aplikasi.
+</FAQBox>

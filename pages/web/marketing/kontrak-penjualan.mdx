@@ -1,0 +1,290 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import kontrake1 from "@/public/image/web/marketing/kontrak/e1.png";
+import kontrake2 from "@/public/image/web/marketing/kontrak/e2.png";
+import kontrake3 from "@/public/image/web/marketing/kontrak/e3.png";
+import kontrake4 from "@/public/image/web/marketing/kontrak/e4.png";
+import kontrake5 from "@/public/image/web/marketing/kontrak/e5.png";
+import kontrake6 from "@/public/image/web/marketing/kontrak/e6.png";
+
+import kontrakh1 from "@/public/image/web/marketing/kontrak/h1.png";
+
+# Kontrak
+
+Menu **Kontrak Penjualan**, digunakan untuk memfasilitasi pencatatan
+Pengikatan Perjanjian Jual Beli antara customer dengan pengembang
+(Developer) istilah lain yang dikenal yaitu **PPJB**.
+
+## Langkah-langkah menambahkan kontrak
+
+    <Steps>
+        ### Klik tombol **Buat Baru**.
+        ### Isikan data di halaman tambah data.
+        1. Pilih nama **Proyek**.
+
+        `Catatan: Apabila ada data dari booking, maka klik tombol "Load Booking", data
+        yang telah booking akan di pindahkan ke menu Kontrak secara
+        otomatis dengan mengklik kolom "NO. BOOKING	" di tabel, apabila tidak, maka input Baru. `
+
+        2. Pilih Tanggal Kontrak dan nomor booking dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list booking yang tersedia
+
+        3. Isikan No. Reff/Memo dan virtual Account.
+
+        <Tabs
+            items={[
+                "Data Konsumen",
+                "Penjualan",
+                "Jadwal Bayar",
+                "Uang Titipan",
+                "Dokumen Konsumen",
+                "Hadiah",
+            ]}
+        >
+
+            <Tab>
+            ![kontrak Tab data konsumen](@/public/image/web/marketing/kontrak/a1.png)
+            4. Pilih nama konsumen dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list konsumen yang tersedia,
+            lalu klik **nama** pada kolom.
+            5. Isikan input text **Nomor Identitas (KTP,SIM,Passport dsb), Nomor Telp/HP, NPWP dan Email**.
+            6. Pilih **profesi**.
+            7. Isikan input text **Deskripsi Profesi, Alamat Sesuai Identitas dan Alamat Surat Menyurat**.
+            8. Pilih **nama marketing** dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list marketing yang tersedia,
+            lalu klik **nama** pada kolom.
+            9. Pilih **koordinator marketing** dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list marketing yang tersedia,
+            lalu klik **nama** pada kolom.
+            </Tab>
+
+            <Tab>
+            ![kontrak Tab Penjualan](@/public/image/web/marketing/kontrak/a2.png)
+            10. Pilih **no. unit** dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list unit yang tersedia,
+            lalu klik **no. unit** pada kolom.
+            11. Pilih **cara pembayaran**.
+            12. Isikan harga
+                - Harga jual standar
+                - Harga Lebih Luas (opsional)
+                - Biaya Tinggi Lantai (opsional)
+                - Biaya View/Strategis  (opsional)
+                - Tambahan Mutu  (opsional)
+                - Diskon (opsional)
+                - PPN (opsional)
+                - Potongan / Biaya Lainnya (opsional)
+            13. Isikan nominal
+                - Uang muka dengan cara mengisi **Persen Uang Muka** atau mengisi **Nilai Uang Muka**
+                - Diskon Uang Muka
+
+            `Catatan: Diskon uang muka tidak boleh melebihi total harga UANGMUKA-BOOKING FEE Diskon uang muka tidak boleh melebihi total harga `
+
+            14. Pilih **Status Booking Fee**
+            15. Isi Nilai Uang Booking Fee. Nilai
+                Uang Booking Fee yang dimasukan adalah nilai booking seluruhnya tanpa
+                dikurangi uang yang pernah dibayarkan saat reservasi.
+
+                `Catatan: jika ada pesan "Maaf jika booking fee termasuk harga jual, nilai booking fee tidak boleh melebihi uang muka"
+                maka nilai booking fee tersebut termasuk kedalam harga jual sehingga nilai booking fee dikosongkan.`
+            </Tab>
+
+            <Tab>
+            ![kontrak Tab Jadwal Bayar](@/public/image/web/marketing/kontrak/a3.png)
+            16. Isi **Termin Uang Muka** (jumlah cicilan uang muka yang akan dibayar)
+            (contoh: isi angka **3** , bila uang muka akan dibayar tiga kali angsuran)
+            17. Isi **Termin Kredit/Angsuran**. Untuk termin opsi Platfond Kredit, diisi dengan angka **1**.
+            18. Klik tombol **Generate**, sistem akan melakukan perhitungan jadwal
+            rencana pembayaran beserta jumlah nominal yang harus dibayarkan
+            customer untuk setiap terminnya.
+            Jenis termin, tanggal jatuh tempo,persen, nominal, ppn dan jumlah nilai angsuran hasil **generate** dapat
+            diubah sesuai kebutuhan dengan cara merubah secara manual pada tabel
+            pembayaran dikolom **Jumlah**.
+            ![booking Tab Jadwal Bayar](@/public/image/web/marketing/booking/booking3.png)
+            </Tab>
+
+            <Tab>
+            19. Jika terdapat **Nilai Titipan Diluar Harga Jual** yang akan ditagihkan/ diberikan ke konsumen, lakukan langkah sebagai berikut:
+            - Klik tombol pada icon **+**.
+            - Isi uang titipan yang ada di tabel tersedia (jenis,jatuh tempo,nilai, keterangan), klik masing-masing pada kolom di tabel.
+            ![kontrak Tab uang titipan](@/public/image/web/marketing/kontrak/a4.png)
+            </Tab>
+
+            <Tab>
+            20. Pada Tab **Kelengkapan Dokumen persyaratan** kelengkapan isi dan
+            sesuaikan dengan dokumen fisik yang dibawa customer dengan cara menchecklist pada tabel dokumen. Lihat gambar UI kelengkapan dokumen
+            seperti gambar dibawah ini:
+            ![Kontrak Tab Kelengkapan Dokumen persyaratan](@/public/image/web/marketing/kontrak/a5.png)
+            </Tab>
+
+            <Tab>
+            21. Pilih tab Hadiah. Jika Booking unit tersebut terdapat promo hadiah. Isi Quantity dan berikan tanda ceklist pada tabel hadiah seperti berikut:
+            ![kontrak Tab Hadiah](@/public/image/web/marketing/kontrak/a6.png)
+            </Tab>
+        </Tabs>
+        ### Klik tombol **Simpan** untuk menyimpan data
+    </Steps>
+---
+
+
+## Langkah-langkah mengubah kontrak
+
+    <Steps>
+       ### Klik nomor kontrak
+        Tentukan data yang akan diedit, kemudian klik 1x pada data tabel kolom **Nomor Kontrak** 
+        ### Isikan perubahan data.
+        1. Pilih nama **Proyek**.
+
+        `Catatan: Apabila ada data dari booking, maka klik tombol "Load Booking", data
+        yang telah booking akan di pindahkan ke menu Kontrak secara
+        otomatis dengan mengklik kolom "NO. BOOKING	" di tabel, apabila tidak, maka input Baru. `
+
+        2. Pilih Tanggal Kontrak dan nomor booking dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list booking yang tersedia
+
+        3. Isikan No. Reff/Memo dan virtual Account.
+
+        <Tabs
+            items={[
+                "Data Konsumen",
+                "Penjualan",
+                "Jadwal Bayar",
+                "Uang Titipan",
+                "Dokumen Konsumen",
+                "Hadiah",
+            ]}
+        >
+
+            <Tab>
+        <Image
+            src={kontrake1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            4. Pilih nama konsumen dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list konsumen yang tersedia,
+            lalu klik **nama** pada kolom.
+            5. Isikan input text **Nomor Identitas (KTP,SIM,Passport dsb), Nomor Telp/HP, NPWP dan Email**.
+            6. Pilih **profesi**.
+            7. Isikan input text **Deskripsi Profesi, Alamat Sesuai Identitas dan Alamat Surat Menyurat**.
+            8. Pilih **nama marketing** dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list marketing yang tersedia,
+            lalu klik **nama** pada kolom.
+            9. Pilih **koordinator marketing** dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list marketing yang tersedia,
+            lalu klik **nama** pada kolom.
+            </Tab>
+
+            <Tab>
+        <Image
+            src={kontrake2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            10. Pilih **no. unit** dengan klik <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/> maka akan muncul list unit yang tersedia,
+            lalu klik **no. unit** pada kolom.
+            11. Pilih **cara pembayaran**.
+            12. Isikan harga
+                - Harga jual standar
+                - Harga Lebih Luas (opsional)
+                - Biaya Tinggi Lantai (opsional)
+                - Biaya View/Strategis  (opsional)
+                - Tambahan Mutu  (opsional)
+                - Diskon (opsional)
+                - PPN (opsional)
+                - Potongan / Biaya Lainnya (opsional)
+            13. Isikan nominal
+                - Uang muka dengan cara mengisi **Persen Uang Muka** atau mengisi **Nilai Uang Muka**
+                - Diskon Uang Muka
+
+            `Catatan: Diskon uang muka tidak boleh melebihi total harga UANGMUKA-BOOKING FEE Diskon uang muka tidak boleh melebihi total harga `
+
+            14. Pilih **Status Booking Fee**
+            15. Isi Nilai Uang Booking Fee. Nilai
+                Uang Booking Fee yang dimasukan adalah nilai booking seluruhnya tanpa
+                dikurangi uang yang pernah dibayarkan saat reservasi.
+
+                `Catatan: jika ada pesan "Maaf jika booking fee termasuk harga jual, nilai booking fee tidak boleh melebihi uang muka"
+                maka nilai booking fee tersebut termasuk kedalam harga jual sehingga nilai booking fee dikosongkan.`
+            </Tab>
+
+            <Tab>
+        <Image
+            src={kontrake3}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            16. Isi **Termin Uang Muka** (jumlah cicilan uang muka yang akan dibayar)
+            (contoh: isi angka **3** , bila uang muka akan dibayar tiga kali angsuran)
+            17. Isi **Termin Kredit/Angsuran**. Untuk termin opsi Platfond Kredit, diisi dengan angka **1**.
+            18. Klik tombol **Generate**, sistem akan melakukan perhitungan jadwal
+            rencana pembayaran beserta jumlah nominal yang harus dibayarkan
+            customer untuk setiap terminnya.
+            Jenis termin, tanggal jatuh tempo,persen, nominal, ppn dan jumlah nilai angsuran hasil **generate** dapat
+            diubah sesuai kebutuhan dengan cara merubah secara manual pada tabel
+            pembayaran dikolom **Jumlah**.
+            
+            </Tab>
+
+            <Tab>
+        <Image
+            src={kontrake4}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            19. Jika terdapat **Nilai Titipan Diluar Harga Jual** yang akan ditagihkan/ diberikan ke konsumen, lakukan langkah sebagai berikut:
+            - Klik tombol pada icon **+**.
+            - Isi uang titipan yang ada di tabel tersedia (jenis,jatuh tempo,nilai, keterangan), klik masing-masing pada kolom di tabel.
+            
+            </Tab>
+
+            <Tab>
+        <Image
+            src={kontrake5}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            20. Pada Tab **Kelengkapan Dokumen persyaratan** kelengkapan isi dan
+            sesuaikan dengan dokumen fisik yang dibawa customer dengan cara menchecklist pada tabel dokumen. Lihat gambar UI kelengkapan dokumen
+            seperti gambar dibawah ini:
+            
+            </Tab>
+
+            <Tab>
+        <Image
+            src={kontrake6}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            21. Pilih tab Hadiah. Jika Booking unit tersebut terdapat promo hadiah. Isi Quantity dan berikan tanda ceklist pada tabel hadiah seperti berikut:
+            
+            </Tab>
+        </Tabs>
+        ### Klik tombol **Update** untuk menyimpan data
+    </Steps>
+---
+
+## Hapus Kontrak
+
+<Steps>
+### Klik Nomor Kontrak
+Tentukan data yang akan dihapus, kemudian klik 1x pada data tabel 
+kolom Nomor Kontrak tersebut yang tampil ditabel.
+
+<Image
+            src={kontrakh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Tekan tombol **Hapus**, untuk menghapus data.
+2. Klik **Oke** untuk menghapus data, klik **Cancel** untuk membatalkan penghapusan
+data
+
+</Steps>

@@ -1,0 +1,53 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import backupp1 from "@/public/image/web/setting/tools/backup-database/p1.png";
+import backupp2 from "@/public/image/web/setting/tools/backup-database/p2.png";
+
+# Backup Database
+
+## Create Backup Database 
+
+<Steps>
+
+### klik tombol **Backup Database**
+
+klik tombol Backup Database kemudian akan tampil popup loading progress Backup Database
+
+<Image
+            src={backupp2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+
+</Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah file backup database bisa dihapus ?">
+  **Ya**, file backup database dapat dihapus. 
+  
+</FAQBox>

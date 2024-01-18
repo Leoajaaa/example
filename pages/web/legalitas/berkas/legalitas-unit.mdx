@@ -1,0 +1,45 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+
+# Legalitas Unit
+
+Menu **Legalitas Unit**, digunakan untuk mencatat proses pengajuan
+legalitas proyek, mulai dari tanggal diajukannya dan keterangan berkas-berkas
+pendukung terkait pengajuan perijinan tersebut.
+
+<Tabs items={["Rekap", "Detail Berkas"]}>
+    <Tab>
+    ## Cara menampilkan hasil rekap legalitas unit
+        <Steps>
+        ### Pilih nama **Proyek**.
+        ### Klik tombol **Tampilkan**.
+        ![tampil legalitas unit](@/public/image/web/legalitas/berkas/legalitas-unit/legalitas_unit1.png)
+
+        </Steps>
+
+    </Tab>
+
+    <Tab>
+    ## Cara menampilkan hasil detail berkas
+        <Steps>
+        ### Klik kolom berkas yang ada di tabel **rekap**.
+        ### Tab detail berkas akan muncul sesuai yang dipilih.
+        ![tampil legalitas unit](@/public/image/web/legalitas/berkas/legalitas-unit/legalitas_unit2.png)
+        </Steps>
+
+    ## Langkah-langkah mengubah detail berkas
+        <Steps>
+        ### Checklist kolom **Check** yang ada di tabel.
+        Tabel akan membuka kolom tanggal pengajuan, tanggal selesai, nomor dokumen, nilai dan keterangan
+
+        ### Lakukan perubahan yang diinginkan.
+        1. Pilih tanggal pengajuan dan tanggal selesai.
+        2. Ubah nomor dokumen, nilai dan keterangan.
+        3. Upload Berkas file, jika berhasil tanda akan tercentang hijau jika berhasil dan Anda bisa melihat hasilnya di kolom **Berkas**.
+
+        `Catatan: Format upload harus JPG/JPEG/PNG dan ukuran upload tidak lebih dari 2MB.`
+
+        ### Klik tombol **Simpan** untuk mengubah data
+        </Steps>
+    </Tab>
+
+</Tabs>

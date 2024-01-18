@@ -1,0 +1,279 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import notifa1 from "@/public/image/web/setting/tools/notifikasi/a1.png";
+import notifa2 from "@/public/image/web/setting/tools/notifikasi/a2.png";
+
+import notifp1 from "@/public/image/web/setting/tools/notifikasi/p1.png";
+import notifp2 from "@/public/image/web/setting/tools/notifikasi/p2.png";
+import notifp3 from "@/public/image/web/setting/tools/notifikasi/p3.png";
+
+import notife1 from "@/public/image/web/setting/tools/notifikasi/e1.png";
+import notife2 from "@/public/image/web/setting/tools/notifikasi/e2.png";
+
+import notifupa1 from "@/public/image/web/setting/tools/notifikasi/upa1.png";
+import notifupe1 from "@/public/image/web/setting/tools/notifikasi/upe1.png";
+
+# Notifikasi
+
+<div style={{ padding: "1rem" }}>
+    **Notifikasi** digunakan untuk mengisi detail informasi Notifikasi yang ada pada developer properti, Seperti : **Nama Notifikasi**, **alamat**, **rekening** serta **logo** yang digunakan oleh Notifikasi.
+</div>
+
+<Tabs items={["Jenis Notifikasi", "Template", "User Penerima"]}>
+<Tab>
+## Update Notifikasi
+
+<Steps>
+### Klik nama **Notif**
+Klik baris data **Nama Notif** pada jenis notif yang akan diupdate, yang tampil di tabel.
+
+{/* <Bleed> */}
+<Image
+            src={notifa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+{/* </Bleed> */}
+
+### info jenis notifikasi
+
+<Image
+            src={notife1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih Status
+2. Klik tombol update, kemudian OK
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+
+
+
+
+
+</Steps>
+
+</Tab>
+
+<Tab>
+
+## Tambah Data
+
+<Steps>
+
+### Klik tombol **Buat Baru**
+
+<Image
+            src={notifp2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+### isi data template 
+
+<Image
+            src={notifa2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih proyek
+2. Pilih jenis notifikasi
+3. lengkapi isian pada atribut (judul notifikasi, teks)
+
+
+<Callout type="info" emoji="ℹ️">
+    `Tanda (*) pada atribut isian, menandakan bahwa isian tersebut wajib diisi/tidak boleh kosong`
+</Callout>
+
+### Simpan Data
+
+1. Klik tombol **Simpan** untuk menyimpan data template baru
+
+</Steps>
+
+## Edit Data
+
+<Steps>
+
+### Pilih User Role
+
+Tentukan data yang akan diedit, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Isi perubahan data
+
+Sistem akan menampilkan data template notifikasi (Proyek, Jenis Notifikasi, Judul Notifikasi, Teks) secara otomatis pada masing-masing
+jenis data.
+
+<Image
+            src={notife2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Pilih data Proyek
+2. Pilih Jenis Notifikasi
+3. Lengkapi isian pada atribut Judul Notifikasi
+4. Lengkapi isian pada atribut Teks
+5. Klik tombol **Update** untuk menyimpan data.
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### klik tampilkan
+
+1. Tentukan data yang akan dihapus, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Info data Template Notifikasi
+
+<Image
+            src={notife2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+2. Sistem akan menampilkan halaman pop up Edit Data Template Notifikasi
+3. Klik tombol **Hapus** untuk menghapus data.
+
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Template Notifikasi hanya bisa dilakukan jika data tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+
+</Tab>
+
+<Tab>
+## Tambah Data
+
+<Steps>
+### Klik **Buat Baru**
+
+### info user penerima notifikasi
+
+<Image
+            src={notifupa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. pilih user
+2. pilih jenis notifikasi
+3. checklist proyek
+
+</Steps>
+
+## Edit Data
+<Steps>
+
+### pilih jenis notifikasi
+
+1. klik tombol Tampilkan
+2. Tentukan data yang akan diedit, kemudian Klik 1x pada data nama user yang
+tampil di tabel.
+
+### isi perubahan data user notifikasi
+
+<Image
+            src={notifupe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. ceklist daftar proyek yang ingin diberikan akses notifikasi kepada user yang dipilih
+
+</Steps>
+
+## Hapus Data
+
+<Steps>
+
+### klik tampilkan
+
+1. Tentukan data user yang akan dihapus akses notifikasinya, kemudian Klik 1x pada nama user tersebut yang
+tampil di tabel.
+
+
+### Info data Template Notifikasi
+
+<Image
+            src={notifupe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+2. Sistem akan menampilkan halaman pop up Edit Data User Notifikasi
+3. Klik tombol **Hapus** untuk menghapus data.
+
+
+
+<Callout type="error" emoji="️🚫">
+  `Penghapusan Template Notifikasi hanya bisa dilakukan jika data tersebut belum terhubung ke data pada modul lain`
+</Callout>
+
+</Steps>
+
+
+
+</Tab>
+
+
+</Tabs>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Notifikasi. 
+  
+</FAQBox>
+
+

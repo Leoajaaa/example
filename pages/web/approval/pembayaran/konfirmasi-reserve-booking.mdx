@@ -1,0 +1,328 @@
+import Image from "next/image";
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import aprk1 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/rk1.png";
+import aprk2 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/rk2.png";
+import apcrk1 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/crk1.png";
+import apcrk2 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/crk2.png";
+import apbrk1 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/brk1.png";
+import apbrk2 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/brk2.png";
+
+import apbk1 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/bk1.png";
+import apbk2 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/bk2.png";
+import apcbk1 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/cbk1.png";
+import apcbk2 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/cbk2.png";
+import apbbk1 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/bbk1.png";
+import apbbk2 from "@/public/image/web/approval/pembayaran/konfirmasi-rb/bbk2.png";
+
+# Approval Konfirmasi Reserve / Booking
+
+<div style={{ padding: "1rem" }}>
+    **Approval Konfirmasi Reserve / Booking** digunakan untuk melakukan Approval Pembayaran Konfirmasi Reserve / Booking yang telah dilakukan oleh Konsumen.
+</div>
+
+<Tabs items={["Belum Approval", "Approve", "Batal"]}>
+<Tab>
+## Konfirmasi Reservasi
+
+<Steps>
+### Klik **Belum Approval**
+Tombol aksi **Belum Approval** terdapat pada halaman awal modul **Approval Konfirmasi Reserve / Booking**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Pilih **Proyek**
+
+### Pilih Jenis Pembayaran
+
+<Image
+            src={aprk1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Klik Tampilkan
+2. Tentukan data yang akan dilakukan Konfirmasi pembayaran reserve, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Klik Tombol Menyetujui
+
+<Image
+            src={aprk2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Klik tombol **Menyetujui** untuk mengkonfirmasi data nilai pembayaran reserve yang telah dikonfirmasi konsumen
+2. Klik ya untuk mengkonfirmasi pembayaran reserve
+
+<Callout type="info" emoji="ℹ️">
+    `Konfirmasi Pembayaran Reserve Hanya bisa dilakukan jika Konsumen sudah melakukan Konfirmasi Pembayaran`
+</Callout>
+
+
+</Steps>
+
+
+</Tab>
+
+<Tab>
+## Bukti Pembayaran Reserve
+
+<Steps>
+### Klik **Approve**
+Tombol aksi **Approve** terdapat pada halaman awal modul **Approval Konfirmasi Reserve / Booking**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Pilih **Proyek**
+
+### Pilih Jenis Pembayaran
+
+<Image
+            src={apcrk1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Klik Tampilkan
+2. Tentukan data yang akan dilakukan Konfirmasi pembayaran reserve, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+### Klik Tombol Menyetujui
+<Image
+            src={apcrk2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+1. Klik tombol **Kirim Kuitansi Pembayaran** untuk mengirimkan Kuitansi pembayaran reserve yang telah dikonfirmasi
+2. Klik tombol **Kirim Bukti Pembayaran** untuk mengirimkan bukti pembayaran reserve yang telah dikonfirmasi
+
+<Callout type="info" emoji="ℹ️">
+    `Konfirmasi Pembayaran Reserve Hanya bisa dilakukan jika Konsumen sudah melakukan Konfirmasi Pembayaran`
+</Callout>
+
+</Steps>
+
+</Tab>
+
+<Tab>
+## Detail Batal Approve
+
+<Steps>
+
+### Pilih **Proyek**
+
+### Pilih Jenis Pembayaran
+
+### Pilih Approval Konfirmasi Reserve / Booking
+
+1. Tentukan data yang akan ditampilkan detail konfirmasi pembayaran reserve, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+<Image
+            src={apbrk1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+2. Sistem akan menampilkan data Approval Konfirmasi Pembayaran Reservasi (Data Unit, Data Pembayaran, Data Penerimaan Pembayaran.) dalam bentuk halaman pop up.
+
+<Image
+            src={apbrk2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+</Steps>
+
+</Tab>
+
+
+</Tabs>
+
+
+
+
+
+
+# Konfirmasi Booking
+
+<Tabs items={["Belum Approval", "Approve", "Batal"]}>
+<Tab>
+## Konfirmasi Booking
+
+<Steps>
+### Klik **Belum Approval**
+Tombol aksi **Belum Approval** terdapat pada halaman awal modul **Approval Konfirmasi Reserve / Booking**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Pilih **Proyek**
+
+### Pilih Jenis Pembayaran
+
+<Image
+            src={apbk1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Klik Tampilkan
+2. Tentukan data yang akan dilakukan Konfirmasi pembayaran booking, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+
+### Klik Tombol Menyetujui
+
+<Image
+            src={apbk2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Klik tombol **Menyetujui** untuk mengkonfirmasi data nilai pembayaran booking yang telah dikonfirmasi konsumen
+2. Klik ya untuk mengkonfirmasi pembayaran booking
+
+<Callout type="info" emoji="ℹ️">
+    `Konfirmasi Pembayaran booking Hanya bisa dilakukan jika Konsumen sudah melakukan Konfirmasi Pembayaran`
+</Callout>
+
+
+</Steps>
+
+
+</Tab>
+
+<Tab>
+## Bukti Pembayaran booking
+
+<Steps>
+### Klik **Approve**
+Tombol aksi **Approve** terdapat pada halaman awal modul **Approval Konfirmasi booking / Booking**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Pilih **Proyek**
+
+### Pilih Jenis Pembayaran
+
+<Image
+            src={apcbk1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+1. Klik Tampilkan
+2. Tentukan data yang akan dilakukan Konfirmasi pembayaran booking, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+
+### Klik Tombol Menyetujui
+<Image
+            src={apcbk2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+1. Klik tombol **Kirim Kuitansi Pembayaran** untuk mengirimkan Kuitansi pembayaran booking yang telah dikonfirmasi
+2. Klik tombol **Kirim Bukti Pembayaran** untuk mengirimkan bukti pembayaran booking yang telah dikonfirmasi
+
+<Callout type="info" emoji="ℹ️">
+    `Konfirmasi Pembayaran booking Hanya bisa dilakukan jika Konsumen sudah melakukan Konfirmasi Pembayaran`
+</Callout>
+
+</Steps>
+
+</Tab>
+
+<Tab>
+## Detail Batal Approve
+
+<Steps>
+
+### Pilih **Proyek**
+
+### Pilih Jenis Pembayaran
+
+### Pilih Approval Konfirmasi booking / Booking
+
+1. Tentukan data yang akan ditampilkan detail konfirmasi pembayaran booking, kemudian Klik 1x pada data tersebut yang
+tampil di tabel.
+<Image
+            src={apbbk1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+2. Sistem akan menampilkan data Approval Konfirmasi Pembayaran Reservasi (Data Unit, Data Pembayaran, Data Penerimaan Pembayaran.) dalam bentuk halaman pop up.
+
+<Image
+            src={apbbk2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+</Steps>
+
+
+</Tab>
+
+
+</Tabs>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Approval Konfirmasi Reserve / Booking. 
+  
+</FAQBox>
+
+

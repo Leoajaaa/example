@@ -1,0 +1,66 @@
+import { Steps } from "nextra/components";
+import Image from "next/image";
+import search from "@/public/icon/icon_search.png";
+
+# Supplier
+
+Menu **Supplier** digunakan untuk identifikasi Kontraktor/Supplier/Vendor.
+
+## Cara menampilkan data
+
+<Steps>
+
+### Pilih Proyek.
+
+### Klik tombol **Tampilkan**.
+
+Menampilkan data sesuai kriteria data (no, proyek, kode, nama, no.telp, email, kontak person dan alamat) yang diisi
+![tampil supplier 1](@/public/image/web/data-master/rekanan/supplier/supplier1.png)
+
+</Steps>
+
+## Langkah-langkah menambahkan supplier
+
+    <Steps>
+    ### Klik button **Buat Baru**.
+    ### Isikan data
+    1.  Pilih nama **proyek**.
+    2.  Isikan pada text box nama supplier.
+    3.  Pilih jenis Usaha.
+    4.  Isikan pada text box alamat, no.telp, no.fax, email, kontak person, nomor identitas(KTP, SIM, PASSPORT, dsb...), NPWP dan jabatan.
+    5.  Pilih nama bank, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI kas/bank, Klik nama bank yang akan dipilih.
+    6.  Isikan pada text box nomor rekening, atas nama rekening, PKP/NON PKP dan NPPKP
+    7.  Pilih nama akun, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI kas/bank, Klik nama akun yang akan dipilih.
+    ### Klik tombol **Simpan** untuk menyimpan data
+    `Catatan: proyek, kode, nama supplier, jenis usaha, alamat, no.telp, nama bank dan nama akun wajib diisi`
+    </Steps>
+
+## Langkah-langkah mengubah supplier
+
+    <Steps>
+    ### Klik **Kode** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Lakukan perubahan yang diinginkan.
+    1.  Ubah nama **proyek**.
+    2.  Ubah pada text box nama supplier.
+    3.  Ubah jenis Usaha.
+    4.  Ubah pada text box alamat, no.telp, no.fax, email, kontak person, nomor identitas(KTP, SIM, PASSPORT, dsb...), NPWP dan jabatan.
+    5.  Ubah nama bank, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI kas/bank, Klik nama bank yang akan diubah.
+    6.  Ubah pada text box nomor rekening, atas nama rekening, PKP/NON PKP dan NPPKP
+    7.  Ubah nama akun, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI kas/bank, Klik nama akun yang akan diubah.
+    ### Klik tombol **Update** untuk mengubah data.
+    </Steps>
+
+## Langkah-langkah menghapus supplier
+
+    <Steps>
+    ### Klik **Kode** pada data yang akan dihapus, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+    penghapusan data.
+    </Steps>

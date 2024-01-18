@@ -1,0 +1,52 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import bkp1 from "@/public/image/web/laporan/proyek/biografi-kavling/p1.png";
+
+# <span style={{ fontSize: '28px' }}> Biografi Kavling </span>
+
+Menu Biografi Kavling digunakan untuk memonitor suatu proyek mulai dari Persediaan Unit, Penjualan (Booking, Kontrak), Monitoring Progress
+Pembangunan Unit, Progress Pembayaran Konsumen, Progress Pembayaran Escrow Bank sampai dengan Serah terima.
+
+## <span style={{ fontSize: '24px' }}> Preview Biografi Kavling </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Tampilkan </span>
+
+<Image
+            src={bkp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. Pilih **Source Data**
+
+ </Steps>
+ ---
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Ya**, . 
+  
+</FAQBox>

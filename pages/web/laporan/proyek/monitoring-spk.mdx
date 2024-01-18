@@ -1,0 +1,51 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import msp1 from "@/public/image/web/laporan/proyek/monitoring-spk/p1.png";
+
+# <span style={{ fontSize: '28px' }}> Monitoring SPK </span>
+
+Menu Monitoring SPK digunakan untuk menampilkan data nilai Kontrak SPK/PO beserta realisasi pembayaran dan posisi outstanding saldo pembayaran terhadap SPK tersebut.
+
+## <span style={{ fontSize: '24px' }}> Preview Monitoring SPK </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Tampilkan </span>
+
+<Image
+            src={msp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. Pilih proyek
+ 2. Klik tombol **Tampilkan** untuk menampilkan laporan Monitoring SPK
+
+ </Steps>
+ ---
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Ya**, . 
+  
+</FAQBox>

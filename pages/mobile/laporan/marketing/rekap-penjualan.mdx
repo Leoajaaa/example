@@ -1,0 +1,114 @@
+import { Steps, Tabs, Tab  } from "nextra/components";
+import { Callout } from "nextra/components";
+
+import Image from 'next/image';
+import penjualanp1 from "@/public/image/mobile/marketing/laporan-penjualan/p1.jpg";
+import penjualanp2 from "@/public/image/mobile/marketing/laporan-penjualan/p2.jpg";
+import penjualanp3 from "@/public/image/mobile/marketing/laporan-penjualan/p3.jpg";
+import penjualanp4 from "@/public/image/mobile/marketing/laporan-penjualan/p4.jpg";
+
+# laporan Penjualan
+
+Menu **laporan Penjualan**, berfungsi untuk memfasilitasi pencatatan penjualan yang dilakukan oleh Marketing. Menu Laporan penjualan menyajikan rekap laporan Penjualan dalam bentuk grafik dan tabel data berdasarkan Periode tertentu
+
+---
+<Steps>
+## Preview laporan Penjualan
+
+### buka aplikasi, 
+Anda perlu membuka Aplikasi Porta Pro yang telah terpasang di smartphone Anda. Dengan mengetuk ikon aplikasi, layar ponsel Anda akan terangkat dan menampilkan tampilan antarmuka Aplikasi Porta Pro.
+
+### login aplikasi,
+jika Anda belum masuk ke akun Anda pada aplikasi tersebut, langkah berikutnya adalah melakukan proses login terlebih dahulu. Anda dapat memasukkan informasi akun Anda seperti kode perusahaan, nama pengguna dan kata sandi untuk mengakses akun Anda.
+
+ Setelah Anda berhasil masuk, Anda dapat melanjutkan dengan "Preview laporan Penjualan".
+
+### pilih modul marketing
+Langkah pertama dalam "Preview laporan Penjualan" adalah memilih modul Marketing. Pada antarmuka aplikasi, carilah dan pilih opsi yang bertuliskan "Marketing".
+
+<Image
+            src={penjualanp1}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### pilih menu laporan penjualan
+Setelah Anda masuk ke modul Marketing, langkah selanjutnya adalah memilih menu "laporan Penjualan". Temukan dan tap pada opsi ini untuk melanjutkan.
+
+<Image
+            src={penjualanp2}
+            
+            width={250}
+            height={250}
+                
+        />
+
+### pilih filter periode
+Setelah Anda masuk ke menu Laporan Penjualan, langkah selanjutnya adalah memilih opsi "Filter Periode." Ini memungkinkan Anda untuk menentukan rentang waktu yang ingin Anda gunakan saat menganalisis data penjualan. Dengan memilih filter periode, Anda dapat fokus pada data dalam rentang waktu tertentu yang relevan dengan kebutuhan Anda.
+<Tabs
+            items={[
+                "Grafik",
+                "Tabel",
+                
+            ]}
+        >
+        <Tab>
+Setelah Anda menyesuaikan periode, Anda memiliki dua opsi tampilan data penjualan. Pertama, jika Anda ingin melihat data dalam bentuk grafik yang lebih visual, pilih "Togle Button Grafik." Dengan mengaktifkan opsi ini, data penjualan akan disajikan dalam bentuk grafik yang memudahkan Anda untuk melihat tren dan perbandingan.
+
+<Image
+            src={penjualanp3}
+            
+            width={250}
+            height={250}
+                
+        />
+</Tab>
+<Tab>
+Namun, jika Anda lebih suka melihat data dalam bentuk tabel yang lebih terstruktur, pilih "Togle Button Tabel." Dengan mengaktifkan opsi ini, data penjualan akan ditampilkan dalam bentuk tabel, yang dapat membantu Anda mengakses detail-data lebih rinci.
+<Image
+            src={penjualanp4}
+            
+            width={250}
+            height={250}
+                
+        />
+</Tab>
+</Tabs>
+</Steps>
+
+---
+
+<Steps>
+## Detail Laporan Penjualan
+
+
+
+</Steps>
+---
+  Melalui serangkaian langkah-langkah tersebut, Anda dapat melakukan "Preview laporan Penjualan" dengan memanfaatkan Aplikasi Porta Pro di smartphone Anda. Anda akan dapat melihat informasi yang relevan dengan laporan Penjualan dalam format yang Anda pilih, baik itu grafik atau tabel.
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>
+
+
+
+

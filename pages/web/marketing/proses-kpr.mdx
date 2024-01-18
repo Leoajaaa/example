@@ -1,0 +1,54 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+import proseskpru1 from "@/public/image/web/marketing/proses-kpr/u1.png";
+
+# Proses KPR
+
+Menu **Proses KPR** berfungsi untuk input data status proses KPR yang diajukan oleh
+konsumen terkait pembelian unit dengan cara pembayaran KPR.
+
+## Langkah-langkah menambahkan data proses KPR
+
+    <Steps>
+    ### Pilih nama **Proyek**.
+    ### Pilih nama **Bank** pemberi KPR.
+    ### Klik tombol **Tampilkan** untuk mulai pencarian data.
+    ### Ubah data di tabel
+    <Image
+            src={proseskpru1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Berikan tanda Checlist di kolom **PILIH** untuk baris data yang akan diinput.
+    2. Pilih Bank yang diinput
+    3. Isikan tanggal, Ceklist kolom sudah (Jika status proses sudah selesai), pilih hasil proses (Disetujui/Ditolak/-) dan isi keterangan
+    ### Klik tombol **Simpan** untuk menyimpan data
+    </Steps>
+
+    ## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Tidak**, Tidak terdapat batasan pada penambahan data Approval Konfirmasi Reserve / Booking. 
+  
+</FAQBox>

@@ -1,0 +1,246 @@
+import { Steps } from "nextra/components";
+
+import Image from 'next/image';
+import menu from "@/public/image/mobile/keuangan/progres-pembayaran/0.jpg";
+import filter from "@/public/image/mobile/keuangan/progres-pembayaran/1.jpg";
+import grafikcarabayar from "@/public/image/mobile/keuangan/progres-pembayaran/2.jpg";
+import grafikperbulan from "@/public/image/mobile/keuangan/progres-pembayaran/3.jpg";
+import carabayartarget from "@/public/image/mobile/keuangan/progres-pembayaran/4.jpg";
+import carabayarpenerimaan from "@/public/image/mobile/keuangan/progres-pembayaran/5.jpg";
+import carabayarselisih from "@/public/image/mobile/keuangan/progres-pembayaran/6.jpg";
+import perbulantarget from "@/public/image/mobile/keuangan/progres-pembayaran/7.jpg";
+import perbulanpenerimaan from "@/public/image/mobile/keuangan/progres-pembayaran/8.jpg";
+import perbulanselisih from "@/public/image/mobile/keuangan/progres-pembayaran/9.jpg";
+
+
+
+# Progres Pembayaran
+
+Menu Kartu Pembayaran, digunakan untuk membantu memuat tentang rincian mutasi dan saldo piutang konsumen
+
+---
+
+**Akses Menu Kartu Pembayaran Konsumen**
+<table>
+  <tbody>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Buka modul **Keuangan**
+
+         2. Buka Menu **progres pembayaran**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={menu}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+
+
+---
+
+**Menampilkan progres pembayaran**
+
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Pilih Proyek
+
+         2. Pilih periode
+         ```
+         Periode yang di tampilkan akan berpengaruh pada banyaknya bulan 
+         data yang ditampilkan
+         ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={filter}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+    **Menampilkan Data Secara Grafik**
+
+    _Data Grafik yang ditampilkan adalah **per jenis pembayaran** dan **perbulan**_
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+      1. Tekan tombol **grafik**
+      2. Tampilan data **per jenis bayar**
+      ```
+      Data perjenis bayar terdiri dari booking fee, uang muka, KPR,
+      angsuran, dan retensi berdasarkan seluruh kontrak yang sudah ada
+      ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={grafikcarabayar}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+      3. Tampilan data **per jenis bayar**
+      ```
+      Data perbulan berdasarkan filter bulan yang dipilih
+
+      ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+        <Image
+            src={grafikperbulan}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+**Menampilkan Data Tabel perjenis bayar**
+
+    _Data perjenis bayar terdiri dari **booking fee, uang muka, angsuran, KPR,** dan **retensi**_
+    <tr>
+      <td align="left" width="350px">
+        <Steps>
+        1. Tekan tombol **tabel** untuk menampilkan data **target**
+
+        ```
+        Data target adalah nominal total tiap jenis bayar yang harus 
+        dibayarkan oleh konsumen
+        ```
+        2. Tekan tombol tanda panah ke kanan untuk melihat data **penerimaan**
+        </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={carabayartarget}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+        3. Tampilan data **penerimaan**
+        ```
+        Data penerimaan adalah nominal yang sudah dibayarkan oleh 
+        konsumen
+        ```
+        4. Tekan tombol tanda panah ke kanan untuk melihat data **selisih**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={carabayarpenerimaan}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+        5. Tampilan data **selisih**
+        ```
+        Data selisih berasal dari nominal target dikurangi nominal 
+        penerimaan
+        ```
+        6. Tekan tombol tanda panah ke kiri untuk kembali melihat data **penerimaan** atau **target**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={carabayarselisih}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+     ---
+     **Menampilkan Data Tabel perbulan**
+
+    _Data perbulan ditampilkan berdasarkan periode yang dipilih_
+    <tr>
+      <td align="left" width="350px">
+        <Steps>
+        1. Geser layar keatas
+        2. Tampilan data **target**
+
+        ```
+        Data target adalah nominal total tiap bulan harus dibayarkan 
+        oleh konsumen
+        ```
+        3. Tekan tombol tanda panah ke kanan untuk melihat data **penerimaan**
+        </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={perbulantarget}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+        4. Tampilan data **penerimaan**
+        ```
+        Data penerimaan adalah nominal yang sudah dibayarkan oleh 
+        konsumen
+        ```
+        5. Tekan tombol tanda panah ke kanan untuk melihat data **selisih**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={perbulanpenerimaan}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+        6. Tampilan data **selisih**
+        ```
+        Data selisih berasal dari nominal target dikurangi nominal 
+        penerimaan
+        ```
+        7. Tekan tombol tanda panah ke kiri untuk kembali melihat data **penerimaan** atau **target**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={perbulanselisih}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+
+  </tbody>
+</table>

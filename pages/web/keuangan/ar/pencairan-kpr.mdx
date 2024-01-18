@@ -1,0 +1,70 @@
+import { Steps, Callout } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pencairankpru1 from "@/public/image/web/keuangan/ar/pencairan-kpr/u1.png";
+import pencairankpru2 from "@/public/image/web/keuangan/ar/pencairan-kpr/u2.png";
+import pencairankpri1 from "@/public/image/web/keuangan/ar/pencairan-kpr/i1.png";
+
+# Pencairan KPR
+
+Menu **pencairan KPR** digunakan untuk melakukan input data pencairan dana
+KPR/KPA dari pihak bank, dimana biasanya ada beberapa pencairan yang dapat
+dilakukan, contohnya : pencairan KPR 1, Retensi Sertifikat, Retensi IMB, dsb.
+
+## Langkah-langkah menambahkan pencairan kpr
+
+    <Steps>
+        ### Pilih nama **Proyek**.
+        ### Pilih **Jenis Pencairan**.
+        ### Klik tombol **Tampilkan**.
+        ### Berikan ceklist pada baris data (kolom ceklist).
+        <Image
+            src={pencairankpru1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+        ### Isi nilai dan tanggal pencairan.
+        <Callout type="warning" emoji="⚠️">
+        Catatan: nilai pembayaran tidak boleh melebihi dari saldo.
+        </Callout>
+
+        ### Klik tombol **Proses** untuk proses penyimpanan data yang telah diisikan.
+        Akan muncul pop up pencairan KPR
+        <Image
+            src={pencairankpru2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+        1. Pilih **Metode Pembayaran**.
+        2. Pilih **Rekening**.
+        3. Isikan nilai prosentase PPN. (opsional)
+        4. Pilih jenis PPH dan nilai potongan PPH. (opsional)
+        5. Klik tombol **Selesai**.
+        6. Klik tombol **Simpan**.
+    </Steps>
+
+## Cara import data pencairan (format excel) :
+
+    <Steps>
+    ### Klik tombol **Import**, nantinya user akan diarahkan pada jendela pilihan file yang akan diimport ke modul ini.
+    <Image
+            src={pencairankpri1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    ### Upload Berkas
+    <Callout type="info" emoji="ℹ️">
+        Catatan: pastikan file berformat .XLS,
+        Sistem sudah menyediakan template pencairan KPR, yang berisi:
+        **Nama Cluster, Type, No unit, nama konsumen, no VA, tanggal pencairan dan nilai pencairan**
+    </Callout>
+    ### Klik tombol **Ok**
+    </Steps>

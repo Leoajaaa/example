@@ -1,0 +1,72 @@
+import { Steps } from "nextra/components";
+
+import Image from "next/image";
+
+import itemberkasa1 from "@/public/image/web/data-master/general/item-berkas/a1.png";
+import itemberkasp1 from "@/public/image/web/data-master/general/item-berkas/p1.png";
+import itemberkase1 from "@/public/image/web/data-master/general/item-berkas/e1.png";
+
+# Item Berkas Konsumen
+
+Menu **Item Berkas Konsumen** digunakan untuk acuan kelengkapan
+berkas yang harus dilengkapi oleh Konsumen saat membeli unit properti.
+
+## Langkah-langkah menambahkan Item Berkas Konsumen
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data Item Berkas Konsumen.
+    <Image
+            src={itemberkasa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Ketik **Kode** Item pada kolom **Kode**
+    2. Ketik **Nama** Item pada kolom **Nama**
+    3. Ketik **No urut** Item pada kolom **No urut**
+    4. Checklist Default
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    `Catatan: Kode, nama dan No urut wajib diisi`
+    </Steps>
+
+## Langkah-langkah merubah Item Berkas Konsumen
+
+    <Steps>
+    ### Klik **Group Marketing** pada data yang akan diubah, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    ### Lakukan perubahan yang diinginkan.
+    <Image
+            src={itemberkase1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    1. Ubah **Kode** Item pada kolom **Kode**
+    2. Ubah **Nama** Item pada kolom **Nama**
+    3. Ubah **No urut** Item pada kolom **No urut**
+    4. Checklist Default
+    ### Klik tombol **Update** untuk mengubah data.
+    `Catatan: jika ada pesan "Gagal menghapus data, data dokumen aktif digunakan di dokumen profesi/cara pembayaran" maka tidak bisa diubah maupun dihapus.`
+    </Steps>
+
+## Langkah-langkah menghapus Item Berkas Konsumen
+
+    <Steps>
+    ### Klik **Group Marketing** pada data yang akan dihapus, yang tampil di tabel.
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={itemberkase1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+    penghapusan data.
+
+    `Catatan: jika ada pesan "Gagal menghapus data, data dokumen aktif digunakan di dokumen profesi/cara pembayaran" maka tidak bisa diubah maupun dihapus.`
+    </Steps>

@@ -1,0 +1,118 @@
+import { Steps } from "nextra/components";
+
+# <span style={{ fontSize: '28px' }}> RAB Proyek </span>
+
+Menu **RAB Proyek**, digunakan untuk memfasilitasi pencatatan data Rencana
+Anggaran Biaya, yang dialokasikan untuk membiayai Proyek tertentu.
+
+## <span style={{ fontSize: '24px' }}> Langkah-langkah menambahkan RAB proyek </span>
+
+    <Steps>
+
+    ### <span style={{ fontSize: '22px' }}> Klik tombol **Buat Baru**. </span>
+
+    ### <span style={{ fontSize: '22px' }}> Pilih **proyek**. </span>
+
+    (Tidak ada) Jika proyek tidak ditemukan, akan membentuk data baru seperti gambar berikut.
+    ![rab proyek 1](@/public/image/web/proyek/perencanaan/rab-proyek/rab_proyek1.png)
+
+    (Ada) jika proyek sudah terdaftar maka hanya dapat melakukan perubahan atau merevisi data yang sudah ada
+
+    - Edit RAB
+    Edit hanya berfungsi untuk mengupdate data dari data sebelumnya.
+
+    - Revisi RAB
+    Revisi akan bernilai **1** apabila RAB pertama kali dibuat untuk proyek
+    tertentu. Apabila proyek tertentu sudah dibuatkan sebelumnya maka nilai
+    Revisi akan bertambah satu **+1** dari nilai yang sebelumnya.
+
+    ### <span style={{ fontSize: '22px' }}> Isikan RAB proyek </span>
+    1. Isi tanggal periode RAB **tanggal mulai** dan **tanggal akhir** RAB tersebut dibuat.
+    2. Nomor RAB, akan secara otomatis terisi oleh sistem.
+    3. Isikan margin, luas efektif proyek dan keterangan pada input text.
+    4. Pada tabel kolom vol (Volume), Satuan, Harga Satuan dan Sub Total diisi secara manual. Sedangkan kolom bobot terisi otomatis
+    5. Klik kolom **URAIAN** untuk mengisi periode.
+    6. Isikan bulan dan nominal. Pastikan total nominal sesuai dengan nilai dari **Sub Total**
+    7. (Opsional) Apabila periode bulan mengikuti periode RAB sesuai dengan tanggal mulai dan tanggal akhir, klik tombol **Generate**
+    ![rab proyek 2](@/public/image/web/proyek/perencanaan/rab-proyek/rab_proyek2.png)
+    8. Klik tombol **Simpan** untuk menyimpan periode mulai dan selesai.
+    9. (Opsional) Apabila periode bulan mengikuti periode RAB sesuai dengan tanggal mulai dan tanggal akhir, klik tombol **Generate Tanggal**.
+        Pastikan nilai Vol (Volume), Satuan, Harga Satuan dan Sub Total sudah terisi.
+    ![rab proyek 3](@/public/image/web/proyek/perencanaan/rab-proyek/rab_proyek3.png)
+    10. Klik tombol **Simpan** untuk menyimpan data RAB proyek.
+
+    </Steps>
+
+## <span style={{ fontSize: '24px' }}> Langkah-langkah mengubah RAB proyek </span>
+
+    <Steps>
+    ### <span style={{ fontSize: '22px' }}> Klik **Nomor** pada data yang akan diubah, yang tampil di tabel. </span>
+    `Catatan: Jika ada pesan "Maaf Data RAB lama tidak bisa diedit/dihapus" maka data tersebut tidak bisa diedit/dihapus`.
+
+    ### <span style={{ fontSize: '22px' }}> Sistem akan menampilkan data tersebut, pada masing-masing Text Box. </span>
+
+    ### <span style={{ fontSize: '22px' }}> Lakukan perubahan yang diinginkan. </span>
+    1. Ubah tanggal periode RAB **tanggal mulai** dan **tanggal akhir** RAB tersebut dibuat.
+    2. Ubah Nomor RAB, akan secara otomatis terisi oleh sistem.
+    3. Ubah margin, luas efektif proyek dan keterangan pada input text.
+    4. Ubah tabel pada kolom Vol (Volume), Satuan, Harga Satuan dan Sub Total diisi secara manual. Sedangkan kolom bobot terisi otomatis
+    5. Klik kolom **URAIAN** untuk mengisi periode.
+    6. Ubah bulan dan nominal. Pastikan total nominal sesuai dengan nilai dari **Sub Total**
+    7. (Opsional) Apabila periode bulan mengikuti periode RAB sesuai dengan tanggal mulai dan tanggal akhir, klik tombol **Generate**
+    ![rab proyek 2](@/public/image/web/proyek/perencanaan/rab-proyek/rab_proyek2.png)
+    8. Klik tombol **Simpan** untuk menyimpan periode mulai dan selesai.
+    9. (Opsional) Apabila periode bulan mengikuti periode RAB sesuai dengan tanggal mulai dan tanggal akhir, klik tombol **Generate Tanggal**.
+        Pastikan nilai Vol (Volume), Satuan, Harga Satuan dan Sub Total sudah terisi.
+    ![rab proyek 3](@/public/image/web/proyek/perencanaan/rab-proyek/rab_proyek3.png)
+    10. Klik tombol **Simpan** untuk menyimpan data RAB proyek.
+    ### Klik tombol **Update** untuk mengubah data.
+
+    </Steps>
+
+## <span style={{ fontSize: '24px' }}> Langkah-langkah revisi RAB proyek </span>
+
+    <Steps>
+    ### <span style={{ fontSize: '22px' }}> Klik tombol **Buat Baru**.. </span>
+
+    ### <span style={{ fontSize: '22px' }}> Pilih **proyek**. lalu pilih tombol **revisi** </span>
+    `Catatan :Counter revisi akan secara otomatis bertambah sesuai revisi terakhir`
+
+    ### <span style={{ fontSize: '22px' }}> Lakukan revisi yang diinginkan. </span>
+
+    1. revisi tanggal periode RAB **tanggal mulai** dan **tanggal akhir** RAB tersebut dibuat.
+    2. revisi Nomor RAB, akan secara otomatis terisi oleh sistem.
+    3. revisi margin, luas efektif proyek dan keterangan pada input text.
+    4. revisi tabel pada kolom Vol (Volume), Satuan, Harga Satuan dan Sub Total diisi secara manual. Sedangkan kolom bobot terisi otomatis
+    5. Klik kolom **URAIAN** untuk mengisi periode.
+    6. revisi bulan dan nominal. Pastikan total nominal sesuai dengan nilai dari **Sub Total**
+    7. (Opsional) Apabila periode bulan mengikuti periode RAB sesuai dengan tanggal mulai dan tanggal akhir, klik tombol **Generate**
+    ![rab proyek 2](@/public/image/web/proyek/perencanaan/rab-proyek/rab_proyek2.png)
+    8. Klik tombol **Simpan** untuk menyimpan periode mulai dan selesai.
+    9. (Opsional) Apabila periode bulan mengikuti periode RAB sesuai dengan tanggal mulai dan tanggal akhir, klik tombol **Generate Tanggal**.
+        Pastikan nilai Vol (Volume), Satuan, Harga Satuan dan Sub Total sudah terisi.
+    ![rab proyek 3](@/public/image/web/proyek/perencanaan/rab-proyek/rab_proyek3.png)
+    10. Klik tombol **Simpan** untuk menyimpan data RAB proyek.
+    ### <span style={{ fontSize: '22px' }}> Klik tombol **Revisi** untuk mengrevisi data. </span>
+
+
+    </Steps>
+
+## <span style={{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

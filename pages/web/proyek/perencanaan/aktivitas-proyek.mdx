@@ -1,0 +1,129 @@
+
+
+import { Steps, Tabs, Tab } from "nextra/components";
+
+import Image from 'next/image';
+
+import aktivitasp1 from "@/public/image/web/proyek/perencanaan/aktivitas-proyek/p1.png";
+import aktivitasp2 from "@/public/image/web/proyek/perencanaan/aktivitas-proyek/p2.png";
+import aktivitasp3 from "@/public/image/web/proyek/perencanaan/aktivitas-proyek/p3.png";
+import aktivitasu1 from "@/public/image/web/proyek/perencanaan/aktivitas-proyek/u1.png";
+import aktivitash1 from "@/public/image/web/proyek/perencanaan/aktivitas-proyek/h1.png";
+import aktivitash2 from "@/public/image/web/proyek/perencanaan/aktivitas-proyek/h2.png";
+
+
+# <span style={{ fontSize: '28px' }}> Aktivitas Proyek </span>
+
+Menu Aktivitas Proyek digunakan untuk memonitor semua proses aktivitas proyek dan bisa menampilkan data gambar aktivitas proyeknya sudah sejauh mana, serta menampilkan nilai presentase progres aktivitasnya. 
+
+## <span style={{ fontSize: '24px' }}> Langkah-langkah menampilkan Aktivitas Proyek </span>
+
+<Steps>
+### <span style={{ fontSize: '22px' }}> Pilih Proyek </span>
+Pilih proyek untuk menentukan aktivitas proyek mana yang akan ditampilkan (contoh: MSI Land1)
+
+<Image
+            src={aktivitasp1}
+            
+            width={500}
+            height={500}
+                
+        />
+
+### <span style={{ fontSize: '22px' }}> Pilih grup Aktivitas </span>
+Pilih grup aktivitas (contoh: All,pertanian,perizinan,sarana dan prasarana)
+
+<Image
+            src={aktivitasp2}
+            
+            width={500}
+            height={500}
+                
+        />
+
+### <span style={{ fontSize: '22px' }}> Klik tombol tampilkan </span>
+Klik tombol “Tampilkan” yang ada ditampilan Ativitas Proyek.
+
+<Image
+            src={aktivitasp3}
+            
+            width={500}
+            height={500}
+                
+        />
+
+</Steps>
+
+## <span style={{ fontSize: '24px' }}> Langkah-langkah update Aktivitas Proyek </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik tombol update </span>
+pilih data pada tabel mana yang ingin diupdate, kemudian klik tombol update dan sistem menampilkan popup Update Ativitas Proyek
+<Image
+            src={aktivitasu1}
+            
+            width={500}
+            height={500}
+                
+        />
+        1. Untuk tanggal update akan akan otomatis terisi
+2. Pilih status (Belum dimulai, Proses, dan Selesai)
+3. Seret bar progress saat ini untuk menentukan nilai persen progress aktivitas
+proyek
+
+4. Unggah file dalam bentuk (JPEG,JPG, &amp; PNG) maksimal lebar 2000px
+5. Masukan Keterangan
+6. Klik update
+System akan menampilkan popup konfirmasi update proses aktivitas proyek
+kemudian klik “iya, Update” untuk update dan “tidak” untuk tidak update
+</Steps>
+
+## <span style={{ fontSize: '24px' }}> Menampilkan History Aktivitas Proyek </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik nilai presentase  </span>
+klik bar porgress presentase pada kolom Progres Aktivitas untuk menampilkan halaman pop Detail Progres
+
+<Image
+            src={aktivitash1}
+            
+            width={500}
+            height={500}
+                
+        />
+
+### <span style={{ fontSize: '22px' }}> klik tombol History </span>
+setelah tombol History di klik, aplikasi akan menampilkan halaman pop up  History Aktivitas Proyek
+<Image
+            src={aktivitash2}
+            
+            width={500}
+            height={500}
+                
+        />
+
+
+</Steps>
+---
+
+## <span style={{ fontSize: '24px' }}> FAQ </span>
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  
+</FAQBox>

@@ -1,0 +1,89 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+
+# Harga Unit
+
+Menu **Harga Unit** digunakan untuk menentukan harga unit property,
+baik harga standard ataupun harga per cara bayar unit.
+
+<Tabs items={["Standard", "Per Cara Bayar"]}>
+    <Tab>
+        Halaman Tab ini, digunakan untuk mengisi harga standard unit property
+        yang akan dijual.
+
+        ## Cara menampilkan data
+        1.Pilih Proyek.
+
+        2.Klik tombol **Tampilkan**.
+        ![tampil harga unit 1](@/public/image/web/data-master/properti/harga-unit/harga_unit1.png)
+
+        ## Langkah langkah mengubah harga standard
+        <Steps>
+        ### Ceklist pada kolom **Approval**
+        Status unit bersifat **open** saat terceklist
+
+        ### Klik tombol **Approve**
+
+        ### Isikan nomor memo perubahan harga, tanggal, keterangan. Isikan juga nama user dan password user yang telah diberikan akses untuk melakukan approval perubahan harga tersebut
+        Pastikan semua Input Box terisi semua
+
+        ### Klik tombol **Simpan**
+        `Catatan: Pastikan nama user sudah terdaftar di sistem`
+        </Steps>
+
+        ## Langkah langkah menghapus harga standard
+
+        <Steps>
+
+        ### Klik no. unit pada data yang akan diubah, yang tampil di tabel.
+        `Catatan: jika ada pesan "Data harga tidak dapat diubah, karena sudah terdaftar pada transaksi" maka data tersebut tidak bisa dihapus maupun diedit.`
+
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+
+        ### Klik tombol **Hapus** untuk menghapus data.
+
+        Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+        penghapusan data.
+
+        </Steps>
+
+    </Tab>
+    <Tab>
+        Halaman Tab ini, difungsikan untuk melakukan setting harga penjualan
+        unit per jenis cara bayar yang akan dipilih oleh konsumen.
+
+        ## Cara menampilkan data
+        1.Pilih Proyek.
+
+        2.Klik tombol **Tampilkan**.
+        ![tampil harga unit 1](@/public/image/web/data-master/properti/harga-unit/harga_unit1.png)
+
+        ## Langkah langkah mengubah harga cara bayar
+        <Steps>
+        ### Ceklist pada kolom **Approval**
+        Status unit bersifat **open** saat terceklist
+
+        ### Klik tombol **Approve**
+
+        ### Isikan nomor memo perubahan harga, tanggal, keterangan. Isikan juga nama user dan password user yang telah diberikan akses untuk melakukan approval perubahan harga tersebut
+        Pastikan semua Input Box terisi semua
+
+        ### Klik tombol **Simpan**
+        `Catatan: Pastikan nama user sudah terdaftar di sistem`
+        </Steps>
+
+        ## Langkah langkah menghapus harga cara bayar
+
+        <Steps>
+        ### Klik item pada data yang akan dihapus, yang tampil di tabel.
+        untuk menghapus item ada beberapa data kolom yang bisa dihapus berikut data kolom yang bisa dihapus:
+        **Angsuran, Cash Bertahap, Cash Keras dan KPR**
+
+        ### Klik item pada data yang akan dihapus, yang tampil di tabel.
+
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+
+        ### Klik tombol **Hapus** untuk menghapus data.
+        </Steps>
+    </Tab>
+
+</Tabs>

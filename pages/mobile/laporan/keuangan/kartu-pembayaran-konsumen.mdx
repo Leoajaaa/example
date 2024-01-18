@@ -1,0 +1,187 @@
+import { Steps } from "nextra/components";
+
+import Image from 'next/image';
+import menu from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/0.jpg";
+import filter from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/1.jpg";
+import listkontrak from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/2.jpg";
+import sisapembayaran from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/3.jpg";
+import jatuhtempo from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/4.jpg";
+import nilai from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/5.jpg";
+import bayar from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/6.jpg";
+import sisabayar from "@/public/image/mobile/keuangan/kartu-pembayaran-konsumen/7.jpg";
+
+# Kartu Pembayaran Konsumen
+
+Menu Kartu Pembayaran, digunakan untuk membantu memuat tentang rincian mutasi dan saldo piutang konsumen
+
+---
+
+___*Kartu Pembayaran Konsumen hanya muncul apabila data penjualan unit sudah kontrak/PPJB___
+
+---
+
+**Akses Menu Kartu Pembayaran Konsumen**
+<table>
+  <tbody>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Buka modul **Keuangan**
+
+         2. Buka Menu **Kartu Pembayaran Konsumen**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={menu}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+
+
+---
+
+**Menampilkan Kartu Pembayaran Konsumen**
+
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Pilih **Proyek**
+
+         2. Pilih **Unit**
+
+         3. Tekan **Tampilkan Data**
+         ```
+         Data unit yang akan muncul adalah data yang sudah dibuatkan kontrak
+         ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={filter}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         4. Pilih Daftar **Kontrak**
+        ```
+        Data kontrak hanya bisa di buat pada aplikasi desktop
+        ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+        <Image
+            src={listkontrak}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         5. Pada halaman **Kartu Pembayaran** akan menampilkan **detail unit** dan **list jadwal pembayaran**
+        ```
+        Data kontrak hanya bisa di buat pada aplikasi desktop
+        ```
+         6. Menampilkan **grafik pembayaran** dan **sisa pembayaran**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+        <Image
+            src={sisapembayaran}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         7. Geser ke bagian bawah, akan menampilkan jadwal pembayaran berdasarkan **tanggal jauh tempo**
+         ``` 
+         tekan tombol panah kanan untuk menampilkan jadwal pembayaran 
+         berdasarkan nominal tiap termin
+         ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+        <Image
+            src={jatuhtempo}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         8. Menampilkan **nominal nilai** setiap termin 
+         ``` 
+         tekan tombol panah kanan untuk menampilkan jadwal pembayaran 
+         berdasarkan nilai bayar
+         ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+        <Image
+            src={nilai}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         9. Menampilkan **nominal pembayaran** pada setiap termin
+         ``` 
+         tekan tombol panah kanan untuk menampilkan jadwal pembayaran 
+         berdasarkan nominal pembayaran
+         ```
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+        <Image
+            src={bayar}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+     ---
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         10. Menampilkan **nominal sisa pembayaran** pada setiap termin 
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+        <Image
+            src={sisabayar}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+  </tbody>
+</table>

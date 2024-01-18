@@ -1,0 +1,196 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import Image from "next/image";
+import search from "@/public/icon/icon_search.png";
+
+import rekeninga1 from "@/public/image/web/data-master/rekanan/rekening/ra1.png";
+import rekeninge1 from "@/public/image/web/data-master/rekanan/rekening/re1.png";
+import kasbanka1 from "@/public/image/web/data-master/rekanan/rekening/ka1.png";
+import kasbanke1 from "@/public/image/web/data-master/rekanan/rekening/ke1.png";
+import banka1 from "@/public/image/web/data-master/rekanan/rekening/ba1.png";
+import banke1 from "@/public/image/web/data-master/rekanan/rekening/be1.png";
+
+# Rekening
+
+<Tabs items={["Rekening", "Kas/Bank", "Bank Eksternal"]}>
+    <Tab>
+    Menu **Rekening** digunakan untuk mengidentifikasi rekening yang akan
+    dilibatkan pada saat proses transaksi, baik rekening Kas ataupun Bank.
+
+     ## Langkah langkah membuat rekening
+        <Steps>
+        ### Klik tombol **Buat Baru**
+
+        ### Isikan kolom tambah data rekening
+        <Image
+            src={rekeninga1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+        1. Pilih nama **Proyek**.
+        2. Pilih nama kas/bank, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI kas/bank.
+        3. Isikan pada text box kode rekening dan atas nama.
+        4. Pilih salah satu kategori rekening.
+        5. Pilih jenis rekening.
+        6. Pilih nama akun, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI akun.
+        7. Pilih status rekening.
+
+        ### Klik tombol **Simpan** untuk menyimpan data
+        </Steps>
+
+     ## Langkah langkah mengubah rekening
+        <Steps>
+        ### Klik No. Rekening pada data yang akan diubah, yang tampil di tabel.
+
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+
+        ### Lakukan perubahan yang diinginkan.
+        <Image
+            src={rekeninge1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+        1. Ubah nama **Proyek**.
+        2. Ubah nama kas/bank, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI kas/bank.
+        3. Ubah pada text box kode rekening dan atas nama.
+        4. Ubah salah satu kategori rekening.
+        5. Ubah jenis rekening.
+        6. Ubah nama akun, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+        sistem akan menampilkan UI akun.
+        7. Ubah status rekening.
+        ### Klik tombol **Update** untuk mengubah data.
+        </Steps>
+
+     ## Langkah langkah menghapus rekening
+        <Steps>
+        ### Klik No. Rekening pada data yang akan dihapus, yang tampil di tabel.
+        ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+        ### Klik tombol **Hapus** untuk menghapus data.
+        Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+        penghapusan data.
+        </Steps>
+    </Tab>
+
+    <Tab>
+    Menu **Kas/Bank** akan digunakan pada transaksi keuangan, baik
+    penerimaan maupun pengeluaran uang ataupun nama bank pemberi KPR/KPA.
+
+     ## Langkah langkah membuat kas/bank
+         <Steps>
+          ### Klik tombol **Buat Baru**
+
+          ### Isikan kolom tambah data kas/bank
+          <Image
+            src={kasbanka1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+           1. Pilih nama **Jenis**.
+           2. Pilih nama bank eksternal, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+           sistem akan menampilkan UI bank eksternal.
+           3. Isikan pada text box kode kas/bank, nama kas/bank, telp, fax dan alamat.
+
+          ### Klik tombol **Simpan** untuk menyimpan data
+          `Catatan: nama jenis, nama bank eksternal, kode kas/bank dan nama kas/bank wajib diisi`
+         </Steps>
+
+       ## Langkah langkah mengubah kas/bank
+         <Steps>
+          ### Klik Kode pada data yang akan diubah, yang tampil di tabel.
+
+          ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+
+          ### Lakukan perubahan yang diinginkan.
+          <Image
+            src={kasbanke1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+           1. Ubah nama **Jenis**.
+           2. Ubah nama bank eksternal, dengan cara klik tombol dengan cara klik tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>
+           sistem akan menampilkan UI bank eksternal.
+           3. Ubah pada text box kode kas/bank, nama kas/bank, telp, fax dan alamat.
+          ### Klik tombol **Update** untuk mengubah data.
+         </Steps>
+       ## Langkah langkah menghapus kas/bank
+         <Steps>
+          ### Klik Kode pada data yang akan dihapus, yang tampil di tabel.
+          ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+          ### Klik tombol **Hapus** untuk menghapus data.
+          Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+          penghapusan data.
+         </Steps>
+    </Tab>
+
+     <Tab>
+     Menu **Bank Eksternal**  berfungsi mendaftarkan daftar bank-bank yang tidak terdaftar di sistem yang akan digunakan untuk transaksi keuangan.
+
+      ## Langkah langkah membuat bank eksternal
+       <Steps>
+          ### Klik tombol **Buat Baru**
+
+          ### Isikan kolom tambah data bank eksternal
+          <Image
+            src={banka1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+          1. Isikan pada text box nama, kode kriling, kode RTGS dan status.
+
+          ### Upload Logo
+          Upload logo digunakan untuk melakukan upload format template file
+          cetak per proyek. Drag gambar yang sudah ditentukan atau Klik tombol “Unggah Gambar” Maka akan muncul tampilan lokasi yang inging diupload.
+          `Catatan: Format upload harus JPG/JPEG/PNG dan ukuran upload tidak lebih dari 2MB.`
+
+          ### Klik tombol **Simpan** untuk menyimpan data
+          `Catatan: nama, kode kriling, kode RTGS dan status wajib diisi`
+       </Steps>
+
+        ## Langkah langkah mengubah bank eksternal
+       <Steps>
+          ### Klik Nama pada data yang akan diubah, yang tampil di tabel.
+
+          ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+
+          ### Lakukan perubahan yang diinginkan.
+          <Image
+            src={banke1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+           1. Ubah pada text box nama, kode kriling, kode RTGS dan status.
+
+          ### Ganti/ Hapus Upload Logo
+          Ganti/ Hapus logo digunakan untuk melakukan upload format template file
+          cetak per proyek. Drag gambar yang sudah ditentukan atau Klik tombol “Unggah Gambar” Maka akan muncul tampilan lokasi yang inging diupload.
+          `Catatan: Format upload harus JPG/JPEG/PNG dan ukuran upload tidak lebih dari 2MB.`
+
+          ### Klik tombol **Update** untuk mengubah data
+          `Catatan: nama, kode kriling, kode RTGS dan status wajib diisi`
+       </Steps>
+
+        ## Langkah langkah menghapus bank eksternal
+          <Steps>
+          ### Klik Nama pada data yang akan dihapus, yang tampil di tabel.
+          ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+          ### Klik tombol **Hapus** untuk menghapus data.
+          Klik **Hapus** untuk menghapus data, Klik “Cancel” untuk membatalkan
+          penghapusan data.
+         </Steps>
+     </Tab>
+
+</Tabs>

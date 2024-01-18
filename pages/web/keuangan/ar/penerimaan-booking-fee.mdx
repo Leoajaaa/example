@@ -1,0 +1,158 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pbfa1 from "@/public/image/web/keuangan/ar/penerimaan-booking-fee/a1.png";
+import pbfa2 from "@/public/image/web/keuangan/ar/penerimaan-booking-fee/a2.png";
+import pbfe1 from "@/public/image/web/keuangan/ar/penerimaan-booking-fee/e1.png";
+import pbfe2 from "@/public/image/web/keuangan/ar/penerimaan-booking-fee/e2.png";
+import pbfh1 from "@/public/image/web/keuangan/ar/penerimaan-booking-fee/h1.png";
+
+# Penerimaan Booking Fee
+
+Menu **Penerimaan Booking Fee**, digunakan untuk memfasilitasi pembayaran
+uang tanda jadi (Booking Fee) pembelian Unit Properti.
+
+## Langkah-langkah menambahkan booking fee
+
+    <Steps>
+
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data pada halaman tambah data.
+
+    1. Pilih nama **Proyek**
+    2. Pilih **tanggal bukti**
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Data Pembayaran",
+                "Rincian Pembayaran",
+            ]}
+        >
+            <Tab>
+
+        <Image
+            src={pbfa1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+            3. Pilih **Nomor Booking**, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+            menampilkan UI List Booking. Pilih Nomor Booking yang tertera pada table List Booking, sistem akan otomatis menampilkan Informasi Proyek, Nama Customer dan Unit Properti.
+
+            4. Pilih **tanggal booking**.
+            5. Checklist **jenis penerimaan**.
+            6. Tentukan **metode pembayaran**.
+            7. Tentukan Kas-Bank (Rekening) untuk menempatkan dana yang diterima,
+            dengan cara tekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>. Sistem akan menampilkan Daftar Rekening
+            pada tabel UI List Rekening. Pilih nama kas/bank pada table.
+            8. Isi nomor referensi/ giro/ cek dan nomor kwitansi(jika dibutuhkan).
+            9. Isikan keterangan.
+
+            `Catatan: Pastikan Nilai Booking sesuai dengan di input di data booking. Bila
+            penjualan unit yang bersangkutan melalui proses reservasi, nilai reservasi
+            akan muncul di Nilai Reservasi, nilai reservasi akan mengurangi nilai
+            kewajiban pembayaran customer.`
+
+            </Tab>
+
+            <Tab>
+
+        <Image
+            src={pbfa2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            
+            10. Isi nilai penerimaan fee.
+            `Catatan: Pastikan Nominal Penerimaan tidak bisa lebih besar dari Saldo Booking Fee`
+
+            11. Isikan nilai prosentase PPN.
+
+            12. Isi nilai penerimaan lainnya apabila ada.
+            13. Isi nilai biaya pemotongan administrasi apabila ada.
+            14. Pilih jenis PPH dan nilai potongan PPH.
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Penerimaan** apabila akan mencetak bukti penerimaan.
+    </Steps>
+
+## Langkah-langkah mengubah booking fee
+
+    <Steps>
+    ### Klik **Nomor Bukti** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data Penerimaan Booking Fee tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Ubah data pada halaman edit data.
+    1. Ubah **tanggal bukti**
+
+<Tabs items={["Data Pembayaran", "Rincian Pembayaran"]}>
+    <Tab>
+
+    <Image
+            src={pbfe1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    2. Checklist **jenis penerimaan**.
+    3. Ubah **metode pembayaran**.
+    4. Ubah Kas-Bank (Rekening) untuk menempatkan dana yang diterima,
+    dengan cara tekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>. Sistem akan menampilkan Daftar Rekening
+    pada tabel UI List Rekening. Pilih nama kas/bank pada table.
+    5. Ubah nomor referensi/ giro/ cek dan nomor kwitansi(jika dibutuhkan).
+    6. Ubah keterangan.
+    </Tab>
+
+    <Tab>
+
+    <Image
+            src={pbfe2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+
+    7. Ubah nilai penerimaan fee.
+    `Catatan: Pastikan Nominal Penerimaan tidak bisa lebih besar dari Saldo Booking Fee`
+    8. Ubah nilai prosentase PPN.
+    9. Ubah nilai penerimaan lainnya apabila ada.
+    10. Ubah nilai biaya pemotongan administrasi apabila ada.
+    11. Ubah jenis PPH dan nilai potongan PPH.
+    </Tab>
+
+</Tabs>
+### Klik tombol **Update** untuk mengubah data.
+
+    </Steps>
+
+## Langkah-langkah menghapus booking fee
+
+    <Steps>
+    ### Klik **Nomor Bukti** pada data yang akan dihapus, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data Penerimaan Booking Fee tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+
+    <Image
+            src={pbfh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Isikan alasan melakukan penghapusan data lalu klik **Oke**
+
+    </Steps>

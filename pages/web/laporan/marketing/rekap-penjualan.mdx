@@ -1,0 +1,74 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import rp1 from "@/public/image/web/laporan/marketing/rekap-penjualan/pg1.png";
+import rp2 from "@/public/image/web/laporan/marketing/rekap-penjualan/pt1.png";
+
+# <span style={{ fontSize: '28px' }}> Rekap Penjualan </span>
+
+Menu Laporan Rekap Penjualan berfungsi untuk menampilkan rekap laporan terkait transaksi penjualan unit properti dalam bentuk Grafik ataupun Data Tabel,
+berdasarkan (perproyek, perkategori, Cara Pembayaran, tipe, Group Marketing, Marketing) dengan informasi total unit yang terjual dan total nilai penjualan.
+
+## <span style={{ fontSize: '24px' }}> Preview Rekap Penjualan </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Tampilkan </span>
+
+<Tabs
+            items={[
+                "GRAFIK",
+                "TABEL",
+            ]}
+        >
+<Tab>
+<Image
+            src={rp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. Tekan tombol tampilkan untuk menampilkan data Laporan Rekap Penjualan
+</Tab>
+
+<Tab>
+<Image
+            src={rp2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. Tekan tombol tampilkan untuk menampilkan data Laporan Rekap Penjualan
+</Tab>
+ </Tabs>
+
+ </Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Bagaimana cara mengupdate laporan Rekap Penjualan ?">
+  **Ya**, . 
+  
+</FAQBox>

@@ -1,0 +1,80 @@
+import Image from "next/image";
+import { Steps } from "nextra/components";
+
+import { Callout } from "nextra/components";
+import { Bleed } from 'nextra-theme-docs';
+
+
+
+import permissionp1 from "@/public/image/web/setting/acces-control/user-permission/p1.png";
+import permissione1 from "@/public/image/web/setting/acces-control/user-permission/u1.png";
+
+# User Role
+
+<div style={{ padding: "1rem" }}>
+    **User Role** digunakan untuk mengisi detail informasi User Role yang ada pada developer properti, Seperti : **Nama User Role**, **alamat**, **rekening** serta **logo** yang digunakan oleh User Role.
+</div>
+## Setting Permission User
+
+<Steps>
+### Klik **Tampilkan**
+Tombol aksi **Tampilkan** terdapat pada halaman awal modul **User Permission**. Seperti pada gambar berikut :
+
+{/* <Bleed> */}
+
+{/* </Bleed> */}
+
+### Klik ** Nama User** pada data yang akan disettingkan, yang tampil di tabel.
+
+<Image
+            src={permissionp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+Sistem akan menampilkan data User Permission (Nama User, Akses Menu, Akses Atasan) secara otomatis pada pop up Setting User Permission
+
+### setting user permission
+<Image
+            src={permissione1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+1. Ceklist Akses user apa saja yang akan diberikan pada kolom (All, View, Entry, Update, Delete)
+2. Klik tombol **Simpan** untuk menyimpan data Setting Permission User.
+
+
+
+<Callout type="info" emoji="ℹ️">
+    `Toogle Button Enable User Permission, wajib di aktifkan jika settingan User Permission ingin digunakan`
+</Callout>
+
+</Steps>
+
+
+
+
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Apakah data User dapat dihapus ?">
+  **Tidak** User yang sudah terdaftar tidak dapat dihapus dari aplikasi.
+  jika User sudah tidak aktif, maka dapat dilakukan Penonaktifan User.
+</FAQBox>

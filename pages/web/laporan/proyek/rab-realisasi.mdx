@@ -1,0 +1,50 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import rrp1 from "@/public/image/web/laporan/proyek/rab-realisasi/p1.png";
+
+# <span style={{ fontSize: '28px' }}> RAB Realisasi </span>
+
+Menu Laporan RAB Realisasi sangat penting dalam perhitungan antara untung dan ruginya pihak pengembang (Developer) dalam merencanakan suatu anggaran biaya (RAB)
+
+## <span style={{ fontSize: '24px' }}> Preview RAB  Realisasi </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Klik Tampilkan </span>
+
+<Image
+            src={rrp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. klik tombol tampilkan untuk menampilkan data RAB Realisasi
+
+ </Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="">
+  **Ya**, . 
+  
+</FAQBox>

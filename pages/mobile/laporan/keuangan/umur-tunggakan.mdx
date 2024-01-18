@@ -1,0 +1,110 @@
+import { Steps } from "nextra/components";
+
+import Image from 'next/image';
+import menu from "@/public/image/mobile/keuangan/umur-tunggakan/0.jpg";
+import grafik from "@/public/image/mobile/keuangan/umur-tunggakan/1.jpg";
+import tabel from "@/public/image/mobile/keuangan/umur-tunggakan/2.jpg";
+import detailtabel from "@/public/image/mobile/keuangan/umur-tunggakan/3.jpg";
+
+# Umur Tunggakan
+
+Menu Kartu Pembayaran, digunakan untuk membantu memuat tentang rincian mutasi dan saldo piutang konsumen
+
+---
+
+**Akses Menu Umur Tunggakan**
+<table>
+  <tbody>
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Buka modul **Keuangan**
+
+         2. Buka Menu **Umur Tunggakan**
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={menu}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+
+**Menampilkan Grafik Umur Tunggakan**
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         1. Pilih **Proyek**
+         2. Aktifkan fitur **tampilkan tagihan ke bank(KPR/KPA)**
+         ```
+         Setelah diaktifkan data tagihan akan terakumulasi tagihan ke 
+         bank (KPR/KPA)
+         ```
+         3. Tekan tombol **Grafik** untuk menampilkan **umur tunggakan**
+         ```
+         Grafik tunggakan berisi data total nominal tunggakan, dan grafik
+         umur tunggkan
+         ```
+
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={grafik}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+    ---
+
+**Menampilkan Tabel Umur Tunggakan**
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         3. Tekan tombol **Tabel** untuk menampilkan **umur tunggakan**
+         ```
+         tabel tunggakan berisi data total nominal tunggakan, dan tabel
+         umur tunggkan yaitu <3 Bulan, 3-6 Bulan, 6-12 Bulan, dan >12 Bulan
+         ```
+         4. Untuk menampilkan **Detail Umur Tunggakan** tekan salah satu baris data umur tunggakan
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={tabel}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+
+    <tr>
+      <td align="left" width="350px">
+      <Steps>
+         5. Tampilan **Detail Umur Tunggakan**
+         ```
+         Detail umur tunggakan yang ditampilkan yaitu cluster, tipe, nomor unit,
+         nama konsumen, dan total tunggakan
+         ```
+
+      </Steps>
+      </td>
+      <td width="50px"></td>
+      <td align="center">
+      <Image
+            src={detailtabel}
+            width={300}
+            height={300}
+        />
+      </td>
+    </tr>
+
+ </tbody>
+</table>

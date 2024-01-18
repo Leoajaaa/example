@@ -1,0 +1,50 @@
+import { Steps, Callout, Tabs, Tab } from "nextra/components";
+
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import mhp1 from "@/public/image/web/laporan/marketing/monitoring-hadiah/p1.png";
+
+# <span style={{ fontSize: '28px' }}> Monitoring Hadiah </span>
+
+Menu Monitoring Hadiah betujuan untuk memonitoring item bonus/promo penjualan berdasarkan transaksi penjualan yang telah diisi sebelumnya.
+
+## <span style={{ fontSize: '24px' }}> Preview Monitoring Hadiah </span>
+
+<Steps>
+
+### <span style={{ fontSize: '22px' }}> Tekan Tombol Tampilkan </span>
+
+<Image
+            src={mhp1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+ 
+ 1. pilih proyek
+ 2. Tekan tombol **Tampilkan** untuk menampilkan data Laporan Monitoring Hadiah
+
+ </Steps>
+
+## FAQ
+
+export function FAQBox({ title, children }) {
+    return (
+        <details
+            close
+            className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+        >
+            <summary>
+                <strong className="text-md">{title}</strong>
+            </summary>
+            <div className="nx-p-2">{children}</div>
+        </details>
+    );
+}
+
+<FAQBox title="Bagaimana cara mengisi jumlah hadiah dan hadiah yang sudah diserahkan ?">
+  **Ya**, . 
+  
+</FAQBox>

@@ -1,0 +1,168 @@
+import { Steps, Tabs, Tab } from "nextra/components";
+import search from "@/public/icon/icon_search.png";
+import Image from "next/image";
+
+import pka1 from "@/public/image/web/keuangan/ar/pembayaran-konsumen/a1.png";
+import pka2 from "@/public/image/web/keuangan/ar/pembayaran-konsumen/a2.png";
+import pke1 from "@/public/image/web/keuangan/ar/pembayaran-konsumen/e1.png";
+import pke2 from "@/public/image/web/keuangan/ar/pembayaran-konsumen/e2.png";
+import pkh1 from "@/public/image/web/keuangan/ar/pembayaran-konsumen/h1.png";
+
+# Pembayaran Konsumen
+
+Menu **Pembayaran Konsumen**, digunakan untuk memfasilitasi
+pembayaran Uang Muka, Angsuran, Pencairan KPR dan Pencairan Retensi
+Konsumen.
+
+## Langkah-langkah menambahkan pembayaran konsumen
+
+    <Steps>
+    ### Klik tombol **Buat Baru**.
+    ### Isikan data pada halaman tambah data.
+
+    1. Pilih nama **Proyek**
+    2. Pilih **tanggal bukti**
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Peruntukan",
+                "Detail Pembayaran",
+            ]}
+        >
+            <Tab>
+
+            <Image
+            src={pka1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            
+            3. Pilih Nomor Kontrak, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+                menampilkan UI List Kontrak. Pilih Nomor Unit yang tertera pada table List Kontrak.
+                Sistem akan otomatis menampilkan Informasi Proyek, Nama Customer, Unit Properti dan Daftar Tagihan yang harus dibayar konsumen berdasarkan Invoice yang dibuat.
+
+            4. Checklist **jenis penerimaan**.
+            5. Tentukan **metode pembayaran**.
+            6. Tentukan Kas-Bank (Rekening) untuk menempatkan dana yang diterima,
+                dengan cara tekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>. Sistem akan menampilkan Daftar Rekening
+                pada tabel UI List Rekening. Pilih nama kas/bank pada table.
+            7. Isi nomor referensi/ giro/ cek dan nomor kwitansi(jika dibutuhkan).
+            8. Isikan keterangan.
+            </Tab>
+
+            <Tab>
+            <Image
+            src={pka2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            9. Isikan nilai pembayaran. **(Lalu klik enter lalu akan muncul jumlah pembayaran sesuai di tabel)**
+            10. Setting nyala pada tombol **Alokasikan Pembayaran denda** apabila konsumen melakukan pembayaran
+                tagihan sekaligus dengan denda keterlambatannya (Jumlah hari dan nilai
+                denda akan dihitung otomatis oleh sistem berdasarkan ketentuan yang
+                telah di setting di aplikasi EiCES).
+            11. Isi biaya administrasi apabila ada biaya administrasi bank yang
+                dibebankan ke konsumen.
+            12. Pindahkan PPn apabila dibesaran pembayaran tersebut terdapat nilai PPn
+                nya.
+            13. Pindahkan PPh apabila dibesaran pembayaran tersebut terdapat nilai PPh
+                nya.
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Simpan** untuk menyimpan data.
+    Klik tombol **Print Out Pembayaran Konsumen** lalu
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Bukti Pembayaran** apabila akan mencetak bukti pembayaran.
+
+    </Steps>
+
+## Langkah-langkah mengubah pembayaran konsumen
+
+    <Steps>
+    ### Klik **Nomor Bukti** pada data yang akan diubah, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data pembayaran konsumen tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Isikan data pada halaman edit data.
+
+    1. Ubah nama **Proyek**
+    2. Ubah **tanggal bukti**
+
+    `Catatan: nomor bukti akan terisi otomatis berdasarkan tanggal bukti, proyek dan rekening`
+
+    <Tabs
+            items={[
+                "Peruntukan",
+                "Detail Pembayaran",
+            ]}
+        >
+            <Tab>
+            <Image
+            src={pke1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            3. Ubah Nomor Kontrak, dengan cara menekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>, Sistem akan
+                menampilkan UI List Kontrak. Pilih Nomor Unit yang tertera pada table List Kontrak.
+                Sistem akan otomatis menampilkan Informasi Proyek, Nama Customer, Unit Properti dan Daftar Tagihan yang harus dibayar konsumen berdasarkan Invoice yang dibuat.
+
+            4. Checklist **jenis penerimaan**.
+            5. Ubah **metode pembayaran**.
+            6. Ubah Kas-Bank (Rekening) untuk menempatkan dana yang diterima,
+                dengan cara tekan tombol <Image src={search} alt="search akun" width={"auto"} height={"auto"} style={{ display: "inline-block" }}/>. Sistem akan menampilkan Daftar Rekening
+                pada tabel UI List Rekening. Pilih nama kas/bank pada table.
+            7. Ubah nomor referensi/ giro/ cek dan nomor kwitansi(jika dibutuhkan).
+            8. Ubah keterangan.
+            </Tab>
+
+            <Tab>
+            <Image
+            src={pke2}
+            
+            width={1000}
+            height={1000}
+                
+        />
+            9. Ubah nilai pembayaran. **(Lalu klik enter lalu akan muncul jumlah pembayaran sesuai di tabel)**
+            10. Setting nyala pada tombol **Alokasikan Pembayaran denda** apabila konsumen melakukan pembayaran
+                tagihan sekaligus dengan denda keterlambatannya (Jumlah hari dan nilai
+                denda akan dihitung otomatis oleh sistem berdasarkan ketentuan yang
+                telah di setting di aplikasi EiCES).
+            11. Ubah biaya administrasi apabila ada biaya administrasi bank yang
+                dibebankan ke konsumen.
+            12. Pindahkan PPn apabila dibesaran pembayaran tersebut terdapat nilai PPn
+                nya.
+            13. Pindahkan PPh apabila dibesaran pembayaran tersebut terdapat nilai PPh
+                nya.
+            </Tab>
+    </Tabs>
+    ### Klik tombol **Update** untuk mengubah data.
+    Klik tombol **Print Out Pembayaran Konsumen** lalu
+    Klik tombol **Kwitansi** apabila akan mencetak kwitansinya, Klik tombol **Print Bukti Pembayaran** apabila akan mencetak bukti pembayaran.
+
+    </Steps>
+
+## Langkah-langkah menghapus booking fee
+
+    <Steps>
+    ### Klik **Nomor Bukti** pada data yang akan dihapus, yang tampil di tabel.
+    `Catatan: jika terdapat pesan "Data Penerimaan Booking Fee tidak bisa diubah/dihapus karena sudah terdaftar pada Jurnal" maka data tersebut tidak bisa dihapus maupun diubah.`
+
+    ### Sistem akan menampilkan data tersebut, pada masing-masing Text Box.
+    <Image
+            src={pkh1}
+            
+            width={1000}
+            height={1000}
+                
+        />
+    ### Klik tombol **Hapus** untuk menghapus data.
+    Isikan alasan melakukan penghapusan data lalu klik **Oke**
+
+    </Steps>
